@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scenarios | Genezio Docs</title>
+  <meta name="description" content="Scenarios in Genezio documentation" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="../../assets/site.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">Genezio Docs</a>
+      <nav aria-label="Top navigation"><a href="../../index.html">Home</a><a href="../index.html">Docs</a></nav>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Documentation navigation">
+    <section class="nav-group"><h3><a class="" href="../getting-started.html">Getting Started</a></h3></section>
+    <section class="nav-group">
+        <h3><a class="" href="../introduction/what-is-genezio.html">Introduction</a></h3>
+        <ul><li><a class="" href="../introduction/what-is-genezio.html">What is Genezio?</a></li><li><a class="" href="../introduction/how-llm-search-works.html">How LLM Search Works</a></li><li><a class="" href="../introduction/query-fanouts-explained.html">Query Fanouts Explained</a></li><li><a class="" href="../introduction/how-llms-select-sources.html">How LLMs Select Sources</a></li><li><a class="" href="../introduction/how-ai-citations-work.html">How AI Citations Work</a></li><li><a class="" href="../introduction/what-kpis-are-we-measuring.html">What KPIs Are We Measuring</a></li><li><a class="" href="../introduction/how-genezio-measures-visibility.html">How Genezio Measures Visibility</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="active" href="brands.html">Core Concepts</a></h3>
+        <ul><li><a class="" href="brands.html">Brands</a></li><li><a class="" href="brand-visibility.html">Brand Visibility</a></li><li><a class="" href="users.html">Users</a></li><li><a class="" href="personas.html">Personas</a></li><li><a class="" href="topics.html">Topics</a></li><li><a class="active" href="scenarios.html">Scenarios</a></li><li><a class="" href="topic-scenario-relevance.html">Topic / Scenario Relevance</a></li><li><a class="" href="conversations.html">Conversations</a></li><li><a class="" href="query-fanouts.html">Query Fanouts</a></li><li><a class="" href="citations.html">Citations</a></li><li><a class="" href="statements.html">Statements</a></li><li><a class="" href="competitors.html">Competitors</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../genezio-agents/prompter-agent.html">Genezio Agents</a></h3>
+        <ul><li><a class="" href="../genezio-agents/prompter-agent.html">Prompter Agent</a></li><li><a class="" href="../genezio-agents/recommender-agent.html">Recommender Agent</a></li><li><a class="" href="../genezio-agents/introspector-agent.html">Introspector Agent</a></li><li><a class="" href="../genezio-agents/comparer-agent.html">Comparer Agent</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../analysis/creating-scenarios.html">Running Conversations</a></h3>
+        <ul><li><a class="" href="../analysis/creating-scenarios.html">Creating Scenarios</a></li><li><a class="" href="../analysis/selecting-llm-engines.html">Selecting LLM Engines</a></li><li><a class="" href="../analysis/running-conversations.html">Running Conversations</a></li></ul>
+      </section>
+    <section class="nav-group">
+        <h3>Actions</h3>
+        <ul><li><a class="" href="../insights/actionable-insights.html">Actionable Insights</a></li><li><a class="" href="../content-hub/conetnt-hub.html">Conetnt Hub</a></li></ul>
+      </section>
+  </aside>
+    <main class="content" id="main-content">
+      <h1>Scenarios</h1>
+<p>In Genezio, a <strong>scenario</strong> represents a realistic situation in which a persona is trying to achieve a goal related to a specific topic.</p>
+<p>Scenarios are the <strong>starting point for every conversation</strong> that Genezio runs with an AI system.</p>
+<p>While topics define the general subject area, scenarios describe <strong>the concrete situation that leads a user to ask questions</strong>.</p>
+<hr />
+<h2>Topics vs Scenarios</h2>
+<p>It is important to distinguish between topics and scenarios.</p>
+<p>A <strong>topic</strong> defines the subject area being analyzed.</p>
+<p>Example topic:</p>
+<pre><code>CRM for startups</code></pre>
+<p>A <strong>scenario</strong> describes a realistic situation involving the persona.</p>
+<p>Example scenario:</p>
+<pre><code>The persona is a founder of a small SaaS startup with two co-founders. They recently started getting inbound leads and need a simple way to track contacts and follow up with potential customers.</code></pre>
+<p>From this scenario, Genezio generates one or more prompts that are sent to the AI system during the conversation.</p>
+<hr />
+<h2>How Scenarios Are Used</h2>
+<p>Every conversation run by Genezio begins with a scenario.</p>
+<p>The process works as follows:</p>
+<ol>
+<li>A <strong>persona</strong> defines who the user is (language, location, context).</li>
+<li>A <strong>topic</strong> defines the subject area.</li>
+<li>A <strong>scenario</strong> defines the situation and the persona&#39;s goal.</li>
+<li>Genezio generates <strong>prompts (messages)</strong> from that scenario.</li>
+<li>Those prompts are sent to the LLM during the conversation.</li>
+</ol>
+<p>This structure ensures that conversations are grounded in <strong>realistic user contexts rather than abstract prompts</strong>.</p>
+<hr />
+<h2>Scenario Structure</h2>
+<p>A scenario describes the <strong>situation and goal</strong> the persona is experiencing.</p>
+<p>The <strong>persona context is implicit</strong> in the scenario because every scenario belongs to a <strong>topic</strong>, and every topic is associated with a <strong>persona</strong>.</p>
+<p>This means the persona&#39;s:</p>
+<ul>
+<li>role or profile</li>
+<li>language</li>
+<li>geographic location</li>
+</ul>
+<p>are already defined before the scenario is executed.</p>
+<p>The scenario itself therefore focuses on the <strong>user&#39;s situation and objective</strong>, while the persona provides the broader context for how the conversation should be conducted.</p>
+<h3>Situation</h3>
+<p>The circumstances that led the user to search for a solution.</p>
+<p>Example:</p>
+<ul>
+<li>receiving the first sales leads</li>
+<li>preparing for a marathon</li>
+<li>comparing banking options</li>
+</ul>
+<h3>Goal</h3>
+<p>What the persona wants to achieve.</p>
+<p>Example:</p>
+<ul>
+<li>find a CRM</li>
+<li>choose a running shoe</li>
+<li>open a bank account</li>
+</ul>
+<p>Because the persona already defines <em>who the user is</em> and <em>where they are located</em>, the scenario focuses on <em>why they are asking the question</em>.</p>
+<p>This separation allows Genezio to reuse scenarios across realistic persona contexts while keeping conversations grounded in specific goals.</p>
+<hr />
+<h2>Example Scenario</h2>
+<p>Topic:</p>
+<pre><code>CRM for startups</code></pre>
+<p>Persona:</p>
+<ul>
+<li>Startup founder</li>
+<li>Located in San Francisco</li>
+<li>Language: English</li>
+</ul>
+<p>Scenario:</p>
+<pre><code>John runs a small SaaS startup with two co-founders. They have recently started receiving inbound leads and need a simple way to track potential customers and follow up.</code></pre>
+<p>From this scenario, Genezio may generate prompts such as:</p>
+<blockquote class="user-question"><p><strong>User query:</strong> <em><strong>What CRM would you recommend for a small SaaS startup?</strong></em></p></blockquote>
+<p>and follow-ups such as:</p>
+<blockquote class="user-question"><p><strong>User query:</strong> <em><strong>Which of these tools is easiest for a team of three people?</strong></em></p></blockquote>
+<p>The scenario provides the <strong>context</strong>, while the prompts represent the <strong>actual messages sent to the AI system</strong>.</p>
+<hr />
+<h2>Scenarios and Genezio Agents</h2>
+<p>Scenarios are used differently depending on the Genezio Agent type.</p>
+<h3>Prompter Agent</h3>
+<p>For <strong>Prompter Agent topics</strong>, the scenario itself becomes the prompt.</p>
+<p>The text is sent <strong>exactly as written</strong> to the AI system and the interaction is <strong>single-turn</strong>.</p>
+<h3>Recommender Agent</h3>
+<p>For <strong>Recommender Agent topics</strong>, the scenario defines the starting situation. Genezio generates multiple prompts during the conversation to simulate a realistic recommendation flow.</p>
+<h3>Introspector Agent</h3>
+<p>For <strong>Introspector Agent topics</strong>, the scenario places the persona in a situation where they want to understand a specific brand.</p>
+<p>Genezio generates prompts that explore:</p>
+<ul>
+<li>what the brand does</li>
+<li>who it is designed for</li>
+<li>its strengths and weaknesses</li>
+</ul>
+<h3>Comparer Agent</h3>
+<p>For <strong>Comparer Agent topics</strong>, the scenario describes a situation where the persona is evaluating multiple brands.</p>
+<p>Genezio generates prompts that compare those alternatives and analyze their differences.</p>
+<hr />
+<h2>Why Scenarios Matter</h2>
+<p>Scenarios allow Genezio to simulate <strong>real user behavior</strong>.</p>
+<p>In the real world, people rarely ask generic questions like &quot;best CRM&quot;. Instead, they ask questions based on their situation.</p>
+<p>For example:</p>
+<ul>
+<li>a founder looking for their first CRM</li>
+<li>a teenager looking for a debit card</li>
+<li>a runner preparing for a marathon</li>
+</ul>
+<p>By modeling these situations, Genezio can analyze how AI systems respond to <strong>realistic user needs and contexts</strong>.</p>
+<hr />
+<h2>Next Steps</h2>
+<p>To see how scenarios turn into interactions with AI systems, continue with:</p>
+<ul>
+<li><a href="./conversations.html">Core Concepts -&gt; Conversations</a></li>
+</ul>
+<p>This page explains how Genezio executes conversations and analyzes the responses generated by LLMs.</p>
+    </main>
+  </div>
+</body>
+</html>

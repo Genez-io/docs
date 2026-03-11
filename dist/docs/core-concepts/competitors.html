@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Competitors | Genezio Docs</title>
+  <meta name="description" content="Competitors in Genezio documentation" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="../../assets/site.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">Genezio Docs</a>
+      <nav aria-label="Top navigation"><a href="../../index.html">Home</a><a href="../index.html">Docs</a></nav>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Documentation navigation">
+    <section class="nav-group"><h3><a class="" href="../getting-started.html">Getting Started</a></h3></section>
+    <section class="nav-group">
+        <h3><a class="" href="../introduction/what-is-genezio.html">Introduction</a></h3>
+        <ul><li><a class="" href="../introduction/what-is-genezio.html">What is Genezio?</a></li><li><a class="" href="../introduction/how-llm-search-works.html">How LLM Search Works</a></li><li><a class="" href="../introduction/query-fanouts-explained.html">Query Fanouts Explained</a></li><li><a class="" href="../introduction/how-llms-select-sources.html">How LLMs Select Sources</a></li><li><a class="" href="../introduction/how-ai-citations-work.html">How AI Citations Work</a></li><li><a class="" href="../introduction/what-kpis-are-we-measuring.html">What KPIs Are We Measuring</a></li><li><a class="" href="../introduction/how-genezio-measures-visibility.html">How Genezio Measures Visibility</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="active" href="brands.html">Core Concepts</a></h3>
+        <ul><li><a class="" href="brands.html">Brands</a></li><li><a class="" href="brand-visibility.html">Brand Visibility</a></li><li><a class="" href="users.html">Users</a></li><li><a class="" href="personas.html">Personas</a></li><li><a class="" href="topics.html">Topics</a></li><li><a class="" href="scenarios.html">Scenarios</a></li><li><a class="" href="topic-scenario-relevance.html">Topic / Scenario Relevance</a></li><li><a class="" href="conversations.html">Conversations</a></li><li><a class="" href="query-fanouts.html">Query Fanouts</a></li><li><a class="" href="citations.html">Citations</a></li><li><a class="" href="statements.html">Statements</a></li><li><a class="active" href="competitors.html">Competitors</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../genezio-agents/prompter-agent.html">Genezio Agents</a></h3>
+        <ul><li><a class="" href="../genezio-agents/prompter-agent.html">Prompter Agent</a></li><li><a class="" href="../genezio-agents/recommender-agent.html">Recommender Agent</a></li><li><a class="" href="../genezio-agents/introspector-agent.html">Introspector Agent</a></li><li><a class="" href="../genezio-agents/comparer-agent.html">Comparer Agent</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../analysis/creating-scenarios.html">Running Conversations</a></h3>
+        <ul><li><a class="" href="../analysis/creating-scenarios.html">Creating Scenarios</a></li><li><a class="" href="../analysis/selecting-llm-engines.html">Selecting LLM Engines</a></li><li><a class="" href="../analysis/running-conversations.html">Running Conversations</a></li></ul>
+      </section>
+    <section class="nav-group">
+        <h3>Actions</h3>
+        <ul><li><a class="" href="../insights/actionable-insights.html">Actionable Insights</a></li><li><a class="" href="../content-hub/conetnt-hub.html">Conetnt Hub</a></li></ul>
+      </section>
+  </aside>
+    <main class="content" id="main-content">
+      <h1>Competitors</h1>
+<p>In Genezio, <strong>competitors</strong> are brands that appear in AI-generated answers alongside the brand being analyzed.</p>
+<p>When AI systems respond to questions, they frequently recommend or compare multiple products or services within the same category. Genezio automatically detects these brands and classifies them as <strong>competitors</strong>.</p>
+<p>Tracking competitors helps organizations understand how their brand is positioned relative to alternatives in AI-generated answers.</p>
+<hr />
+<h2>Automatic Competitor Detection</h2>
+<p>Genezio automatically identifies competitor brands during conversation analysis.</p>
+<p>Competitors are detected when:</p>
+<ul>
+<li>an AI response recommends multiple products</li>
+<li>brands are mentioned in the same answer</li>
+<li>products are compared against each other</li>
+<li>sources cited by the AI reference competing brands</li>
+</ul>
+<p>For example, if a conversation asks about tools for managing customer relationships, the AI system might mention several products in the same answer. These brands are automatically extracted and tracked as competitors.</p>
+<p>By aggregating these mentions across many conversations, Genezio builds a <strong>competitor landscape</strong> for each topic.</p>
+<hr />
+<h2>Competitors Across Topics</h2>
+<p>Competitors can vary depending on the topic being analyzed.</p>
+<p>For example, a brand may compete with different products depending on the user&#39;s intent or scenario.</p>
+<p>Example:</p>
+<ul>
+<li>Topic: CRM for startups</li>
+<li>Topic: marketing automation platforms</li>
+</ul>
+<p>The set of competitors appearing in AI answers may differ between these topics.</p>
+<p>This helps organizations understand how AI systems interpret the competitive landscape for different problems.</p>
+<hr />
+<h2>Managing Competitors</h2>
+<p>While competitor detection is automatic, users can adjust the competitor list to better reflect their market.</p>
+<p>Genezio allows users to:</p>
+<h3>Promote Competitors</h3>
+<p>If a relevant competitor is detected but not strongly represented, users can <strong>promote</strong> the brand so it is treated as a primary competitor in analysis.</p>
+<hr />
+<h3>Demote Competitors</h3>
+<p>Sometimes AI systems mention brands that are not true competitors.</p>
+<p>Users can <strong>demote</strong> these brands so they are treated as less relevant in competitive analysis.</p>
+<hr />
+<h3>Merge Competitors</h3>
+<p>Different names or variations may refer to the same brand.</p>
+<p>For example, a brand might appear with slightly different naming variations across responses.</p>
+<p>Genezio allows users to <strong>merge competitor entries</strong> so that all mentions are consolidated under a single brand.</p>
+<p>This keeps analysis consistent across conversations.</p>
+<hr />
+<h3>Attach Competitors to Your Brand</h3>
+<p>In some cases, a detected competitor may actually belong to the analyzed brand.</p>
+<p>Examples include:</p>
+<ul>
+<li>sub-brands</li>
+<li>acquired companies</li>
+<li>product lines belonging to the same organization</li>
+</ul>
+<p>Users can <strong>attach these entities to their brand</strong>, ensuring they are treated as part of the same brand rather than as a competitor.</p>
+<hr />
+<h2>Competitors in Analysis</h2>
+<p>Once detected, competitors are used throughout the platform to generate insights.</p>
+<p>Competitor data helps power metrics such as:</p>
+<ul>
+<li><strong>AI Visibility comparisons</strong></li>
+<li><strong>Share of Voice</strong></li>
+<li><strong>Competitive positioning in AI answers</strong></li>
+<li><strong>topic-level brand presence</strong></li>
+</ul>
+<p>This allows teams to see not only how often their brand appears, but also <strong>which brands dominate the conversation</strong>.</p>
+<hr />
+<h2>Competitors in the Interface</h2>
+<p>Competitors appear across several parts of the Genezio interface, including:</p>
+<ul>
+<li>topic analysis views</li>
+<li>visibility comparisons</li>
+<li>conversation details</li>
+<li>citation analysis</li>
+</ul>
+<p>Users can inspect how competitors appear in specific conversations and which sources reference them.</p>
+<hr />
+<h2>Why Competitor Analysis Matters</h2>
+<p>AI assistants increasingly shape how users discover and compare products.</p>
+<p>Understanding which brands appear alongside yours helps answer questions such as:</p>
+<ul>
+<li>Which competitors does AI recommend most often?</li>
+<li>Which competitors dominate certain topics?</li>
+<li>Which sources mention competitors but not your brand?</li>
+</ul>
+<p>These insights help organizations identify opportunities to improve their AI Visibility.</p>
+<hr />
+<h2>Next Steps</h2>
+<p>To see how competitor data contributes to visibility metrics, continue with:</p>
+<ul>
+<li><a href="../insights/ai-visibility-score.html">Insights -&gt; Visibility Score</a></li>
+<li><a href="../insights/share-of-voice.html">Insights -&gt; Share of Voice</a></li>
+</ul>
+<p>These pages explain how Genezio converts conversation data into measurable AI visibility insights.</p>
+    </main>
+  </div>
+</body>
+</html>

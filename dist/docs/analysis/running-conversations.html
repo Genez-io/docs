@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Running Conversations | Genezio Docs</title>
+  <meta name="description" content="Running Conversations in Genezio documentation" />
+  <meta name="robots" content="index,follow" />
+  <link rel="stylesheet" href="../../assets/site.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html">Genezio Docs</a>
+      <nav aria-label="Top navigation"><a href="../../index.html">Home</a><a href="../index.html">Docs</a></nav>
+    </div>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Documentation navigation">
+    <section class="nav-group"><h3><a class="" href="../getting-started.html">Getting Started</a></h3></section>
+    <section class="nav-group">
+        <h3><a class="" href="../introduction/what-is-genezio.html">Introduction</a></h3>
+        <ul><li><a class="" href="../introduction/what-is-genezio.html">What is Genezio?</a></li><li><a class="" href="../introduction/how-llm-search-works.html">How LLM Search Works</a></li><li><a class="" href="../introduction/query-fanouts-explained.html">Query Fanouts Explained</a></li><li><a class="" href="../introduction/how-llms-select-sources.html">How LLMs Select Sources</a></li><li><a class="" href="../introduction/how-ai-citations-work.html">How AI Citations Work</a></li><li><a class="" href="../introduction/what-kpis-are-we-measuring.html">What KPIs Are We Measuring</a></li><li><a class="" href="../introduction/how-genezio-measures-visibility.html">How Genezio Measures Visibility</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../core-concepts/brands.html">Core Concepts</a></h3>
+        <ul><li><a class="" href="../core-concepts/brands.html">Brands</a></li><li><a class="" href="../core-concepts/brand-visibility.html">Brand Visibility</a></li><li><a class="" href="../core-concepts/users.html">Users</a></li><li><a class="" href="../core-concepts/personas.html">Personas</a></li><li><a class="" href="../core-concepts/topics.html">Topics</a></li><li><a class="" href="../core-concepts/scenarios.html">Scenarios</a></li><li><a class="" href="../core-concepts/topic-scenario-relevance.html">Topic / Scenario Relevance</a></li><li><a class="" href="../core-concepts/conversations.html">Conversations</a></li><li><a class="" href="../core-concepts/query-fanouts.html">Query Fanouts</a></li><li><a class="" href="../core-concepts/citations.html">Citations</a></li><li><a class="" href="../core-concepts/statements.html">Statements</a></li><li><a class="" href="../core-concepts/competitors.html">Competitors</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="" href="../genezio-agents/prompter-agent.html">Genezio Agents</a></h3>
+        <ul><li><a class="" href="../genezio-agents/prompter-agent.html">Prompter Agent</a></li><li><a class="" href="../genezio-agents/recommender-agent.html">Recommender Agent</a></li><li><a class="" href="../genezio-agents/introspector-agent.html">Introspector Agent</a></li><li><a class="" href="../genezio-agents/comparer-agent.html">Comparer Agent</a></li></ul>
+      </section><section class="nav-group">
+        <h3><a class="active" href="creating-scenarios.html">Running Conversations</a></h3>
+        <ul><li><a class="" href="creating-scenarios.html">Creating Scenarios</a></li><li><a class="" href="selecting-llm-engines.html">Selecting LLM Engines</a></li><li><a class="active" href="running-conversations.html">Running Conversations</a></li></ul>
+      </section>
+    <section class="nav-group">
+        <h3>Actions</h3>
+        <ul><li><a class="" href="../insights/actionable-insights.html">Actionable Insights</a></li><li><a class="" href="../content-hub/conetnt-hub.html">Conetnt Hub</a></li></ul>
+      </section>
+  </aside>
+    <main class="content" id="main-content">
+      <h1>Running Conversations</h1>
+<p>This guide explains how Genezio runs conversations and how the results are generated.</p>
+<p>Conversations are the core mechanism Genezio uses to measure how AI systems talk about your brand and your competitors.</p>
+<hr />
+<h2>Conversation Execution</h2>
+<p>Genezio runs conversations automatically on a <strong>daily schedule</strong>.</p>
+<p>Each day, the system executes:</p>
+<ul>
+<li>every <strong>scenario</strong></li>
+<li>for every selected <strong>LLM engine</strong></li>
+</ul>
+<p>This means that if you have:</p>
+<ul>
+<li>10 scenarios</li>
+<li>4 LLM engines selected</li>
+</ul>
+<p>Genezio will run <strong>40 conversations per day</strong>.</p>
+<p>Each of these conversations is stored and analyzed independently.</p>
+<hr />
+<h2>Persona Influence</h2>
+<p>Every conversation is influenced by the <strong>persona</strong> associated with the topic.</p>
+<p>Each topic in Genezio has a specific persona assigned to it. When a conversation runs:</p>
+<ul>
+<li>the AI interaction is written <strong>as that persona</strong></li>
+<li>the conversation is executed in the <strong>persona&#39;s language</strong></li>
+<li>the interaction is run <strong>from the persona&#39;s geographic location</strong></li>
+</ul>
+<p>This ensures that the AI system responds as if a real user from that context asked the question. Different personas may receive different answers from the same AI system.</p>
+<p>For example, a student, a startup founder, and a corporate buyer asking about the same product category may receive different recommendations.</p>
+<hr />
+<h2>Why Conversations Run Daily</h2>
+<p>AI systems evolve continuously. Their answers may change because:</p>
+<ul>
+<li>models are updated</li>
+<li>sources on the web change</li>
+<li>new content appears</li>
+<li>the retrieval system changes</li>
+</ul>
+<p>Running conversations daily allows Genezio to track how answers evolve over time and detect changes in <strong>AI Visibility</strong>.</p>
+<hr />
+<h2>What Happens During a Conversation</h2>
+<p>When a conversation runs, Genezio performs several steps:</p>
+<ol>
+<li>The system selects a <strong>scenario</strong>.</li>
+<li>The conversation is executed against a selected <strong>LLM engine</strong>.</li>
+<li>Genezio captures the full response from the AI system.</li>
+<li>The response is analyzed and structured data is extracted.</li>
+</ol>
+<p>This analysis produces several key signals used throughout the platform.</p>
+<hr />
+<h2>Data Extracted from Conversations</h2>
+<p>Each conversation exposes multiple layers of analysis.</p>
+<h3>Query Fanouts</h3>
+<p>The additional searches the AI system performs internally while constructing an answer.</p>
+<p>Query fanouts reveal how the AI system explores the topic.</p>
+<hr />
+<h3>Citations</h3>
+<p>The webpages (sources) referenced by the AI system when generating the answer.</p>
+<p>These sources help explain where the information in the response came from.</p>
+<hr />
+<h3>Statements</h3>
+<p>Atomic claims extracted from the AI response.</p>
+<p>Statements allow Genezio to analyze how brands are described and compare narratives across conversations.</p>
+<hr />
+<h3>Competitors</h3>
+<p>Brands mentioned in the same response as your brand are automatically detected and tracked as competitors.</p>
+<hr />
+<h3>SWOT Analysis (Comparer Agent Conversations)</h3>
+<p>For <strong>Comparer Agent topics</strong>, Genezio generates an additional analysis layer.</p>
+<p>When the AI response compares brands, Genezio extracts information that can be structured as a <strong>SWOT analysis</strong>:</p>
+<ul>
+<li>Strengths</li>
+<li>Weaknesses</li>
+<li>Opportunities</li>
+<li>Threats</li>
+</ul>
+<p>This helps reveal how AI systems position competing brands relative to each other.</p>
+<hr />
+<h2>Inspecting Conversations</h2>
+<p>Each conversation can be inspected in the <strong>Conversation Detail View</strong>.</p>
+<p>This view allows you to see:</p>
+<ul>
+<li>the full interaction with the AI system</li>
+<li>the prompts sent to the model</li>
+<li>the responses generated</li>
+<li>detected query fanouts</li>
+<li>extracted citations</li>
+<li>extracted statements</li>
+</ul>
+<p>This transparency allows teams to understand exactly <strong>why a brand appeared or did not appear in an AI answer</strong>.</p>
+<hr />
+<h2>Re-running Conversations</h2>
+<p>Conversations are normally executed automatically each day.</p>
+<p>However, they can also be re-run when:</p>
+<ul>
+<li>a scenario is updated</li>
+<li>a new scenario is added</li>
+<li>a topic is modified</li>
+</ul>
+<p>This allows you to quickly test new scenarios and observe how AI systems respond.</p>
+<hr />
+<h2>Next Steps</h2>
+<p>To understand the structure of the data extracted from conversations, see:</p>
+<ul>
+<li><a href="../core-concepts/query-fanouts.html">Core Concepts -&gt; Query Fanouts</a></li>
+<li><a href="../core-concepts/citations.html">Core Concepts -&gt; Citations</a></li>
+<li><a href="../core-concepts/statements.html">Core Concepts -&gt; Statements</a></li>
+</ul>
+<p>These pages explain how Genezio converts AI responses into structured insights.</p>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "genezio-marketer-docs",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static HTML documentation site generator for Genezio",
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rm -rf dist"
+  }
+}
