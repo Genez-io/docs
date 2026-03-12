@@ -142,6 +142,39 @@ a {
   padding: 20px;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+}
+
+th,
+td {
+  border: 1px solid var(--line);
+  padding: 8px 10px;
+  vertical-align: top;
+}
+
+th {
+  background: #f3f6eb;
+  font-weight: 700;
+}
+
+.task-item {
+  list-style: none;
+  margin-left: -18px;
+}
+
+.task-item label {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.task-item input[type="checkbox"] {
+  margin-top: 4px;
+}
+
 .kicker {
   margin: 0;
   color: var(--accent);

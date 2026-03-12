@@ -28,6 +28,18 @@ const sections = [
     ]
   },
   {
+    slug: 'for-marketers',
+    title: 'For Marketers',
+    description: 'Practical onboarding and KPI guidance for marketing teams.',
+    pages: [
+      'Genezio for Marketers',
+      'Your KPIs Explained',
+      'How the 4 Agents Work',
+      'From Data to Content Strategy',
+      'Your First Week'
+    ]
+  },
+  {
     slug: 'core-concepts',
     title: 'Core Concepts',
     description: 'Learn the core data model used across the platform.',
@@ -583,7 +595,30 @@ function markdownToHtml(markdown) {
     quoteLines = [];
   }
 
-  for (const line of lines) {
+  function splitTableCells(line) {
+    let value = line.trim();
+    if (value.startsWith('|')) value = value.slice(1);
+    if (value.endsWith('|')) value = value.slice(0, -1);
+    if (!value.length) return [];
+    return value.split('|').map((cell) => cell.trim());
+  }
+
+  function isTableSeparator(line) {
+    const cells = splitTableCells(line);
+    if (cells.length === 0) return false;
+    return cells.every((cell) => /^:?-{3,}:?$/.test(cell));
+  }
+
+  function alignmentFromSeparator(cell) {
+    const left = cell.startsWith(':');
+    const right = cell.endsWith(':');
+    if (left && right) return 'center';
+    if (right) return 'right';
+    return 'left';
+  }
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
     const fence = line.match(/^```([\w-]+)?\s*$/);
     if (fence) {
       flushParagraph();
@@ -615,6 +650,42 @@ function markdownToHtml(markdown) {
       continue;
     }
 
+    const nextLine = lines[i + 1] || '';
+    if (line.includes('|') && isTableSeparator(nextLine)) {
+      flushParagraph();
+      closeList();
+      flushQuote();
+
+      const headers = splitTableCells(line);
+      const alignments = splitTableCells(nextLine).map(alignmentFromSeparator);
+      out.push('<table>');
+      out.push(
+        `<thead><tr>${headers
+          .map((cell, idx) => `<th style="text-align:${alignments[idx] || 'left'}">${renderInline(cell)}</th>`)
+          .join('')}</tr></thead>`
+      );
+      out.push('<tbody>');
+
+      i += 2;
+      while (i < lines.length) {
+        const rowLine = lines[i];
+        if (!rowLine.trim() || !rowLine.includes('|')) break;
+        const cells = splitTableCells(rowLine);
+        if (cells.length === 0) break;
+        out.push(
+          `<tr>${cells
+            .map((cell, idx) => `<td style="text-align:${alignments[idx] || 'left'}">${renderInline(cell)}</td>`)
+            .join('')}</tr>`
+        );
+        i += 1;
+      }
+
+      out.push('</tbody>');
+      out.push('</table>');
+      i -= 1;
+      continue;
+    }
+
     const hr = line.match(/^\s*([-*_])\1\1+\s*$/);
     if (hr) {
       flushParagraph();
@@ -643,7 +714,17 @@ function markdownToHtml(markdown) {
         listType = 'ul';
         out.push('<ul>');
       }
-      out.push(`<li>${renderInline(ulItem[1])}</li>`);
+      const taskMatch = ulItem[1].match(/^\[( |x|X)\]\s+(.+)$/);
+      if (taskMatch) {
+        const checked = taskMatch[1].toLowerCase() === 'x';
+        out.push(
+          `<li class="task-item"><label><input type="checkbox" disabled${checked ? ' checked' : ''} /> <span>${renderInline(
+            taskMatch[2]
+          )}</span></label></li>`
+        );
+      } else {
+        out.push(`<li>${renderInline(ulItem[1])}</li>`);
+      }
       continue;
     }
 
