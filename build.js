@@ -551,7 +551,17 @@ function renderInline(text) {
   escaped = escaped.replace(/`([^`]+)`/g, '<code>$1</code>');
   escaped = escaped.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
   escaped = escaped.replace(/\*([^*]+)\*/g, '<em>$1</em>');
-  escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+  escaped = escaped.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
+    let normalizedHref = href;
+    const isExternal = /^(?:[a-z]+:|#|\/\/)/i.test(normalizedHref);
+
+    if (!isExternal) {
+      normalizedHref = normalizedHref.replace(/\.md(#.*)?$/i, '.html$1');
+      normalizedHref = normalizedHref.replace(/(^|\/)\d{2}-([a-z0-9-]+)\.html(#.*)?$/i, '$1$2.html$3');
+    }
+
+    return `<a href="${normalizedHref}">${label}</a>`;
+  });
   return escaped;
 }
 
