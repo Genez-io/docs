@@ -70,7 +70,7 @@ See your Share of Voice — how often your brand appears compared to competitors
 
 ## How This Documentation Is Organized
 
-The rest of this "For Marketers" section translates Genezio's technical concepts into practical marketing language:
+The rest of this Foundations section translates Genezio's technical concepts into practical execution language:
 
 - [Your KPIs Explained](02-your-kpis-explained.md) — What AI Visibility % and AI Recommendations % mean for your business
 - [How the 4 Agents Work](03-how-the-4-agents-work.md) — The four types of AI conversations Genezio runs, and why it matters

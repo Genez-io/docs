@@ -2,7 +2,7 @@
 
 In Genezio, a **topic** represents a subject area where users may ask AI assistants questions related to a brand or product category.
 
-Topics define the **scope of analysis**. They determine which questions Genezio asks AI systems and therefore where a brand's AI Visibility is measured.
+Topics define the **scope of analysis**. They determine which questions Genezio asks AI systems and therefore where a brand's AI Recommendations and Visibility are measured.
 
 Each topic belongs to a **persona**, meaning that conversations for that topic are executed from the perspective of that persona (including their language and location).
 
@@ -47,7 +47,7 @@ The structure works like this:
 1. A **topic** defines the subject area (for example: "CRM for startups").
 2. A **scenario** describes the persona's situation and goal.
 3. Genezio starts a **conversation** with an AI system based on that scenario.
-4. The conversation then consists of one or more **messages (prompts)** sent to the LLM.
+4. The conversation then consists of one or more **messages (prompts)** sent to the AI engine.
 
 For example:
 
@@ -99,7 +99,7 @@ Prompter Agent conversations represent the simplest and most direct discovery qu
 
 A **Recommender Agent** simulates a user asking the AI system to recommend solutions.
 
-Unlike the Prompter Agent, the Recommender Agent uses **multi-turn conversations**.
+Unlike the Prompter Agent, the Recommender Agent uses **multi-step conversations**.
 
 The scenario defines the **situation and goal**, and Genezio generates **multiple prompts during the conversation** to simulate how a real user might interact with the AI assistant.
 
@@ -164,7 +164,7 @@ From this scenario, Genezio generates prompts that ask the AI to:
 
 These conversations help analyze **competitive positioning** in AI answers.
 
-Because the brands appear in the scenario itself, Comparer Agent conversations are **not used when calculating AI Visibility**.
+Because the brands appear in the scenario itself, Comparer Agent conversations are **not used when calculating AI Visibility**. However, they **do count toward AI Recommendations**, since the AI still chooses which brand to recommend for the user's situation.
 
 ---
 
@@ -173,9 +173,9 @@ Because the brands appear in the scenario itself, Comparer Agent conversations a
 Genezio Agent types differ in how conversations are executed.
 
 * **Prompter Agent:** Single prompt sent exactly as written
-* **Recommender Agent:** Multi-turn conversation generated from a scenario
-* **Introspector Agent:** Multi-turn conversation exploring a brand
-* **Comparer Agent:** Multi-turn conversation comparing brands
+* **Recommender Agent:** Multi-step conversation generated from a scenario
+* **Introspector Agent:** Multi-step conversation exploring a brand
+* **Comparer Agent:** Multi-step conversation comparing brands
 
 This combination allows Genezio to simulate both **simple discovery queries** and **realistic conversational research behavior**.
 
@@ -201,7 +201,7 @@ Over time, teams often expand their topics to cover additional markets, products
 
 ## Why Topics Matter
 
-Topics define **where your brand's AI Visibility is measured**.
+Topics define **where your brand's AI Recommendations and Visibility are measured**.
 
 A brand may have strong visibility in some topics but low visibility in others.
 

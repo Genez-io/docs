@@ -11,7 +11,7 @@ It is used for brand explanation and positioning analysis, not for organic visib
 For an Introspector Agent topic:
 
 * the scenario explicitly includes the target brand
-* Genezio runs a multi-turn conversation about that brand
+* Genezio runs a multi-step conversation about that brand
 * prompts explore use cases, fit, strengths, and limitations
 
 Example:
@@ -26,7 +26,7 @@ Introspector Agent conversations help teams analyze:
 
 * how AI systems explain a brand's category and value
 * recurring strengths or weaknesses in brand narratives
-* consistency of brand framing across LLM engines
+* consistency of brand framing across AI engines
 
 ---
 

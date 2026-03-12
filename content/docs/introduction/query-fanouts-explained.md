@@ -2,7 +2,7 @@
 
 When a user asks a question to an AI system such as ChatGPT, Claude, Gemini, or Perplexity, the model rarely relies on the exact question alone to generate an answer.
 
-Instead, the system expands the original question into multiple related searches in order to gather more information. These expanded searches are called **query fanouts**.
+Instead, the system expands the original question into multiple related searches in order to gather more information. These expanded searches are called **follow-up searches (called query fanouts)**.
 
 Query fanouts help the AI system explore a topic from several angles, retrieve more relevant sources, and generate a more complete answer.
 
@@ -30,7 +30,7 @@ These queries allow the system to retrieve content covering different perspectiv
 
 ---
 
-## Why LLMs Use Query Fanouts
+## Why AI Engines Use Query Fanouts
 
 User questions are often broad, ambiguous, or incomplete. A single search query may not retrieve enough information to generate a high-quality answer.
 
@@ -62,7 +62,7 @@ For example, if a fanout query includes:
 
 The AI system may retrieve comparison pages, review articles, and vendor websites discussing startup CRMs. The brands mentioned in those sources are therefore more likely to appear in the final answer.
 
-This means that **query fanouts strongly influence AI Visibility**.
+This means that **query fanouts strongly influence AI Recommendations and Visibility**.
 
 ---
 
@@ -80,7 +80,7 @@ Possible fanout queries may include:
 * **Query fanout:** *startup sales management software*
 * **Query fanout:** *CRM comparison for early stage companies*
 
-Each of these searches may retrieve different articles, reviews, or vendor pages. The information gathered from those sources is then synthesized into a single answer.
+Each of these searches may retrieve different articles, reviews, or vendor pages. The information gathered from those sources is then combined into a single answer.
 
 ---
 
@@ -116,7 +116,7 @@ For example, if Genezio detects that AI systems frequently explore queries such 
 * "best CRM for early stage startups"
 * "CRM tools for SaaS founders"
 
-but a brand has little content or coverage around those topics, that gap may represent an opportunity to improve AI Visibility.
+but a brand has little content or coverage around those topics, that gap may represent an opportunity to improve AI Recommendations and Visibility.
 
 ---
 

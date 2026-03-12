@@ -1,6 +1,6 @@
 # Recommender Agent
 
-The **Recommender Agent** is a Genezio Agent type that simulates recommendation-seeking behavior in multi-turn AI conversations.
+The **Recommender Agent** is a Genezio Agent type that simulates recommendation-seeking behavior in multi-step AI conversations.
 
 It is designed for scenarios where a persona is trying to find a specific solution that fits their needs and constraints.
 
@@ -43,9 +43,9 @@ Recommender Agent conversations are a core input to:
 
 ---
 
-## Multi-Turn Behavior
+## Multi-Step Behavior
 
-Multi-turn flow makes this agent useful for realistic buyer journeys:
+Multi-step flow makes this agent useful for realistic buyer journeys:
 
 * initial broad recommendation
 * filtering by budget, features, or team size

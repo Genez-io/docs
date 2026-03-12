@@ -95,35 +95,35 @@ Example:
 
 > **User query:** ***HubSpot vs Salesforce***
 
-Including these would artificially inflate visibility because the brand is already part of the prompt.
+Including these would artificially inflate visibility because the brand is already part of the prompt. Note that Comparer conversations **do count toward AI Recommendations** — see [Brand Recommendation](brand-recommendation.md).
 
 ---
 
-## Confidence and Sample Size
+## Accuracy and Sample Size
 
-Brand Visibility is calculated using a **statistical confidence model**.
+Brand Visibility is calculated using an **accuracy model**.
 
-Instead of relying on a fixed number of conversations, Genezio analyzes the **most recent conversations until a confidence threshold is reached**.
+Instead of relying on a fixed number of conversations, Genezio analyzes the **most recent conversations until a reliable accuracy threshold is reached**.
 
-By default, Genezio calculates visibility using the latest conversations until the estimate reaches a **90% confidence level**.
+By default, Genezio calculates visibility using the latest conversations until the estimate reaches a **90% accuracy level**.
 
-This ensures that the visibility percentage is statistically reliable.
+This ensures that the visibility percentage is reliable and trustworthy.
 
 ---
 
-## Confidence Range
+## Accuracy Range
 
-Because Brand Visibility is estimated from a sample of conversations, the result includes a **confidence range**.
+Because Brand Visibility is estimated from a sample of conversations, the result includes an **accuracy range**.
 
 For example:
 
 ```
 Brand Presence: 78%
-Confidence range: 54% - 100%
-Confidence level: 90%
+Accuracy range: 54% - 100%
+Accuracy level: 90%
 ```
 
-This means that based on the analyzed conversations, there is a **90% probability** that the true visibility of the brand falls within that range.
+This means that based on the analyzed conversations, Genezio is **90% confident** that the true visibility of the brand falls within that range.
 
 As more conversations are executed, the range typically becomes narrower and the estimate becomes more precise.
 

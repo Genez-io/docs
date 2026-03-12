@@ -94,7 +94,7 @@ Once detected, competitors are used throughout the platform to generate insights
 
 Competitor data helps power metrics such as:
 
-* **AI Visibility comparisons**
+* **AI Recommendations and Visibility comparisons**
 * **Share of Voice**
 * **Competitive positioning in AI answers**
 * **topic-level brand presence**
@@ -126,7 +126,7 @@ Understanding which brands appear alongside yours helps answer questions such as
 * Which competitors dominate certain topics?
 * Which sources mention competitors but not your brand?
 
-These insights help organizations identify opportunities to improve their AI Visibility.
+These insights help organizations identify opportunities to improve their AI Recommendations and Visibility.
 
 ---
 

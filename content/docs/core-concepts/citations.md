@@ -162,7 +162,7 @@ In this view, Genezio displays:
 
 * the AI response
 * the citations (sources) referenced by the AI system
-* the associated query fanouts
+* the associated follow-up searches (called query fanouts)
 * detected brand mentions
 
 This transparency allows users to see exactly **which sources contributed to a specific AI answer**.

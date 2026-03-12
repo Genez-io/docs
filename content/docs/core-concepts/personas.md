@@ -81,7 +81,7 @@ Location can influence recommendations, available products, regulatory context, 
 
 When Genezio interacts with an AI system, it **acts as the defined persona**.
 
-This means Genezio generates prompts and follow-up questions **as if it were that user**. The system effectively impersonates the persona when talking to the LLM.
+This means Genezio generates prompts and follow-up questions **as if it were that user**. The system effectively impersonates the persona when talking to the AI engine.
 
 For example, if the persona represents:
 

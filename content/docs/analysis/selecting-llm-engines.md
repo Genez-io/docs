@@ -2,7 +2,7 @@
 
 This guide explains how to choose which AI systems Genezio will use when running conversations.
 
-Genezio can execute scenarios across multiple **LLM engines** (AI assistants). Running conversations across different engines allows you to understand how your brand appears across the AI ecosystem.
+Genezio can execute scenarios across multiple **AI engines** (AI assistants). Running conversations across different engines allows you to understand how your brand appears across the AI ecosystem.
 
 ---
 
@@ -31,17 +31,17 @@ Depending on your plan and platform availability, Genezio may support engines su
 
 Each engine may produce different answers, citations, and brand mentions.
 
-For most engines, Genezio runs conversations **through the same user interface that a human would use**. In other words, the system interacts with the LLM the same way a normal user would when typing questions in the product interface. This approach helps reproduce real-world AI interactions as closely as possible.
+For most engines, Genezio runs conversations **through the same user interface that a human would use**. In other words, the system interacts with the AI engine the same way a normal user would when typing questions in the product interface. This approach helps reproduce real-world AI interactions as closely as possible.
 
 Some engines can also be run **API-only**. In these cases, conversations are executed directly through the provider's API rather than through a user interface.
 
-Running conversations across multiple engines helps provide a more complete picture of your **AI Visibility**.
+Running conversations across multiple engines helps provide a more complete picture of your **AI Recommendations and Visibility**.
 
 ---
 
 ## When Changes Take Effect
 
-Changes to selected LLM engines do not affect conversations immediately.
+Changes to selected AI engines do not affect conversations immediately.
 
 Genezio runs conversations in **daily batches**.
 

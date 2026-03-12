@@ -8,14 +8,14 @@ These sources provide the factual material that the model uses to generate its r
 
 ## Retrieval Before Generation
 
-Most modern AI search systems follow a pattern often described as **retrieval-augmented generation (RAG)**.
+Most modern AI search systems follow a pattern where **the AI engine pulls in and uses sources to build its answer**.
 
 In this process:
 
 1. A user asks a question.
 2. The system retrieves relevant documents or passages.
-3. The language model analyzes the retrieved information.
-4. The model generates a synthesized answer.
+3. The AI engine analyzes the retrieved information.
+4. The model generates an AI-generated answer.
 
 Because the model uses retrieved information as context, the documents selected during the retrieval stage strongly influence the final answer.
 
@@ -31,7 +31,7 @@ AI systems typically retrieve information from a combination of sources, includi
 * comparison pages
 * documentation sites
 * forums and communities
-* knowledge bases
+* training data and web sources
 
 Some systems rely on external search engines, while others use their own internal indexes or knowledge sources.
 
@@ -96,7 +96,7 @@ During this stage, the model may:
 * merge explanations from different documents
 * extract key facts or recommendations
 
-Because the answer is synthesized, the final response may not match any single page exactly. Instead, it reflects a combination of information gathered during retrieval.
+Because the answer is AI-generated, the final response may not match any single page exactly. Instead, it reflects a combination of information gathered during retrieval.
 
 ---
 

@@ -4,39 +4,39 @@ const path = require('path');
 const OUT_DIR = path.join(process.cwd(), 'dist');
 const ASSET_DIR = path.join(OUT_DIR, 'assets');
 const CONTENT_DIR = path.join(process.cwd(), 'content');
-const standaloneDocs = [
-  {
-    slug: 'getting-started',
-    title: 'Getting Started',
-    description: 'Step-by-step onboarding for new teams.'
-  }
-];
+const standaloneDocs = [];
 
 const sections = [
   {
+    slug: 'getting-started',
+    title: 'Getting Started',
+    description: 'Step-by-step onboarding for new teams.',
+    pages: [
+      'Setup Guide',
+      'Create an Account',
+      'Create Your First Brand',
+      'Describe Your Brand',
+      'Define Topics',
+      'Create Scenarios',
+      'Run Your First Conversations',
+      'Understanding Your First Results',
+      'Your First Week'
+    ]
+  },
+  {
     slug: 'introduction',
     title: 'Introduction',
-    description: 'Understand AI Visibility and how Genezio works.',
+    description: 'Understand AI Recommendations, Visibility, and how Genezio works.',
     pages: [
       'What is Genezio?',
+      'Why AI Recommendations Matter',
       'How LLM Search Works',
       'Query Fanouts Explained',
       'How LLMs Select Sources',
       'How AI Citations Work',
       'What KPIs Are We Measuring',
-      'How Genezio Measures Visibility'
-    ]
-  },
-  {
-    slug: 'for-marketers',
-    title: 'For Marketers',
-    description: 'Practical onboarding and KPI guidance for marketing teams.',
-    pages: [
-      'Genezio for Marketers',
-      'Your KPIs Explained',
-      'How the 4 Agents Work',
-      'From Data to Content Strategy',
-      'Your First Week'
+      'How Genezio Measures Visibility',
+      'How the 4 Agents Work'
     ]
   },
   {
@@ -45,6 +45,7 @@ const sections = [
     description: 'Learn the core data model used across the platform.',
     pages: [
       'Brands',
+      'Brand Recommendation',
       'Brand Visibility',
       'Users',
       'Personas',
@@ -80,6 +81,7 @@ const sections = [
     title: 'Insights',
     description: 'Interpret metrics and translate them into decisions.',
     pages: [
+      'Your KPIs Explained',
       'AI Visibility Score',
       'Share of Voice',
       'Competitor Insights',
@@ -94,7 +96,8 @@ const sections = [
     title: 'Content Hub',
     description: 'Create and optimize source-worthy content.',
     pages: [
-      'Conetnt Hub',
+      'Content Hub',
+      'From Data to Content Strategy',
       'Generating Articles',
       'Using Query Fanouts for Content',
       'Selecting Tone of Voice',

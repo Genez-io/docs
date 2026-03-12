@@ -14,7 +14,7 @@ The Content Hub allows you to generate, edit, refine, and publish these articles
 
 ---
 
-## Why Content Matters for AI Visibility
+## Why Content Matters for AI Recommendations
 
 AI systems build their answers from information available on the web.
 
@@ -68,7 +68,7 @@ Finally, you can provide additional context to guide the AI.
 Examples include:
 
 * **Target audience**
-* **Focus query fanouts** (specific search queries the article should address)
+* **Focus follow-up searches (called query fanouts)** (specific search queries the article should address)
 * **Website URLs** that should be used as reference sources
 * **Additional instructions** to influence the writing style or focus
 
@@ -142,7 +142,7 @@ This allows Genezio to:
 * monitor whether it appears in AI citations
 * include it in the **My Citations** section
 
-Tracking published articles helps measure whether the new content improves AI Visibility over time.
+Tracking published articles helps measure whether the new content improves AI Recommendations and Visibility over time.
 
 ---
 

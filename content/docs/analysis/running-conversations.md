@@ -13,12 +13,12 @@ Genezio runs conversations automatically on a **daily schedule**.
 Each day, the system executes:
 
 * every **scenario**
-* for every selected **LLM engine**
+* for every selected **AI engine**
 
 This means that if you have:
 
 * 10 scenarios
-* 4 LLM engines selected
+* 4 AI engines selected
 
 Genezio will run **40 conversations per day**.
 
@@ -51,7 +51,7 @@ AI systems evolve continuously. Their answers may change because:
 * new content appears
 * the retrieval system changes
 
-Running conversations daily allows Genezio to track how answers evolve over time and detect changes in **AI Visibility**.
+Running conversations daily allows Genezio to track how answers evolve over time and detect changes in **AI Recommendations and Visibility**.
 
 ---
 
@@ -60,7 +60,7 @@ Running conversations daily allows Genezio to track how answers evolve over time
 When a conversation runs, Genezio performs several steps:
 
 1. The system selects a **scenario**.
-2. The conversation is executed against a selected **LLM engine**.
+2. The conversation is executed against a selected **AI engine**.
 3. Genezio captures the full response from the AI system.
 4. The response is analyzed and structured data is extracted.
 
@@ -76,7 +76,7 @@ Each conversation exposes multiple layers of analysis.
 
 The additional searches the AI system performs internally while constructing an answer.
 
-Query fanouts reveal how the AI system explores the topic.
+Follow-up searches (called query fanouts) reveal how the AI system explores the topic.
 
 ---
 
@@ -90,7 +90,7 @@ These sources help explain where the information in the response came from.
 
 ### Statements
 
-Atomic claims extracted from the AI response.
+Individual claims extracted from the AI response.
 
 Statements allow Genezio to analyze how brands are described and compare narratives across conversations.
 

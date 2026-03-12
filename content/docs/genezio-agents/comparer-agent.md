@@ -11,7 +11,7 @@ It is designed for competitive positioning analysis.
 For a Comparer Agent topic:
 
 * the scenario names two or more brands
-* Genezio runs a multi-turn comparison conversation
+* Genezio runs a multi-step comparison conversation
 * prompts ask for differences, tradeoffs, and best-fit recommendations
 
 Example:
@@ -43,9 +43,9 @@ This helps teams map how AI systems position their brand against alternatives.
 
 ---
 
-## Visibility KPI Impact
+## KPI Impact
 
-Comparer Agent conversations are **excluded** from Brand Visibility calculations because the compared brand names are included in the prompt.
+Comparer Agent conversations **count toward AI Recommendations** because the AI still decides which brand to recommend for the user's situation. They are **excluded from AI Visibility** calculations because the compared brand names are included in the prompt.
 
 ---
 

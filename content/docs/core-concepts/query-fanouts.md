@@ -4,7 +4,7 @@ In Genezio, **query fanouts** represent the additional searches that an AI syste
 
 When a user asks a question, modern AI systems rarely rely on a single query. Instead, they expand the original question into multiple related searches in order to gather more information.
 
-These additional searches are called **query fanouts**.
+These additional searches are called **follow-up searches (or query fanouts)**.
 
 Understanding query fanouts is important because they strongly influence:
 
@@ -39,16 +39,15 @@ Each of these searches retrieves different documents that the AI system can use 
 
 The exact search infrastructure used by most AI systems is **not publicly documented**. Outside the companies building these systems, no one knows precisely which search engines or indexes are used to retrieve information.
 
-However, based on public statements, research papers, and observed behavior, it is widely believed that LLM-based systems rely on a **combination of sources**, such as:
+However, based on public statements, research papers, and observed behavior, it is widely believed that AI systems rely on a **combination of sources**, such as:
 
 * major web search engines (such as Google or Bing)
-* internal search infrastructure built by the AI provider
-* open-source search technologies
-* proprietary indexes of web content
+* internal search tools built by the AI provider
+* open web content databases
 
-In practice, this means that when an AI system generates fanout queries, those queries may be executed across several retrieval systems before documents are returned to the model.
+In practice, this means that when an AI system generates fanout queries, those queries may be executed across several different search tools before content is returned to the model.
 
-Because this infrastructure is constantly evolving, the exact retrieval pipeline may differ between AI platforms and may change over time.
+Because these systems are constantly evolving, the exact sources used may differ between AI platforms and may change over time. What matters for your content strategy is that **your content needs to be discoverable across multiple search channels**, not just one.
 
 ---
 
@@ -64,7 +63,7 @@ Those documents influence:
 
 For example, if a fanout query retrieves comparison articles that mention specific products, those products are more likely to appear in the generated answer.
 
-Because of this, query fanouts are one of the strongest signals shaping **AI Visibility**.
+Because of this, query fanouts are one of the strongest signals shaping **AI Recommendations and Visibility**.
 
 ---
 

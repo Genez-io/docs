@@ -57,7 +57,7 @@ Citations usually originate from the **documents retrieved during the retrieval 
 The process typically looks like this:
 
 1. The user asks a question.
-2. The system generates related queries (query fanouts).
+2. The system generates related queries (follow-up searches, called query fanouts).
 3. Relevant documents are retrieved.
 4. The model analyzes those documents.
 5. The model generates an answer using the information.
@@ -110,7 +110,7 @@ Both types of visibility are important but represent different kinds of influenc
 
 ---
 
-## Why Citations Matter for AI Visibility
+## Why Citations Matter for AI Recommendations
 
 Citations help explain **why certain brands appear in AI answers**.
 

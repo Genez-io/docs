@@ -1,8 +1,8 @@
 # How LLM Search Works
 
-Large Language Models (LLMs) such as ChatGPT, Claude, Gemini, and Perplexity answer questions differently from traditional search engines.
+AI engines such as ChatGPT, Claude, Gemini, and Perplexity answer questions differently from traditional search engines.
 
-Instead of returning a list of links, these systems generate a synthesized answer by retrieving information from multiple sources and combining it into a single response.
+Instead of returning a list of links, these systems generate an AI-generated answer by retrieving information from multiple sources and combining it into a single response.
 
 Understanding how this process works helps explain why certain brands, sources, and claims appear in AI-generated answers.
 
@@ -21,9 +21,9 @@ Visibility is therefore determined by **ranking position** and **click-through r
 
 ---
 
-## The LLM Search Model
+## The AI Engine Search Model
 
-LLM-powered systems follow a different process.
+AI-engine-powered systems follow a different process.
 
 Instead of returning links, they generate a direct answer based on information retrieved from multiple sources.
 
@@ -32,11 +32,11 @@ A simplified flow looks like this:
 1. The user asks a question.
 2. The AI system expands the query into multiple related searches.
 3. Relevant documents and sources are retrieved.
-4. The model synthesizes information from those sources.
+4. The model combines information from those sources.
 5. A natural language answer is generated.
 6. Some systems include citations or links to sources.
 
-Because the final answer is synthesized, visibility is determined by **whether a brand or source is included in the generated response**, not only whether its webpage ranks highly.
+Because the final answer is AI-generated, visibility is determined by **whether a brand or source is included in the generated response**, not only whether its webpage ranks highly.
 
 ---
 
@@ -58,9 +58,9 @@ Unlike traditional keyword search, these questions are often longer and more con
 
 ## Step 2: Query Expansion
 
-LLM systems rarely rely on the original question alone.
+AI engines rarely rely on the original question alone.
 
-Instead, they expand it into several related queries to gather more information. These expanded searches are often referred to as **query fanouts**.
+Instead, they expand it into several related queries to gather more information. These expanded searches are often referred to as **follow-up searches (called query fanouts)**.
 
 For example, the question:
 
@@ -129,7 +129,7 @@ Depending on the system, the response may also include:
 
 ## Why This Matters for Visibility
 
-Because LLM systems generate a synthesized answer, users may interact primarily with the response itself rather than clicking through multiple links.
+Because AI engines generate an AI-generated answer, users may interact primarily with the response itself rather than clicking through multiple links.
 
 This means that visibility depends on:
 
@@ -143,7 +143,7 @@ A brand can therefore have strong search rankings but limited presence in AI ans
 
 ## What This Means for Organizations
 
-Organizations that want to appear in AI-generated answers need to understand how LLM systems gather and synthesize information.
+Organizations that want to appear in AI-generated answers need to understand how AI engines gather and combine information.
 
 Important factors include:
 
@@ -152,13 +152,13 @@ Important factors include:
 * whether the brand's own content answers common user questions
 * how competitors are represented in the same category
 
-Because LLM answers are generated from multiple sources, visibility depends on a broader web presence rather than a single optimized page.
+Because AI-engine answers are generated from multiple sources, visibility depends on a broader web presence rather than a single optimized page.
 
 ---
 
 ## How Genezio Analyzes This Process
 
-Genezio helps teams understand how LLM search works in practice.
+Genezio helps teams understand how AI engine search works in practice.
 
 It does this by:
 

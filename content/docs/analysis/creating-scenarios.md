@@ -32,7 +32,7 @@ Topics represent the **subject areas** where your brand should appear in AI answ
 When creating a topic, you must select a **Genezio Agent type**:
 
 * **Prompter Agent** - a single prompt sent directly to the AI
-* **Recommender Agent** - a multi-turn recommendation conversation
+* **Recommender Agent** - a multi-step recommendation conversation
 * **Comparer Agent** - a conversation comparing multiple brands
 * **Introspector Agent** - a conversation exploring a specific brand
 

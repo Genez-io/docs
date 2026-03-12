@@ -1,6 +1,6 @@
 # Statements
 
-In Genezio, a **statement** is an atomic claim extracted from an AI-generated answer.
+In Genezio, a **statement** is an individual claim extracted from an AI-generated answer.
 
 When an AI system responds to a question, the response usually contains several claims about products, brands, or categories. Genezio breaks these responses down into smaller units called **statements** so they can be analyzed in a structured way.
 
@@ -123,6 +123,7 @@ Statements form the foundation for several higher-level insights in Genezio.
 
 They contribute to metrics such as:
 
+* AI Recommendations
 * AI Visibility
 * Share of Voice
 * Sentiment analysis

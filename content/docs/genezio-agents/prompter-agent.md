@@ -26,7 +26,7 @@ Prompter Agent conversations are useful when you want to measure:
 
 * which brands are mentioned in direct discovery questions
 * whether your brand appears in first-pass recommendations
-* how different LLM engines respond to the same prompt
+* how different AI engines respond to the same prompt
 
 ---
 
