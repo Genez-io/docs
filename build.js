@@ -202,10 +202,7 @@ const sections = [
   }
 ];
 
-const quickLinks = [
-  { label: 'Home', href: 'index.html' },
-  { label: 'Docs', href: 'docs/index.html' }
-];
+const quickLinks = [];
 
 let enabledSections = [];
 let enabledStandaloneDocs = [];
@@ -868,9 +865,15 @@ function buildSidebar(currentSection, currentPageSlug, currentFilePath) {
     : '';
 
   return `<aside class="sidebar" aria-label="Documentation navigation">
-    ${standaloneLinks}
-    ${regularNavBlocks}
-    ${actionGroup}
+    <div class="sidebar-header">
+      <span class="sidebar-title">Genezio Docs</span>
+      <hr style="border:none;border-top:1px solid var(--line);margin:12px 0 0" />
+    </div>
+    <div class="sidebar-nav">
+      ${standaloneLinks}
+      ${regularNavBlocks}
+      ${actionGroup}
+    </div>
   </aside>`;
 }
 
@@ -900,14 +903,28 @@ function shellTemplate({ title, description, content, currentSection, currentPag
     <div class="topbar-inner">
       <a class="brand" href="${toRelative(currentFilePath, outPath('index.html'))}">Genezio Docs</a>
       <nav aria-label="Top navigation">${topNav}</nav>
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu">&#9776;</button>
     </div>
   </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
   <div class="layout">
     ${sidebar}
     <main class="content" id="main-content">
       ${content}
     </main>
   </div>
+  <script>
+    (function(){
+      var sb=document.querySelector('.sidebar'),ov=document.getElementById('sidebar-overlay'),btn=document.getElementById('sidebar-toggle'),cls=document.getElementById('sidebar-close');
+      var scrollY=0;
+      function open(){scrollY=window.scrollY;document.body.style.top='-'+scrollY+'px';sb.classList.add('open');ov.classList.add('open');document.body.classList.add('sidebar-open');}
+      function close(){sb.classList.remove('open');ov.classList.remove('open');document.body.classList.remove('sidebar-open');document.body.style.top='';window.scrollTo(0,scrollY);}
+      btn.addEventListener('click',open);
+      ov.addEventListener('click',close);
+      if(cls)cls.addEventListener('click',close);
+      sb.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+    })();
+  </script>
 </body>
 </html>`;
 }

@@ -357,17 +357,128 @@ li + li {
   font-weight: 700;
 }
 
+/* Hamburger toggle & sidebar header — hidden on desktop */
+.sidebar-toggle,
+.sidebar-header {
+  display: none;
+  background: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text);
+}
+
+pre {
+  overflow-x: auto;
+}
+
 @media (max-width: 980px) {
   .layout {
     grid-template-columns: 1fr;
   }
 
+  .sidebar-toggle {
+    display: block;
+  }
+
   .sidebar {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    max-width: 85vw;
+    height: 100vh;
+    height: 100dvh;
     max-height: none;
+    z-index: 100;
+    border-radius: 0;
+    border: none;
+    border-right: 1px solid var(--line);
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-top: 0;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-header {
+    display: block;
+    padding: 16px 14px 12px;
+    flex-shrink: 0;
+  }
+
+  .sidebar-header .sidebar-title {
+    font-family: "Space Grotesk", "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .sidebar-close {
+    display: none;
+  }
+
+  .sidebar-nav {
+    flex: 1;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding: 12px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  body.sidebar-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  .sidebar-overlay.open {
+    display: block;
+  }
+
+  .content {
+    padding: 16px 14px;
+    border-radius: 8px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .section-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-main {
+    margin: 16px;
+    padding: 16px;
+  }
+
+  blockquote.user-question p {
+    font-size: 17px;
+  }
+
+  blockquote.query-fanout p {
+    font-size: 16px;
   }
 }

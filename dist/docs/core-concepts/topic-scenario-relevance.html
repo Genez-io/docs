@@ -12,13 +12,20 @@
   <header class="topbar">
     <div class="topbar-inner">
       <a class="brand" href="../../index.html">Genezio Docs</a>
-      <nav aria-label="Top navigation"><a href="../../index.html">Home</a><a href="../index.html">Docs</a></nav>
+      <nav aria-label="Top navigation"></nav>
+      <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Open menu">&#9776;</button>
     </div>
   </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
   <div class="layout">
     <aside class="sidebar" aria-label="Documentation navigation">
-    
-    <section class="nav-group">
+    <div class="sidebar-header">
+      <span class="sidebar-title">Genezio Docs</span>
+      <hr style="border:none;border-top:1px solid var(--line);margin:12px 0 0" />
+    </div>
+    <div class="sidebar-nav">
+      
+      <section class="nav-group">
         <h3><a class="" href="../getting-started/setup-guide.html">Getting Started</a></h3>
         <ul><li><a class="" href="../getting-started/setup-guide.html">Setup Guide</a></li><li><a class="" href="../getting-started/your-first-week.html">Your First Week</a></li></ul>
       </section><section class="nav-group">
@@ -34,10 +41,11 @@
         <h3><a class="" href="../analysis/creating-scenarios.html">Running Conversations</a></h3>
         <ul><li><a class="" href="../analysis/creating-scenarios.html">Creating Scenarios</a></li><li><a class="" href="../analysis/selecting-llm-engines.html">Selecting LLM Engines</a></li><li><a class="" href="../analysis/running-conversations.html">Running Conversations</a></li></ul>
       </section>
-    <section class="nav-group">
+      <section class="nav-group">
         <h3>Actions</h3>
         <ul><li><a class="" href="../insights/your-kpis-explained.html">Your KPIs Explained</a></li><li><a class="" href="../insights/actionable-insights.html">Actionable Insights</a></li><li><a class="" href="../content-hub/content-hub.html">Content Hub</a></li><li><a class="" href="../content-hub/from-data-to-content-strategy.html">From Data to Content Strategy</a></li></ul>
       </section>
+    </div>
   </aside>
     <main class="content" id="main-content">
       <h1>Topic / Scenario Relevance</h1>
@@ -132,5 +140,17 @@
 <p>This page explains how Genezio measures how often your brand appears in AI-generated answers.</p>
     </main>
   </div>
+  <script>
+    (function(){
+      var sb=document.querySelector('.sidebar'),ov=document.getElementById('sidebar-overlay'),btn=document.getElementById('sidebar-toggle'),cls=document.getElementById('sidebar-close');
+      var scrollY=0;
+      function open(){scrollY=window.scrollY;document.body.style.top='-'+scrollY+'px';sb.classList.add('open');ov.classList.add('open');document.body.classList.add('sidebar-open');}
+      function close(){sb.classList.remove('open');ov.classList.remove('open');document.body.classList.remove('sidebar-open');document.body.style.top='';window.scrollTo(0,scrollY);}
+      btn.addEventListener('click',open);
+      ov.addEventListener('click',close);
+      if(cls)cls.addEventListener('click',close);
+      sb.addEventListener('click',function(e){if(e.target.tagName==='A')close();});
+    })();
+  </script>
 </body>
 </html>
