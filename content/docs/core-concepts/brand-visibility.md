@@ -95,7 +95,7 @@ Example:
 
 > **User query:** ***HubSpot vs Salesforce***
 
-Including these would artificially inflate visibility because the brand is already part of the prompt. Note that Comparer conversations **do count toward AI Recommendations** — see [Brand Recommendation](brand-recommendation.md).
+Including these would artificially inflate visibility because the brand is already part of the prompt. The Comparer is a **competitive analysis tool** — it consumes your brand-level KPIs but does not contribute to the calculation of AI Recommendations or AI Visibility. See [Brand Recommendation](brand-recommendation.md) for details.
 
 ---
 

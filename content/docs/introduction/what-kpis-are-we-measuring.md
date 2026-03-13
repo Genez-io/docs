@@ -13,11 +13,9 @@ These KPIs answer different questions and should be read together.
 
 **AI Recommendations** is a percentage.
 
-It measures the percentage of **Recommender and Comparer Agent conversations** where your brand was recommended.
+It measures how often your brand is actively recommended in conversations where it appeared. The denominator is conversations where your brand was visible — making this a **conversion rate from presence to recommendation**.
 
-Recommender conversations are usually **multi-step**, based on scenarios, where the user is looking for a specific recommendation that matches their needs. Comparer conversations pit your brand against competitors and measure whether the AI recommends you in a head-to-head evaluation.
-
-AI Recommendations helps you understand whether your brand is being actively suggested when users ask AI assistants to recommend a solution.
+AI Recommendations helps you understand whether AI engines trust your brand enough to suggest it as a solution when users ask for one.
 
 ---
 
@@ -37,14 +35,22 @@ AI Visibility gives a broader view of how often your brand is present in AI answ
 
 ---
 
+## Where These KPIs Come From
+
+Both metrics are **brand-level measurements**, calculated from Prompter and Recommender conversations — the two agent types where the AI chooses which brands to surface on its own.
+
+The Comparer and Introspector agents serve different purposes. The Comparer is a **competitive analysis tool** that uses your brand's metrics to show how you stack up against specific competitors. The Introspector analyzes how AI describes your brand. Neither contributes to the calculation of AI Recommendations or AI Visibility.
+
+---
+
 ## How These KPIs Work Together
 
 Use both metrics together:
 
-* **AI Recommendations** tells you how often AI systems explicitly recommend your brand in recommendation-focused conversations.
-* **AI Visibility** tells you how often your brand appears overall in eligible conversations.
+* **AI Recommendations** tells you how often AI engines actively recommend your brand when it appears in a conversation.
+* **AI Visibility** tells you how often your brand appears at all in eligible conversations.
 
-A brand may have high visibility but lower recommendation rate, or the opposite. Reading both KPIs together gives a more complete view of AI performance.
+A brand may have high visibility but a lower recommendation rate, or the opposite. Reading both KPIs together gives a more complete view of AI performance.
 
 ---
 

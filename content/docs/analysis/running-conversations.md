@@ -92,7 +92,7 @@ These sources help explain where the information in the response came from.
 
 Individual claims extracted from the AI response.
 
-Statements allow Genezio to analyze how brands are described and compare narratives across conversations.
+Statements allow Genezio to evaluate the accuracy of what AI engines say about your brand and compare narratives across conversations.
 
 ---
 
@@ -102,18 +102,16 @@ Brands mentioned in the same response as your brand are automatically detected a
 
 ---
 
-### SWOT Analysis (Comparer Agent Conversations)
+### Competitive Insights (Comparer Conversations)
 
-For **Comparer Agent topics**, Genezio generates an additional analysis layer.
+When you run Comparer conversations, Genezio analyzes how AI engines frame your brand against specific competitors. From these conversations, you can:
 
-When the AI response compares brands, Genezio extracts information that can be structured as a **SWOT analysis**:
+* Understand which strengths and weaknesses AI engines associate with each brand
+* Identify opportunities where competitors are vulnerable
+* Spot threats where competitors are positioned more favorably
+* Generate SWOT-style insights to inform your competitive strategy
 
-* Strengths
-* Weaknesses
-* Opportunities
-* Threats
-
-This helps reveal how AI systems position competing brands relative to each other.
+This gives you a clear picture of how AI systems position your brand relative to alternatives — and where to focus your content efforts.
 
 ---
 

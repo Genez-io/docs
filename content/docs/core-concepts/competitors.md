@@ -4,6 +4,8 @@ In Genezio, **competitors** are brands that appear in AI-generated answers along
 
 When AI systems respond to questions, they frequently recommend or compare multiple products or services within the same category. Genezio automatically detects these brands and classifies them as **competitors**.
 
+Competitors are tracked at the **brand level**. Each brand you create in Genezio has its own competitor landscape, which is why multi-product companies should create separate brands per product — different products compete against different alternatives.
+
 Tracking competitors helps organizations understand how their brand is positioned relative to alternatives in AI-generated answers.
 
 ---

@@ -30,22 +30,24 @@ Comparer Agent conversations help teams understand:
 
 ---
 
-## SWOT and Competitive Analysis
+## What You Can Learn from Comparer
 
-Comparer Agent outputs are especially useful for structured comparative analysis, including:
+Using Comparer, you can:
 
-* strengths
-* weaknesses
-* opportunities
-* threats
+* See how AI engines frame your brand against specific competitors
+* Compare recommendation and visibility rates side by side
+* Identify the strengths and weaknesses AI associates with each brand
+* Generate SWOT-style insights to guide your competitive content strategy
 
-This helps teams map how AI systems position their brand against alternatives.
+The result is a clear view of where you're winning, where you're losing, and what narratives are driving the difference.
 
 ---
 
 ## KPI Impact
 
-Comparer Agent conversations **count toward AI Recommendations** because the AI still decides which brand to recommend for the user's situation. They are **excluded from AI Visibility** calculations because the compared brand names are included in the prompt.
+Comparer Agent conversations **do not count toward AI Recommendations or AI Visibility**. Because the brand names appear in the prompt, including them would distort the metrics.
+
+Instead, the Comparer is a **competitive analysis tool**. It consumes the brand-level KPIs that Genezio has already calculated from Prompter and Recommender conversations, and uses them alongside head-to-head AI conversations to show how your brand stacks up against specific competitors.
 
 ---
 

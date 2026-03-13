@@ -99,22 +99,20 @@ Example:
 
 In this type of conversation, the brands appear in the prompt itself.
 
-Because the model will almost always reference those brands in the response, Comparer Agent conversations are **excluded from visibility calculations**. However, Comparer conversations **do count toward AI Recommendations**, since the AI still decides which brand to recommend for the user's situation.
+Because the model will almost always reference those brands in the response, Comparer Agent conversations are **excluded from KPI calculations**. The Comparer is a competitive analysis tool — it uses your brand-level metrics to show how you stack up against specific rivals, but it does not contribute to the calculation of AI Visibility or AI Recommendations.
 
 ---
 
-## Which Agent Types Count Toward Which KPIs
+## Which Agent Types Generate KPIs
 
-| Agent | AI Recommendations | AI Visibility |
+| Agent | Generates KPIs? | Role |
 | --- | --- | --- |
-| **Prompter** | — | ✓ |
-| **Recommender** | ✓ | ✓ |
-| **Introspector** | — | — |
-| **Comparer** | ✓ | — |
+| **Prompter** | ✓ AI Visibility | Open-ended discovery — AI chooses which brands to mention |
+| **Recommender** | ✓ AI Recommendations + Visibility | Scenario-driven — AI chooses which brands to recommend |
+| **Introspector** | — | Narrative analysis — explores how AI describes your brand |
+| **Comparer** | — | Competitive analysis — compares your brand against specific rivals |
 
-**AI Visibility** only includes conversations where the AI system decides **on its own** which brands to mention (Prompter and Recommender). This ensures the metric reflects organic brand presence.
-
-**AI Recommendations** includes conversations where the AI actively recommends a brand for the user's situation (Recommender and Comparer). Even in Comparer conversations where both brands are named, the recommendation decision is meaningful.
+Both KPIs are **brand-level metrics** generated from Prompter and Recommender conversations, where the AI decides on its own which brands to surface. This ensures the metrics reflect organic brand presence and genuine recommendation decisions.
 
 ---
 

@@ -50,18 +50,18 @@
     <main class="content" id="main-content">
       <h1>Statements</h1>
 <p>In Genezio, a <strong>statement</strong> is an individual claim extracted from an AI-generated answer.</p>
-<p>When an AI system responds to a question, the response usually contains several claims about products, brands, or categories. Genezio breaks these responses down into smaller units called <strong>statements</strong> so they can be analyzed in a structured way.</p>
+<p>When an AI system responds to a question, the response usually contains several claims about products, brands, or categories. Genezio breaks these responses down into smaller units called <strong>statements</strong> so each claim can be evaluated for accuracy.</p>
 <p>Statements help answer questions such as:</p>
 <ul>
 <li>What exactly did the AI say about a brand?</li>
-<li>Was the statement positive, neutral, or negative?</li>
+<li>Is the claim correct or incorrect?</li>
 <li>Which source supports the claim?</li>
 <li>Which competitors are mentioned in the same context?</li>
 </ul>
-<p>By converting AI responses into statements, Genezio makes it possible to analyze AI-generated content at a much more granular level.</p>
+<p>By converting AI responses into statements, Genezio makes it possible to verify whether AI engines are telling the truth about your brand.</p>
 <hr />
 <h2>Why Statements Are Important</h2>
-<p>AI responses are often long paragraphs that combine multiple ideas. Without breaking them apart, it is difficult to analyze how brands are represented.</p>
+<p>AI responses are often long paragraphs that combine multiple ideas. Without breaking them apart, it is difficult to tell which claims are accurate and which are not.</p>
 <p>For example, an AI assistant might produce an answer like:</p>
 <blockquote><p>Popular CRM tools for startups include HubSpot, Pipedrive, and Zoho CRM. HubSpot is known for its strong marketing automation features, while Pipedrive focuses on simple sales pipeline management.</p></blockquote>
 <p>This response actually contains several distinct claims. Genezio extracts them as separate statements such as:</p>
@@ -72,10 +72,32 @@
 <li>HubSpot is known for marketing automation</li>
 <li>Pipedrive focuses on pipeline management</li>
 </ul>
-<p>Each of these becomes an individual <strong>statement</strong> that can be analyzed independently.</p>
+<p>Each of these becomes an individual <strong>statement</strong> that can be evaluated for accuracy against what your brand actually does.</p>
 <hr />
-<h2>Statement Attributes</h2>
-<p>Each statement extracted by Genezio contains several pieces of structured information.</p>
+<h2>Statement Accuracy</h2>
+<p>The most important thing about a statement is whether it is <strong>correct or incorrect</strong>.</p>
+<p>AI engines make claims about brands all the time — and those claims shape how buyers perceive you. Some claims are accurate. Others are outdated, misleading, or simply wrong.</p>
+<p>Examples:</p>
+<ul>
+<li><em>&quot;Zara is a fast fashion brand&quot;</em> → <strong>Correct</strong></li>
+<li><em>&quot;Gucci is a fast fashion brand&quot;</em> → <strong>Incorrect</strong></li>
+<li><em>&quot;HubSpot offers a free CRM tier&quot;</em> → <strong>Correct</strong></li>
+<li><em>&quot;Pipedrive includes built-in marketing automation&quot;</em> → <strong>Incorrect</strong></li>
+</ul>
+<p>When an AI engine makes an incorrect claim about your brand, it can mislead buyers and cost you recommendations. When it makes a correct claim, it reinforces your positioning.</p>
+<h3>How Accuracy Is Determined</h3>
+<p>To evaluate whether a statement is correct or incorrect, Genezio relies on your <strong>brand knowledge base</strong> — the information you provide about your brand, products, and positioning.</p>
+<p>This may include:</p>
+<ul>
+<li>product descriptions and capabilities</li>
+<li>pricing and plans</li>
+<li>target audience and use cases</li>
+<li>competitive differentiators</li>
+<li>any other brand guidelines</li>
+</ul>
+<p>By comparing AI-generated claims against your brand knowledge, Genezio can flag statements that misrepresent your brand — giving you a clear view of where AI engines are getting it right and where they are getting it wrong.</p>
+<hr />
+<h2>Other Statement Attributes</h2>
 <h3>Text</h3>
 <p>The actual claim made in the AI response.</p>
 <p>Example:</p>
@@ -87,30 +109,20 @@
 <p>Example:</p>
 <pre><code>HubSpot and Salesforce are widely used CRM platforms.</code></pre>
 <hr />
-<h3>Sentiment</h3>
-<p>Genezio evaluates whether the statement describes the brand positively, negatively, or neutrally.</p>
-<p>Possible values include:</p>
-<ul>
-<li>Positive</li>
-<li>Neutral</li>
-<li>Negative</li>
-</ul>
-<p>This allows users to understand not only how often their brand appears, but also <strong>how it is described</strong>.</p>
-<hr />
 <h3>Supporting Citations</h3>
 <p>Statements are often linked to one or more <strong>citations (sources)</strong> that the AI system used when generating the claim.</p>
-<p>This makes it possible to trace a statement back to the webpage that influenced it.</p>
+<p>This makes it possible to trace a statement back to the webpage that influenced it — and understand why the AI made a particular claim.</p>
 <hr />
 <h2>Statements Across Conversations</h2>
 <p>Statements are extracted from every conversation that Genezio runs with AI systems.</p>
 <p>By aggregating statements across many conversations, Genezio can identify patterns such as:</p>
 <ul>
-<li>common claims made about a brand</li>
-<li>recurring strengths and weaknesses</li>
+<li>recurring claims made about a brand — correct or incorrect</li>
+<li>common inaccuracies that need to be addressed</li>
 <li>frequently mentioned competitors</li>
 <li>differences in how AI systems describe the same brand</li>
 </ul>
-<p>This helps organizations understand the <strong>narrative that AI systems associate with their brand</strong>.</p>
+<p>This helps organizations understand the <strong>narrative that AI systems associate with their brand</strong> — and whether that narrative is accurate.</p>
 <hr />
 <h2>Statements in the Interface</h2>
 <p>In Genezio, statements can be explored in the <strong>conversation detail view</strong> and across aggregated analysis views.</p>
@@ -118,22 +130,22 @@
 <ul>
 <li>the original AI response</li>
 <li>the extracted statements</li>
+<li>the accuracy of each claim</li>
 <li>the associated citations</li>
 <li>the brands mentioned in each claim</li>
 </ul>
-<p>This transparency allows teams to see exactly how AI systems are describing products and companies.</p>
+<p>This transparency allows teams to see exactly what AI systems are saying about their brand — and whether it is true.</p>
 <hr />
 <h2>Statements and Insights</h2>
 <p>Statements form the foundation for several higher-level insights in Genezio.</p>
-<p>They contribute to metrics such as:</p>
+<p>They contribute to:</p>
 <ul>
-<li>AI Recommendations</li>
-<li>AI Visibility</li>
-<li>Share of Voice</li>
-<li>Sentiment analysis</li>
-<li>Competitive positioning</li>
+<li>AI Recommendations — incorrect claims can reduce your recommendation rate</li>
+<li>AI Visibility — inaccurate descriptions affect how often AI engines surface your brand</li>
+<li>Share of Voice — the accuracy of claims shapes competitive positioning</li>
+<li>Competitive positioning — understanding which claims favor you vs. competitors</li>
 </ul>
-<p>By structuring AI responses into statements, Genezio transforms unstructured AI answers into data that can be measured and analyzed.</p>
+<p>By structuring AI responses into statements and evaluating their accuracy, Genezio transforms unstructured AI answers into data that can be measured, verified, and acted on.</p>
 <hr />
 <h2>Next Steps</h2>
 <p>To understand how statements and citations combine to measure brand presence, see:</p>

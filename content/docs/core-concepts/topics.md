@@ -164,7 +164,7 @@ From this scenario, Genezio generates prompts that ask the AI to:
 
 These conversations help analyze **competitive positioning** in AI answers.
 
-Because the brands appear in the scenario itself, Comparer Agent conversations are **not used when calculating AI Visibility**. However, they **do count toward AI Recommendations**, since the AI still chooses which brand to recommend for the user's situation.
+Because the brands appear in the scenario itself, Comparer Agent conversations are **not used when calculating AI Visibility or AI Recommendations**. The Comparer is a **competitive analysis tool** — it consumes the brand-level KPIs that Genezio has already calculated from Prompter and Recommender conversations and uses them to show how your brand stacks up against specific competitors.
 
 ---
 

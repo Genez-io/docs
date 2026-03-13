@@ -57,7 +57,7 @@ Take the highest-priority insight from Day 3 and turn it into a proper content b
 
 - [ ] **Title and target keyword** — use the exact phrase the AI uses in scenarios where you score low.
 - [ ] **Citation sources to reference** — list 3–5 sources from Genezio's Citation section for this topic. Your content should reference these domains as external links.
-- [ ] **Statements to counter or reinforce** — include any AI statements about your brand that the content should address.
+- [ ] **Inaccurate claims to correct** — include any AI statements about your brand that are incorrect and need to be addressed through better content.
 - [ ] **Schema markup requirements** — flag if the page needs FAQPage, HowTo, or other schema.
 - [ ] **Assign and set a re-measurement date** — re-run the relevant Genezio conversations 2–4 weeks after publishing.
 

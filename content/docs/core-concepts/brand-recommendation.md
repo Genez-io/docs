@@ -36,54 +36,44 @@ Brand Recommendation = (Conversations where the brand is recommended / Conversat
 
 The denominator is not all conversations — it's only the ones where your brand actually appeared. This means Brand Recommendation measures your **conversion rate from visibility to recommendation**.
 
-Example:
+### Worked Example
 
-* Conversations where your brand appeared (visible): 74
-* Of those, conversations where your brand was recommended: 34
+Say Genezio runs **200 conversations** for your topics:
 
-Brand Recommendation:
+* Your brand appeared in **80** of them → AI Visibility = 80 / 200 = **40%**
+* Of those 80 visible conversations, your brand was recommended in **48** → AI Recommendation = 48 / 80 = **60%**
 
-```
-46%
-```
+This means:
 
-This means that when AI engines mention your brand, they recommend it **46% of the time**. The remaining 54% are conversations where your brand appeared but wasn't the suggested choice.
+* Your brand shows up in 40% of all AI conversations (Visibility)
+* When it does show up, it gets recommended **60% of the time** (Recommendation)
+* The remaining 40% of visible conversations mentioned your brand but didn't recommend it
+
+The denominator is **visible conversations, not total conversations**. Recommendation % measures your conversion rate from being mentioned to being the suggested choice.
 
 ---
 
 ## Which Conversations Are Included
 
-Brand Recommendation is measured using conversations where the AI engine **decides which brands to recommend on its own**, based on the user's needs.
+Brand Recommendation is a **brand-level metric** calculated from conversations where the AI engine decides on its own which brands to recommend, based on the user's needs.
 
-The following Genezio Agent types contribute to Brand Recommendation:
-
-### Recommender Agent
-
-Recommender Agent conversations simulate a user asking for recommendations through a multi-step conversation. The AI engine selects which brands to suggest based on the scenario and follow-up constraints.
+The metric is generated from **Recommender Agent** conversations — scenario-driven, multi-step conversations where a persona asks the AI for a recommendation that matches their specific situation.
 
 Example:
 
 > **User query:** ***Recommend CRM tools for early-stage startups with a small sales team.***
 
----
-
-### Comparer Agent
-
-Comparer Agent conversations ask the AI engine to compare specific brands and often conclude with a recommendation for the user's situation.
-
-Example:
-
-> **User query:** ***Compare HubSpot and Salesforce for a 20-person startup.***
+The AI responds with its own choices. If your brand is among them, that's a recommendation. If it's not, you've lost that opportunity.
 
 ---
 
-### Excluded Agent Types
+### What About Other Agent Types?
 
-Some agent types are **excluded** from Brand Recommendation because they don't ask for a recommendation:
+**Prompter Agent** — Contributes to AI Visibility (brand was mentioned) but does not specifically ask for a recommendation, so it is not used for AI Recommendations.
 
-**Prompter Agent** — Asks a general discovery question without requesting a specific recommendation.
+**Introspector Agent** — Used for narrative analysis and claim accuracy evaluation. Because your brand is named in the question, it doesn't reflect a genuine recommendation decision.
 
-**Introspector Agent** — Asks about a specific brand directly, so there is no recommendation decision.
+**Comparer Agent** — This is a **competitive analysis tool**, not a measurement engine. The Comparer uses your brand's recommendation and visibility data to show how you perform relative to specific competitors. It does not contribute to the calculation of AI Recommendations or AI Visibility.
 
 ---
 
@@ -111,7 +101,7 @@ These two metrics work together but measure different things:
 | --- | --- | --- |
 | **What it measures** | Of the conversations where you're visible, how often are you recommended? | How often your brand appears at all in AI answers |
 | **Denominator** | Conversations where brand appeared | All eligible conversations |
-| **Which conversations** | Recommender + Comparer | Prompter + Recommender |
+| **Which conversations** | Recommender | Prompter + Recommender |
 | **Why it matters** | Your conversion rate from presence to purchase intent | Measures overall brand presence and awareness |
 | **Business analogy** | Conversion rate — of the people who see you, how many choose you | Brand awareness — how many people have heard of you |
 

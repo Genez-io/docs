@@ -114,6 +114,45 @@ Each brand has its own topics, scenarios, conversations, and insights.
 
 ---
 
+## Multi-Product Companies
+
+If your company offers multiple distinct products, the recommended approach is to **create a separate brand for each product**.
+
+Because competitors are tracked at the brand level, different products typically compete in different categories and against different alternatives. Modeling them as separate brands ensures each product gets its own:
+
+* topics and scenarios tailored to that product's category
+* AI Recommendations and Visibility scores specific to that product
+* competitor landscape relevant to that product
+
+### Example: Microsoft
+
+Rather than creating a single "Microsoft" brand, create separate brands for each product you want to track:
+
+* **Microsoft Word** — competes with Google Docs, Notion, etc.
+* **Microsoft Excel** — competes with Google Sheets, Airtable, etc.
+* **Microsoft Teams** — competes with Slack, Zoom, etc.
+
+Each product has different competitors, different topics, and different buyer personas. Tracking them as separate brands gives you accurate, product-level insights instead of a blended average across unrelated categories.
+
+### Example: Bitdefender
+
+A cybersecurity company with multiple product lines might create:
+
+* **Bitdefender Total Security** — consumer antivirus
+* **Bitdefender GravityZone** — enterprise endpoint protection
+
+The consumer product competes against Norton and McAfee. The enterprise product competes against CrowdStrike and SentinelOne. Separate brands keep these competitive landscapes distinct.
+
+### When to Use a Single Brand
+
+Use a single brand when:
+
+* your company name and product name are the same (e.g., Notion, Stripe, Slack)
+* you want to measure overall company-level visibility rather than product-level visibility
+* your products share the same competitors and buyer persona
+
+---
+
 ## Brand Users and Access
 
 Brands in Genezio also have users.

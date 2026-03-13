@@ -144,7 +144,7 @@ For each conversation, Genezio:
 * captures the response
 * extracts mentions of brands
 * detects citations and sources
-* analyzes sentiment and statements
+* extracts and evaluates statements (claims) for accuracy
 
 This process builds the dataset used to calculate AI Recommendations and Visibility.
 

@@ -52,15 +52,15 @@
 
 **Why it doesn't count toward your score:** If the user mentions your brand in the question, the AI will almost always mention it in the answer — that's not meaningful. Including these would artificially inflate your Visibility score and make it useless as a benchmark.
 
-**What it's useful for instead:** Understanding how AI describes your brand. What words does it use? What strengths and weaknesses does it mention? This feeds directly into your Statements analysis — the qualitative layer underneath the score.
+**What it's useful for instead:** Understanding how AI describes your brand. What claims does it make? Are those claims accurate? This feeds directly into your Statements analysis — the accuracy layer underneath the score.
 
-**Content implication:** Brand narrative analysis · Sentiment monitoring · Positioning audit
+**Content implication:** Brand narrative analysis · Claim accuracy monitoring · Positioning audit
 
 ---
 
 ## Agent 4: Comparer Agent
 
-**Counts toward: AI Recommendations %**
+**Does not count toward KPIs — this is a competitive analysis tool**
 
 **What it simulates:** A user actively evaluating you against a specific competitor. They've narrowed their options and want a head-to-head verdict.
 
@@ -69,9 +69,11 @@
 - "Notion vs Asana for a remote team?"
 - "Should I use Salesforce or HubSpot?"
 
-**Why it counts toward AI Recommendations:** Even though both brands are named, the AI still chooses which one to recommend for the user's situation. That recommendation decision is meaningful and directly reflects competitive positioning.
+**Why it doesn't count toward your score:** Both brands are named in the question, so both will always appear in the answer. Like the Introspector, including these would distort your metrics.
 
-**What it also reveals:** How AI frames you against competitors. Does it position you as better for large enterprises? More expensive? Easier to use? This reveals the narrative you need to reinforce — or correct.
+**What it's actually for:** The Comparer is an **analysis tool**. It takes the brand-level KPIs that Genezio has already calculated from Prompter and Recommender conversations and puts them in competitive context. It also runs head-to-head AI conversations to reveal how AI engines frame you against specific competitors — what strengths it highlights, what weaknesses it mentions, and who it picks as the better fit.
+
+Think of it this way: Prompter and Recommender tell you *your score*. Comparer tells you *why you're winning or losing against a specific rival*.
 
 **Content implication:** Competitive intelligence · "vs" comparison page strategy · Win/loss narrative
 
@@ -79,14 +81,14 @@
 
 ## Quick Reference Summary
 
-| Agent | User Intent | Brand Named? | Counts for KPIs? | Best Used For |
+| Agent | User Intent | Brand Named? | Role | Best Used For |
 | --- | --- | --- | --- | --- |
-| **Prompter** | Exploring a category | No | ✓ AI Visibility | Awareness measurement |
-| **Recommender** | Ready to decide | No | ✓ AI Recommendations + Visibility | Intent measurement |
-| **Introspector** | Learning about a brand | Yes | ✗ Excluded | Narrative & sentiment audit |
-| **Comparer** | Comparing options | Yes (both) | ✓ AI Recommendations | Competitive positioning |
+| **Prompter** | Exploring a category | No | ✓ Measures AI Visibility | Awareness measurement |
+| **Recommender** | Ready to decide | No | ✓ Measures AI Recommendations + Visibility | Intent measurement |
+| **Introspector** | Learning about a brand | Yes | Narrative analysis (not KPIs) | Narrative & accuracy audit |
+| **Comparer** | Comparing options | Yes (both) | Competitive analysis (not KPIs) | Competitive positioning |
 
-> **Content strategy implication:** Each agent type maps directly to content you should be creating. Prompter → category-level content. Recommender → use-case landing pages. Introspector → your own brand content and PR. Comparer → "vs" comparison pages. More on this in the next section.
+> **Two agents measure. Two agents analyze.** Prompter and Recommender generate your KPIs. Introspector and Comparer help you understand the narratives and competitive dynamics behind those numbers. All four are essential — but they play different roles.
 
 ---
 

@@ -60,6 +60,31 @@
 <p>How often does your brand show up in AI answers? This is your <strong>presence score</strong> — the broadest view of how frequently AI assistants mention, list, or reference your brand when answering questions in your category.</p>
 <blockquote><p><strong>Simple analogy:</strong> AI Recommendations is like word-of-mouth — people actively suggest you. AI Visibility is like brand awareness — people have heard of you. You want both, but a high Recommendations % is the one that drives pipeline.</p></blockquote>
 <hr />
+<h2>How These KPIs Are Measured</h2>
+<p>Both KPIs are <strong>brand-level metrics</strong>, calculated across all conversations Genezio runs for your brand. They are not tied to a single agent type — they are the output of Genezio&#39;s conversation analysis engine.</p>
+<p>Here&#39;s how it works:</p>
+<ol>
+<li>Genezio runs persona-driven, multi-step conversations with AI engines (ChatGPT, Claude, Gemini, Perplexity).</li>
+<li>Each response is analyzed to extract which brands were mentioned, which were recommended, and what was said about each.</li>
+<li>These signals are aggregated at the brand level to calculate your AI Recommendations % and AI Visibility %.</li>
+</ol>
+<p>The conversations that feed these KPIs come from two agent types:</p>
+<ul>
+<li><strong>Prompter conversations</strong> — open-ended discovery questions where the AI chooses which brands to mention. <em>&quot;What are the best tools for X?&quot;</em></li>
+<li><strong>Recommender conversations</strong> — scenario-driven, multi-step conversations where the AI recommends specific brands for the persona&#39;s situation. <em>&quot;Recommend something for Y given these constraints.&quot;</em></li>
+</ul>
+<p>Both agent types let the AI decide freely which brands to surface. That&#39;s what makes the resulting metrics meaningful — they reflect organic brand presence and genuine recommendation decisions, not prompted mentions.</p>
+<hr />
+<h2>What About Comparer and Introspector?</h2>
+<p>Genezio runs two additional agent types, but they serve a different purpose:</p>
+<ul>
+<li><strong>Introspector conversations</strong> — <em>&quot;Tell me about [your brand].&quot;</em> These explore how AI describes your brand. Because your brand is named in the question, these conversations are used for <strong>narrative and sentiment analysis</strong>, not for calculating KPIs.</li>
+</ul>
+<ul>
+<li><strong>Comparer conversations</strong> — <em>&quot;[Brand A] vs [Brand B].&quot;</em> These are a <strong>competitive analysis tool</strong>. The Comparer does not compute visibility or recommendations — it consumes the brand-level metrics that Genezio has already calculated and uses them alongside head-to-head AI conversations to show how your brand stacks up against specific competitors. Think of the Comparer as a lens for reading your KPIs, not the engine that generates them.</li>
+</ul>
+<blockquote><p><strong>Key distinction:</strong> Your AI Recommendations % and AI Visibility % come from Prompter and Recommender conversations. The Comparer helps you understand those numbers in a competitive context — it doesn&#39;t change or contribute to them.</p></blockquote>
+<hr />
 <h2>How to Read Your Scores</h2>
 <p>There&#39;s no universal &quot;good&quot; score — it depends on your category, competitive intensity, and how long you&#39;ve been tracking. Here&#39;s a general benchmark framework:</p>
 <table>
@@ -73,41 +98,31 @@
 </table>
 <hr />
 <h2>A Practical Example</h2>
-<blockquote><p><strong>Scenario: CRM Software Brand</strong>  You track the topic <em>&quot;CRM for startups&quot;</em> across 200 AI conversations.  Your brand appears in 74 of them → <strong>AI Visibility: 37%</strong>  Of those 74 conversations where you appeared, your brand was actively recommended in 22 → <strong>AI Recommendations: 29.7%</strong>  Your top competitor appears in 140 of 200 conversations (70% visibility) and is recommended in 97 of those 140 (69% recommendations). <strong>That gap is your roadmap.</strong></p></blockquote>
+<blockquote><p><strong>Scenario: CRM Software Brand</strong>  You track the topic <em>&quot;CRM for startups&quot;</em> across 200 AI conversations (Prompter + Recommender).  <strong>AI Visibility:</strong> Your brand appears in 160 of 200 conversations → 160 / 200 = <strong>80%</strong>  <strong>AI Recommendations:</strong> Of those 160 visible conversations, your brand was actively recommended in 96 → 96 / 160 = <strong>60%</strong>  Note: the Recommendation denominator is <strong>visible conversations (160)</strong>, not total conversations (200). This tells you that when AI engines mention your brand, they recommend it 60% of the time.  Your top competitor appears in 180 of 200 conversations (90% visibility) and is recommended in 144 of those 180 (80% recommendations). <strong>That gap is your roadmap.</strong>  You then use the <strong>Comparer</strong> to run head-to-head conversations — <em>&quot;Your brand vs. Competitor X&quot;</em> — to understand exactly how AI engines frame the comparison and what narratives are driving the competitor&#39;s advantage.</p></blockquote>
 <hr />
 <h2>Why the Two KPIs Are Measured Separately</h2>
 <p>A brand can have high visibility but low recommendations — or the reverse. Understanding which scenario you&#39;re in tells you exactly what to fix:</p>
 <table>
 <thead><tr><th style="text-align:left">Pattern</th><th style="text-align:left">What It Means</th><th style="text-align:left">Action</th></tr></thead>
 <tbody>
-<tr><td style="text-align:left"><strong>High Visibility, Low Recommendations</strong></td><td style="text-align:left">AI mentions you, but doesn&#39;t suggest you when asked to pick. You may be seen as secondary or niche.</td><td style="text-align:left">Improve positioning content. Get cited in &quot;best of&quot; lists. Fix negative statements AI makes about your brand.</td></tr>
+<tr><td style="text-align:left"><strong>High Visibility, Low Recommendations</strong></td><td style="text-align:left">AI mentions you, but doesn&#39;t suggest you when asked to pick. You may be seen as secondary or niche.</td><td style="text-align:left">Improve positioning content. Get cited in &quot;best of&quot; lists. Fix inaccurate claims AI makes about your brand.</td></tr>
 <tr><td style="text-align:left"><strong>Low Visibility, High Recommendations</strong></td><td style="text-align:left">When AI mentions you, it recommends you — but that&#39;s rare. You&#39;re a hidden gem.</td><td style="text-align:left">Increase content volume. Get mentioned in more sources. Expand topic coverage.</td></tr>
 <tr><td style="text-align:left"><strong>Both Low</strong></td><td style="text-align:left">AI engines don&#39;t know enough about your brand to confidently mention or recommend you.</td><td style="text-align:left">Start from scratch: content authority, citations, schema, PR. Use Genezio&#39;s Actionable Insights to prioritize.</td></tr>
-<tr><td style="text-align:left"><strong>Both High</strong></td><td style="text-align:left">You&#39;re a category leader in AI answers. Now protect it and expand.</td><td style="text-align:left">Monitor competitor movements. Track new topics. Measure sentiment quality, not just mention frequency.</td></tr>
+<tr><td style="text-align:left"><strong>Both High</strong></td><td style="text-align:left">You&#39;re a category leader in AI answers. Now protect it and expand.</td><td style="text-align:left">Monitor competitor movements. Track new topics. Measure claim accuracy, not just mention frequency.</td></tr>
 </tbody>
 </table>
-<hr />
-<h2>What Does NOT Inflate Your Score</h2>
-<p>Genezio runs four types of AI conversations. Each contributes to different KPIs:</p>
-<ul>
-<li><strong>Prompter conversations</strong> — &quot;What are the best tools for X?&quot; → counts toward <strong>AI Visibility</strong></li>
-<li><strong>Recommender conversations</strong> — &quot;Recommend something for Y.&quot; → counts toward <strong>AI Recommendations + AI Visibility</strong></li>
-<li><strong>Comparer conversations</strong> — &quot;[Brand A] vs [Brand B].&quot; → counts toward <strong>AI Recommendations</strong> (the AI still picks a winner)</li>
-<li><strong>Introspector conversations</strong> — &quot;Tell me about [your brand].&quot; → excluded from both KPIs (used for narrative and sentiment analysis)</li>
-</ul>
-<blockquote><p><strong>Why this matters for you:</strong> AI Visibility only counts conversations where AI mentions your brand <em>on its own</em> — not when you&#39;re named in the question. AI Recommendations counts conversations where AI actively recommends you, including head-to-head comparisons. Both scores are honest and meaningful to track over time.</p></blockquote>
-<blockquote><p><strong>Common mistake:</strong> Don&#39;t benchmark your score against absolute numbers from other industries. A 40% AI Visibility in a crowded SaaS category may be excellent; 40% in a niche B2B space may indicate room to grow. Always compare against your direct competitors&#39; scores within the same topic set.</p></blockquote>
 <hr />
 <h2>How to Report These KPIs to Leadership</h2>
 <p>For your monthly or quarterly marketing review, we recommend presenting:</p>
 <ul>
+<li><strong>AI Recommendations % by topic</strong> — the single most business-relevant number</li>
 <li><strong>AI Visibility % by topic</strong> — shows breadth of brand presence across AI engines</li>
-<li><strong>AI Recommendations % overall</strong> — the single most business-relevant number</li>
-<li><strong>Share of Voice vs. top 2 competitors</strong> — the competitive story</li>
+<li><strong>Share of Voice vs. top 2 competitors</strong> — the competitive story (powered by the Comparer)</li>
 <li><strong>Month-over-month trend</strong> — shows whether your content investments are working</li>
 </ul>
+<blockquote><p><strong>Common mistake:</strong> Don&#39;t benchmark your score against absolute numbers from other industries. A 40% AI Visibility in a crowded SaaS category may be excellent; 40% in a niche B2B space may indicate room to grow. Always compare against your direct competitors&#39; scores within the same topic set.</p></blockquote>
 <hr />
-<p><em>Next: <a href="how-the-4-agents-work.html">How the 4 Agents Work</a></em></p>
+<p><em>Next: <a href="../introduction/how-the-4-agents-work.html">How the 4 Agents Work</a></em></p>
     </main>
   </div>
   <script>

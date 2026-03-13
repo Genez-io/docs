@@ -85,11 +85,11 @@
 <li>&quot;Tell me about Notion&#39;s pricing model.&quot;</li>
 </ul>
 <p><strong>Why it doesn&#39;t count toward your score:</strong> If the user mentions your brand in the question, the AI will almost always mention it in the answer — that&#39;s not meaningful. Including these would artificially inflate your Visibility score and make it useless as a benchmark.</p>
-<p><strong>What it&#39;s useful for instead:</strong> Understanding how AI describes your brand. What words does it use? What strengths and weaknesses does it mention? This feeds directly into your Statements analysis — the qualitative layer underneath the score.</p>
-<p><strong>Content implication:</strong> Brand narrative analysis · Sentiment monitoring · Positioning audit</p>
+<p><strong>What it&#39;s useful for instead:</strong> Understanding how AI describes your brand. What claims does it make? Are those claims accurate? This feeds directly into your Statements analysis — the accuracy layer underneath the score.</p>
+<p><strong>Content implication:</strong> Brand narrative analysis · Claim accuracy monitoring · Positioning audit</p>
 <hr />
 <h2>Agent 4: Comparer Agent</h2>
-<p><strong>Counts toward: AI Recommendations %</strong></p>
+<p><strong>Does not count toward KPIs — this is a competitive analysis tool</strong></p>
 <p><strong>What it simulates:</strong> A user actively evaluating you against a specific competitor. They&#39;ve narrowed their options and want a head-to-head verdict.</p>
 <p><strong>Example queries:</strong></p>
 <ul>
@@ -97,21 +97,22 @@
 <li>&quot;Notion vs Asana for a remote team?&quot;</li>
 <li>&quot;Should I use Salesforce or HubSpot?&quot;</li>
 </ul>
-<p><strong>Why it counts toward AI Recommendations:</strong> Even though both brands are named, the AI still chooses which one to recommend for the user&#39;s situation. That recommendation decision is meaningful and directly reflects competitive positioning.</p>
-<p><strong>What it also reveals:</strong> How AI frames you against competitors. Does it position you as better for large enterprises? More expensive? Easier to use? This reveals the narrative you need to reinforce — or correct.</p>
+<p><strong>Why it doesn&#39;t count toward your score:</strong> Both brands are named in the question, so both will always appear in the answer. Like the Introspector, including these would distort your metrics.</p>
+<p><strong>What it&#39;s actually for:</strong> The Comparer is an <strong>analysis tool</strong>. It takes the brand-level KPIs that Genezio has already calculated from Prompter and Recommender conversations and puts them in competitive context. It also runs head-to-head AI conversations to reveal how AI engines frame you against specific competitors — what strengths it highlights, what weaknesses it mentions, and who it picks as the better fit.</p>
+<p>Think of it this way: Prompter and Recommender tell you <em>your score</em>. Comparer tells you <em>why you&#39;re winning or losing against a specific rival</em>.</p>
 <p><strong>Content implication:</strong> Competitive intelligence · &quot;vs&quot; comparison page strategy · Win/loss narrative</p>
 <hr />
 <h2>Quick Reference Summary</h2>
 <table>
-<thead><tr><th style="text-align:left">Agent</th><th style="text-align:left">User Intent</th><th style="text-align:left">Brand Named?</th><th style="text-align:left">Counts for KPIs?</th><th style="text-align:left">Best Used For</th></tr></thead>
+<thead><tr><th style="text-align:left">Agent</th><th style="text-align:left">User Intent</th><th style="text-align:left">Brand Named?</th><th style="text-align:left">Role</th><th style="text-align:left">Best Used For</th></tr></thead>
 <tbody>
-<tr><td style="text-align:left"><strong>Prompter</strong></td><td style="text-align:left">Exploring a category</td><td style="text-align:left">No</td><td style="text-align:left">✓ AI Visibility</td><td style="text-align:left">Awareness measurement</td></tr>
-<tr><td style="text-align:left"><strong>Recommender</strong></td><td style="text-align:left">Ready to decide</td><td style="text-align:left">No</td><td style="text-align:left">✓ AI Recommendations + Visibility</td><td style="text-align:left">Intent measurement</td></tr>
-<tr><td style="text-align:left"><strong>Introspector</strong></td><td style="text-align:left">Learning about a brand</td><td style="text-align:left">Yes</td><td style="text-align:left">✗ Excluded</td><td style="text-align:left">Narrative &amp; sentiment audit</td></tr>
-<tr><td style="text-align:left"><strong>Comparer</strong></td><td style="text-align:left">Comparing options</td><td style="text-align:left">Yes (both)</td><td style="text-align:left">✓ AI Recommendations</td><td style="text-align:left">Competitive positioning</td></tr>
+<tr><td style="text-align:left"><strong>Prompter</strong></td><td style="text-align:left">Exploring a category</td><td style="text-align:left">No</td><td style="text-align:left">✓ Measures AI Visibility</td><td style="text-align:left">Awareness measurement</td></tr>
+<tr><td style="text-align:left"><strong>Recommender</strong></td><td style="text-align:left">Ready to decide</td><td style="text-align:left">No</td><td style="text-align:left">✓ Measures AI Recommendations + Visibility</td><td style="text-align:left">Intent measurement</td></tr>
+<tr><td style="text-align:left"><strong>Introspector</strong></td><td style="text-align:left">Learning about a brand</td><td style="text-align:left">Yes</td><td style="text-align:left">Narrative analysis (not KPIs)</td><td style="text-align:left">Narrative &amp; accuracy audit</td></tr>
+<tr><td style="text-align:left"><strong>Comparer</strong></td><td style="text-align:left">Comparing options</td><td style="text-align:left">Yes (both)</td><td style="text-align:left">Competitive analysis (not KPIs)</td><td style="text-align:left">Competitive positioning</td></tr>
 </tbody>
 </table>
-<blockquote><p><strong>Content strategy implication:</strong> Each agent type maps directly to content you should be creating. Prompter → category-level content. Recommender → use-case landing pages. Introspector → your own brand content and PR. Comparer → &quot;vs&quot; comparison pages. More on this in the next section.</p></blockquote>
+<blockquote><p><strong>Two agents measure. Two agents analyze.</strong> Prompter and Recommender generate your KPIs. Introspector and Comparer help you understand the narratives and competitive dynamics behind those numbers. All four are essential — but they play different roles.</p></blockquote>
 <hr />
 <p><em>Next: <a href="from-data-to-content-strategy.html">From Data to Content Strategy</a></em></p>
     </main>

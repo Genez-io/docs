@@ -69,32 +69,31 @@
 <p>Brand Recommendation is calculated as:</p>
 <pre><code>Brand Recommendation = (Conversations where the brand is recommended / Conversations where the brand is visible) x 100</code></pre>
 <p>The denominator is not all conversations — it&#39;s only the ones where your brand actually appeared. This means Brand Recommendation measures your <strong>conversion rate from visibility to recommendation</strong>.</p>
-<p>Example:</p>
+<h3>Worked Example</h3>
+<p>Say Genezio runs <strong>200 conversations</strong> for your topics:</p>
 <ul>
-<li>Conversations where your brand appeared (visible): 74</li>
-<li>Of those, conversations where your brand was recommended: 34</li>
+<li>Your brand appeared in <strong>80</strong> of them → AI Visibility = 80 / 200 = <strong>40%</strong></li>
+<li>Of those 80 visible conversations, your brand was recommended in <strong>48</strong> → AI Recommendation = 48 / 80 = <strong>60%</strong></li>
 </ul>
-<p>Brand Recommendation:</p>
-<pre><code>46%</code></pre>
-<p>This means that when AI engines mention your brand, they recommend it <strong>46% of the time</strong>. The remaining 54% are conversations where your brand appeared but wasn&#39;t the suggested choice.</p>
+<p>This means:</p>
+<ul>
+<li>Your brand shows up in 40% of all AI conversations (Visibility)</li>
+<li>When it does show up, it gets recommended <strong>60% of the time</strong> (Recommendation)</li>
+<li>The remaining 40% of visible conversations mentioned your brand but didn&#39;t recommend it</li>
+</ul>
+<p>The denominator is <strong>visible conversations, not total conversations</strong>. Recommendation % measures your conversion rate from being mentioned to being the suggested choice.</p>
 <hr />
 <h2>Which Conversations Are Included</h2>
-<p>Brand Recommendation is measured using conversations where the AI engine <strong>decides which brands to recommend on its own</strong>, based on the user&#39;s needs.</p>
-<p>The following Genezio Agent types contribute to Brand Recommendation:</p>
-<h3>Recommender Agent</h3>
-<p>Recommender Agent conversations simulate a user asking for recommendations through a multi-step conversation. The AI engine selects which brands to suggest based on the scenario and follow-up constraints.</p>
+<p>Brand Recommendation is a <strong>brand-level metric</strong> calculated from conversations where the AI engine decides on its own which brands to recommend, based on the user&#39;s needs.</p>
+<p>The metric is generated from <strong>Recommender Agent</strong> conversations — scenario-driven, multi-step conversations where a persona asks the AI for a recommendation that matches their specific situation.</p>
 <p>Example:</p>
 <blockquote class="user-question"><p><strong>User query:</strong> <em><strong>Recommend CRM tools for early-stage startups with a small sales team.</strong></em></p></blockquote>
+<p>The AI responds with its own choices. If your brand is among them, that&#39;s a recommendation. If it&#39;s not, you&#39;ve lost that opportunity.</p>
 <hr />
-<h3>Comparer Agent</h3>
-<p>Comparer Agent conversations ask the AI engine to compare specific brands and often conclude with a recommendation for the user&#39;s situation.</p>
-<p>Example:</p>
-<blockquote class="user-question"><p><strong>User query:</strong> <em><strong>Compare HubSpot and Salesforce for a 20-person startup.</strong></em></p></blockquote>
-<hr />
-<h3>Excluded Agent Types</h3>
-<p>Some agent types are <strong>excluded</strong> from Brand Recommendation because they don&#39;t ask for a recommendation:</p>
-<p><strong>Prompter Agent</strong> — Asks a general discovery question without requesting a specific recommendation.</p>
-<p><strong>Introspector Agent</strong> — Asks about a specific brand directly, so there is no recommendation decision.</p>
+<h3>What About Other Agent Types?</h3>
+<p><strong>Prompter Agent</strong> — Contributes to AI Visibility (brand was mentioned) but does not specifically ask for a recommendation, so it is not used for AI Recommendations.</p>
+<p><strong>Introspector Agent</strong> — Used for narrative analysis and claim accuracy evaluation. Because your brand is named in the question, it doesn&#39;t reflect a genuine recommendation decision.</p>
+<p><strong>Comparer Agent</strong> — This is a <strong>competitive analysis tool</strong>, not a measurement engine. The Comparer uses your brand&#39;s recommendation and visibility data to show how you perform relative to specific competitors. It does not contribute to the calculation of AI Recommendations or AI Visibility.</p>
 <hr />
 <h2>Why Brand Recommendation Matters</h2>
 <p>Brand Recommendation is the closest metric to a <strong>buying decision</strong> in AI search.</p>
@@ -114,7 +113,7 @@
 <tbody>
 <tr><td style="text-align:left"><strong>What it measures</strong></td><td style="text-align:left">Of the conversations where you&#39;re visible, how often are you recommended?</td><td style="text-align:left">How often your brand appears at all in AI answers</td></tr>
 <tr><td style="text-align:left"><strong>Denominator</strong></td><td style="text-align:left">Conversations where brand appeared</td><td style="text-align:left">All eligible conversations</td></tr>
-<tr><td style="text-align:left"><strong>Which conversations</strong></td><td style="text-align:left">Recommender + Comparer</td><td style="text-align:left">Prompter + Recommender</td></tr>
+<tr><td style="text-align:left"><strong>Which conversations</strong></td><td style="text-align:left">Recommender</td><td style="text-align:left">Prompter + Recommender</td></tr>
 <tr><td style="text-align:left"><strong>Why it matters</strong></td><td style="text-align:left">Your conversion rate from presence to purchase intent</td><td style="text-align:left">Measures overall brand presence and awareness</td></tr>
 <tr><td style="text-align:left"><strong>Business analogy</strong></td><td style="text-align:left">Conversion rate — of the people who see you, how many choose you</td><td style="text-align:left">Brand awareness — how many people have heard of you</td></tr>
 </tbody>

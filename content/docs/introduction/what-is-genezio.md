@@ -102,8 +102,8 @@ The platform then analyzes each response to extract structured information, incl
 
 - brands mentioned
 - sources cited
-- statements about each brand
-- sentiment associated with those statements
+- claims (statements) about each brand
+- accuracy of those claims against your brand knowledge
 
 ### 5. Generate Insights
 
@@ -139,13 +139,9 @@ Which other brands appear in the same answers.
 
 This helps identify competitors in the AI landscape.
 
-### Sentiment
+### Statement Accuracy
 
-Whether statements about a brand are:
-
-- positive
-- neutral
-- negative
+Whether claims AI makes about a brand are correct or incorrect — evaluated against your brand knowledge base. This helps you identify where AI engines are misrepresenting your brand and where they are getting it right.
 
 ### Share of Voice
 
