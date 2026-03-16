@@ -10,13 +10,18 @@ It is designed to test direct discovery-style queries where a user asks one clea
 
 For a Prompter Agent topic:
 
-* the scenario text is treated as the exact prompt
 * the prompt is sent to the AI system word-for-word
 * no follow-up messages are generated
 
-Example:
+Unlike other agent types, Prompter Agent topics use **prompts**, not scenarios. A prompt is a direct question — the kind a real user would type into an AI assistant.
 
-> **User query:** ***What CRM should a startup use?***
+Example prompt:
+
+```
+What CRM should a startup with a small sales team use to track leads and follow up with customers?
+```
+
+This text is sent directly to the AI system as a single message.
 
 ---
 

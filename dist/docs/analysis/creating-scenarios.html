@@ -80,28 +80,32 @@
 <p>Each topic can contain one or more scenarios.</p>
 <hr />
 <h2>Creating Scenarios</h2>
-<p>A <strong>scenario</strong> describes the situation and goal of the persona interacting with the AI system.</p>
-<p>It should describe <strong>why the user is asking the question</strong> and what they are trying to accomplish.</p>
-<p>Example structure:</p>
+<p>A <strong>scenario</strong> is a short story that describes a realistic situation — the context, constraints, and goals that lead someone to ask an AI assistant for help.</p>
+<p>A scenario is <strong>not</strong> a prompt or a question. It is a paragraph full of specific details that Genezio will break down into shorter, natural messages and send to the AI system one by one — like a human would in a real conversation.</p>
+<p>A scenario should include:</p>
 <ul>
-<li>the situation the user is in</li>
+<li>the situation the persona is in</li>
 <li>the goal they want to achieve</li>
-<li>any relevant context</li>
+<li>specific constraints (budget, team size, technical requirements, compliance needs, etc.)</li>
 </ul>
+<p>A scenario should <strong>not</strong> include persona details like role, age, country, or language. Those are defined separately in the persona and are combined with the scenario at conversation time.</p>
 <p>Example scenario:</p>
-<pre><code>The persona runs a small startup and has started receiving inbound leads. They are looking for a simple tool to track contacts and follow up with potential customers.</code></pre>
-<p>Genezio will use this scenario to generate prompts and run conversations with AI systems.</p>
+<pre><code>Mary&#39;s team doesn&#39;t have any technical background. They are looking for a marketing automation platform that is easy for a non-technical team to set up and start using without developer help. Their budget is $800/month and she wants her team of 6 to be able to use it in parallel. She is looking for something that is SOC2 compliant.</code></pre>
+<p>From this scenario, Genezio generates natural conversational messages such as:</p>
+<blockquote><p><em><strong>I&#39;m looking for a marketing automation platform that&#39;s easy to set up without any developer help. My team of 6 isn&#39;t very technical. What would you recommend?</strong></em></p></blockquote>
+<blockquote><p><em><strong>Our budget is around $800/month and we need all 6 team members to be able to work in the platform at the same time. Which tools support that?</strong></em></p></blockquote>
+<blockquote><p><em><strong>Does any of these have SOC2 compliance? That&#39;s a requirement for us.</strong></em></p></blockquote>
+<p>The scenario provides the full picture. Genezio turns it into the kind of back-and-forth a real person would have with an AI assistant.</p>
 <hr />
-<h2>Prompter Agent Scenarios</h2>
-<p>For <strong>Prompter Agent topics</strong>, the scenario itself is the prompt.</p>
-<p>This text is sent <strong>word-for-word</strong> to the AI system and the conversation consists of a <strong>single interaction</strong>.</p>
-<p>Example:</p>
-<blockquote class="user-question"><p><strong>User query:</strong> <em><strong>What CRM should a startup use?</strong></em></p></blockquote>
-<p>Prompter Agent scenarios represent direct discovery questions that users may ask AI assistants.</p>
+<h2>Prompter Agent Prompts</h2>
+<p><strong>Prompter Agent topics</strong> use <strong>prompts</strong>, not scenarios. A prompt is a direct question sent <strong>word-for-word</strong> to the AI system, and the conversation consists of a <strong>single interaction</strong>.</p>
+<p>Example prompt:</p>
+<pre><code>What CRM should a startup with a small sales team use to track leads and follow up with customers?</code></pre>
+<p>Prompter Agent prompts represent direct discovery questions that users may ask AI assistants.</p>
 <hr />
 <h2>Custom AI Overview Queries</h2>
 <p>When interacting with <strong>Google AI Overview</strong>, Genezio sends a <strong>search-style query</strong> instead of a conversational prompt.</p>
-<p>For Prompter Agent scenarios, Genezio automatically generates this query.</p>
+<p>For Prompter Agent prompts, Genezio automatically generates this query.</p>
 <p>However, users can <strong>override the generated query</strong> and provide their own search query if needed.</p>
 <p>This allows you to test exactly how specific Google-style searches influence AI Overview results.</p>
 <hr />
@@ -127,11 +131,15 @@
 <h2>Best Practices</h2>
 <p>Good scenarios typically:</p>
 <ul>
-<li>describe a clear user situation</li>
-<li>include a specific goal</li>
-<li>resemble how real users ask AI assistants for help</li>
+<li>read like a short story or a brief — not like a question</li>
+<li>describe a clear situation with specific details and constraints</li>
+<li>include a concrete goal the persona is trying to achieve</li>
+<li>mention the persona by name but do not repeat persona details (role, location, language)</li>
 </ul>
 <p>Scenarios that are too vague or abstract may produce responses that do not mention brands, which lowers scenario relevance.</p>
+<p>Avoid writing scenarios that look like prompts. For example:</p>
+<p><strong>Bad:</strong> <code>What is the best CRM for startups?</code></p>
+<p><strong>Good:</strong> <code>John&#39;s team of three has been tracking leads in a spreadsheet but they are losing follow-ups as inbound volume grows. They need a simple CRM that integrates with Gmail and costs under $50/user/month.</code></p>
 <hr />
 <h2>Next Steps</h2>
 <p>To understand how scenarios turn into AI interactions, see:</p>

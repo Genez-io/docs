@@ -20,15 +20,15 @@ Example topic:
 CRM for startups
 ```
 
-A **scenario** describes a realistic situation involving the persona.
+A **scenario** is a short story that describes a realistic situation — the persona's context, constraints, and what they are trying to achieve. Think of it as a brief you would hand someone to explain the full picture.
 
 Example scenario:
 
 ```
-The persona is a founder of a small SaaS startup with two co-founders. They recently started getting inbound leads and need a simple way to track contacts and follow up with potential customers.
+Mary's team doesn't have any technical background. They are looking for a marketing automation platform that is easy for a non-technical team to set up and start using without developer help. Their budget is $800/month and she wants her team of 6 to be able to use it in parallel. She is looking for something that is SOC2 compliant.
 ```
 
-From this scenario, Genezio generates one or more prompts that are sent to the AI system during the conversation.
+A scenario is **not** a prompt. It is not a question you would send to an AI assistant. Instead, Genezio reads the scenario, combines it with the persona's details, and generates natural conversational messages from it — the kind a real person would type into ChatGPT or Claude, one at a time.
 
 ---
 
@@ -50,9 +50,9 @@ This structure ensures that conversations are grounded in **realistic user conte
 
 ## Scenario Structure
 
-A scenario describes the **situation and goal** the persona is experiencing.
+A scenario describes the **situation and goal** the persona is experiencing. It should read like a short story — a paragraph full of specific details, constraints, and context.
 
-The **persona context is implicit** in the scenario because every scenario belongs to a **topic**, and every topic is associated with a **persona**.
+A scenario does **not** include details about the persona themselves (such as age, country, occupation, or language). Those are defined separately in the **persona**. The scenario can mention the persona by name, but all other persona details are provided at conversation time.
 
 This means the persona's:
 
@@ -60,65 +60,51 @@ This means the persona's:
 * language
 * geographic location
 
-are already defined before the scenario is executed.
+are already defined before the scenario is executed. The scenario focuses entirely on **what is happening** and **what the persona needs**.
 
-The scenario itself therefore focuses on the **user's situation and objective**, while the persona provides the broader context for how the conversation should be conducted.
+### What to Include
 
-### Situation
+A good scenario includes:
 
-The circumstances that led the user to search for a solution.
+* **The situation** — what circumstances led to this need (e.g., the team outgrew spreadsheets, a product launch is coming up)
+* **The goal** — what they want to achieve (e.g., find a tool, compare options, solve a problem)
+* **Specific constraints** — budget, team size, technical requirements, compliance needs, timeline
 
-Example:
+### What NOT to Include
 
-* receiving the first sales leads
-* preparing for a marathon
-* comparing banking options
+Do not repeat persona details in the scenario. The persona already defines who the user is. The scenario focuses on *why they are asking* and *what they need*.
 
-### Goal
-
-What the persona wants to achieve.
-
-Example:
-
-* find a CRM
-* choose a running shoe
-* open a bank account
-
-Because the persona already defines *who the user is* and *where they are located*, the scenario focuses on *why they are asking the question*.
-
-This separation allows Genezio to reuse scenarios across realistic persona contexts while keeping conversations grounded in specific goals.
+This separation allows Genezio to reuse scenarios across different persona contexts while keeping conversations grounded in specific goals.
 
 ---
 
-## Example Scenario
+## Example: From Scenario to Conversation
 
-Topic:
+Here is a complete example showing how a scenario becomes a conversation.
 
-```
-CRM for startups
-```
+**Topic:** Marketing automation
 
-Persona:
+**Persona:** Marketing manager, located in New York, language: English
 
-* Startup founder
-* Located in San Francisco
-* Language: English
-
-Scenario:
+**Scenario:**
 
 ```
-John runs a small SaaS startup with two co-founders. They have recently started receiving inbound leads and need a simple way to track potential customers and follow up.
+Mary's team doesn't have any technical background. They are looking for a marketing automation platform that is easy for a non-technical team to set up and start using without developer help. Their budget is $800/month and she wants her team of 6 to be able to use it in parallel. She is looking for something that is SOC2 compliant.
 ```
 
-From this scenario, Genezio may generate prompts such as:
+Notice the scenario does not mention Mary's role, location, or language — those come from the persona.
 
-> **User query:** ***What CRM would you recommend for a small SaaS startup?***
+**What Genezio generates from this scenario:**
 
-and follow-ups such as:
+Genezio combines the scenario with the persona details and produces natural conversational messages — the kind a real person would send to an AI assistant, one at a time:
 
-> **User query:** ***Which of these tools is easiest for a team of three people?***
+> **User query:** ***I'm looking for a marketing automation platform that's easy to set up without any developer help. My team of 6 isn't very technical. What would you recommend?***
 
-The scenario provides the **context**, while the prompts represent the **actual messages sent to the AI system**.
+> **User query:** ***Our budget is around $800/month and we need all 6 team members to be able to work in the platform at the same time. Which tools support that?***
+
+> **User query:** ***Does any of these have SOC2 compliance? That's a requirement for us.***
+
+The scenario is the **full story**. The prompts are how a human would naturally unpack that story in a conversation — one question at a time, building on previous answers.
 
 ---
 
@@ -128,9 +114,7 @@ Scenarios are used differently depending on the Genezio Agent type.
 
 ### Prompter Agent
 
-For **Prompter Agent topics**, the scenario itself becomes the prompt.
-
-The text is sent **exactly as written** to the AI system and the interaction is **single-turn**.
+**Prompter Agent topics** use **prompts**, not scenarios. The prompt is a direct question sent **exactly as written** to the AI system, and the interaction is **single-turn**.
 
 ### Recommender Agent
 

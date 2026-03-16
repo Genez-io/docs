@@ -14,13 +14,17 @@ For a Recommender Agent topic:
 * Genezio generates a sequence of prompts from that scenario
 * the AI conversation runs across multiple turns
 
-Example starting query:
+Example scenario:
 
-> **User query:** ***Recommend CRM tools for an early-stage startup.***
+```
+John's team of three has been tracking leads in a spreadsheet but they are losing follow-ups as inbound volume grows. They need a simple CRM that integrates with Gmail and costs under $50/user/month.
+```
 
-Possible follow-up:
+From this scenario, Genezio generates conversational messages such as:
 
-> **User query:** ***Which one is easiest to set up for a team of three?***
+> **User query:** ***I run a small startup and we've been tracking leads in a spreadsheet, but it's not working anymore. What CRM tools would you recommend for a team of three?***
+
+> **User query:** ***We need something that integrates with Gmail and stays under $50 per user per month. Which of those would fit?***
 
 ---
 

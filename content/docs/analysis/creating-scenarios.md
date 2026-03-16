@@ -42,37 +42,47 @@ Each topic can contain one or more scenarios.
 
 ## Creating Scenarios
 
-A **scenario** describes the situation and goal of the persona interacting with the AI system.
+A **scenario** is a short story that describes a realistic situation — the context, constraints, and goals that lead someone to ask an AI assistant for help.
 
-It should describe **why the user is asking the question** and what they are trying to accomplish.
+A scenario is **not** a prompt or a question. It is a paragraph full of specific details that Genezio will break down into shorter, natural messages and send to the AI system one by one — like a human would in a real conversation.
 
-Example structure:
+A scenario should include:
 
-* the situation the user is in
+* the situation the persona is in
 * the goal they want to achieve
-* any relevant context
+* specific constraints (budget, team size, technical requirements, compliance needs, etc.)
+
+A scenario should **not** include persona details like role, age, country, or language. Those are defined separately in the persona and are combined with the scenario at conversation time.
 
 Example scenario:
 
 ```
-The persona runs a small startup and has started receiving inbound leads. They are looking for a simple tool to track contacts and follow up with potential customers.
+Mary's team doesn't have any technical background. They are looking for a marketing automation platform that is easy for a non-technical team to set up and start using without developer help. Their budget is $800/month and she wants her team of 6 to be able to use it in parallel. She is looking for something that is SOC2 compliant.
 ```
 
-Genezio will use this scenario to generate prompts and run conversations with AI systems.
+From this scenario, Genezio generates natural conversational messages such as:
+
+> ***I'm looking for a marketing automation platform that's easy to set up without any developer help. My team of 6 isn't very technical. What would you recommend?***
+
+> ***Our budget is around $800/month and we need all 6 team members to be able to work in the platform at the same time. Which tools support that?***
+
+> ***Does any of these have SOC2 compliance? That's a requirement for us.***
+
+The scenario provides the full picture. Genezio turns it into the kind of back-and-forth a real person would have with an AI assistant.
 
 ---
 
-## Prompter Agent Scenarios
+## Prompter Agent Prompts
 
-For **Prompter Agent topics**, the scenario itself is the prompt.
+**Prompter Agent topics** use **prompts**, not scenarios. A prompt is a direct question sent **word-for-word** to the AI system, and the conversation consists of a **single interaction**.
 
-This text is sent **word-for-word** to the AI system and the conversation consists of a **single interaction**.
+Example prompt:
 
-Example:
+```
+What CRM should a startup with a small sales team use to track leads and follow up with customers?
+```
 
-> **User query:** ***What CRM should a startup use?***
-
-Prompter Agent scenarios represent direct discovery questions that users may ask AI assistants.
+Prompter Agent prompts represent direct discovery questions that users may ask AI assistants.
 
 ---
 
@@ -80,7 +90,7 @@ Prompter Agent scenarios represent direct discovery questions that users may ask
 
 When interacting with **Google AI Overview**, Genezio sends a **search-style query** instead of a conversational prompt.
 
-For Prompter Agent scenarios, Genezio automatically generates this query.
+For Prompter Agent prompts, Genezio automatically generates this query.
 
 However, users can **override the generated query** and provide their own search query if needed.
 
@@ -119,11 +129,18 @@ This makes it easy to test improvements and quickly see how AI systems respond t
 
 Good scenarios typically:
 
-* describe a clear user situation
-* include a specific goal
-* resemble how real users ask AI assistants for help
+* read like a short story or a brief — not like a question
+* describe a clear situation with specific details and constraints
+* include a concrete goal the persona is trying to achieve
+* mention the persona by name but do not repeat persona details (role, location, language)
 
 Scenarios that are too vague or abstract may produce responses that do not mention brands, which lowers scenario relevance.
+
+Avoid writing scenarios that look like prompts. For example:
+
+**Bad:** `What is the best CRM for startups?`
+
+**Good:** `John's team of three has been tracking leads in a spreadsheet but they are losing follow-ups as inbound volume grows. They need a simple CRM that integrates with Gmail and costs under $50/user/month.`
 
 ---
 

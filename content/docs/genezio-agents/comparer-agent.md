@@ -14,9 +14,19 @@ For a Comparer Agent topic:
 * Genezio runs a multi-step comparison conversation
 * prompts ask for differences, tradeoffs, and best-fit recommendations
 
-Example:
+Example scenario:
 
-> **User query:** ***HubSpot vs Pipedrive: which CRM is better for a small startup?***
+```
+Alex is evaluating HubSpot and Pipedrive for his sales team of five. He needs a CRM that is easy to onboard, has good reporting, and works well with their existing email workflow. He wants to understand the key differences before making a decision.
+```
+
+From this scenario, Genezio generates conversational messages such as:
+
+> **User query:** ***I'm comparing HubSpot and Pipedrive for a sales team of five. What are the main differences between the two?***
+
+> **User query:** ***Which one is easier to onboard for a small team with no CRM experience?***
+
+> **User query:** ***How do they compare on reporting and email integration?***
 
 ---
 
