@@ -1316,6 +1316,24 @@ function docsHomeContent() {
 <ul>${sectionItems || '<li>No sections published yet.</li>'}</ul>`;
 }
 
+function docsLandingContent(currentFilePath) {
+  const cards = enabledSections
+    .map((section) => {
+      const href = toRelative(currentFilePath, outPath(sectionLandingHref(section)));
+      return `<li class="landing-card"><a href="${href}"><strong>${escapeHtml(section.title)}</strong></a><p>${escapeHtml(section.description)}</p></li>`;
+    })
+    .join('');
+
+  return `<article>
+    <header class="landing-hero">
+      <p class="kicker">Documentation</p>
+      <h1>Genezio Docs</h1>
+      <p>Learn how to measure and improve how AI answer engines like ChatGPT, Claude, Gemini, and Perplexity recommend your brand. Pick a section below to get started.</p>
+    </header>
+    <ul class="section-grid">${cards}</ul>
+  </article>`;
+}
+
 function getDocsLandingPath() {
   const intro = enabledSections.find((section) => section.slug === 'introduction');
   if (intro) {
@@ -1420,24 +1438,16 @@ function main() {
   fs.copyFileSync(cssSource, cssTarget);
 
   const indexPath = path.join(OUT_DIR, 'index.html');
-  const docsLandingPath = getDocsLandingPath();
-  const docsLandingHref = toRelative(indexPath, outPath(docsLandingPath));
   writeFile(
     indexPath,
-    `<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Documentation | Genezio Docs</title>
-  <meta http-equiv="refresh" content="0; url=${docsLandingHref}" />
-  <link rel="canonical" href="${docsLandingHref}" />
-</head>
-<body>
-  <p>Redirecting to <a href="${docsLandingHref}">${docsLandingHref}</a>...</p>
-  <script>window.location.replace(${JSON.stringify(docsLandingHref)});</script>
-</body>
-</html>`
+    shellTemplate({
+      title: 'Documentation',
+      description: 'Genezio documentation — measure and improve how AI answer engines recommend your brand.',
+      content: docsLandingContent(indexPath),
+      currentSection: '',
+      currentPageSlug: '',
+      currentFilePath: indexPath
+    })
   );
 
   for (const doc of enabledStandaloneDocs) {
