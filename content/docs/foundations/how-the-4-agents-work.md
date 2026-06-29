@@ -90,4 +90,4 @@
 
 ---
 
-*Next: [From Data to Content Strategy](04-from-data-to-content-strategy.md)*
+*Next: [From Data to Content Strategy](../content-hub/from-data-to-content-strategy.md)*

@@ -119,4 +119,4 @@ See [Fact Checker Agent](../genezio-agents/fact-checker-agent.html) for the full
 
 ---
 
-*Next: [From Data to Content Strategy](04-from-data-to-content-strategy.md)*
+*Next: [From Data to Content Strategy](../content-hub/from-data-to-content-strategy.md)*
