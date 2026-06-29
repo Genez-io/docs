@@ -1505,85 +1505,33 @@ function main() {
   generateSitemap();
 }
 
-function getFileLastMod(filePath) {
-  try {
-    if (fs.existsSync(filePath)) {
-      const stats = fs.statSync(filePath);
-      return stats.mtime.toISOString().split('T')[0];
-    }
-  } catch (e) {
-    // ignore
-  }
-  return new Date().toISOString().split('T')[0];
-}
-
-function getLatestModifiedDate() {
-  let latest = new Date(0);
-  const checkDir = (dir) => {
-    const files = fs.readdirSync(dir);
-    for (const file of files) {
-      const fullPath = path.join(dir, file);
-      const stat = fs.statSync(fullPath);
-      if (stat.isDirectory()) {
-        checkDir(fullPath);
-      } else if (file.endsWith('.md')) {
-        if (stat.mtime > latest) {
-          latest = stat.mtime;
-        }
-      }
-    }
-  };
-  try {
-    checkDir(CONTENT_DIR);
-  } catch (e) {
-    // ignore
-  }
-  return latest.getTime() > 0 ? latest.toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
-}
-
 function generateSitemap() {
   const urls = [];
 
   // 1. Landing page
-  urls.push({
-    loc: 'https://genezio.com/docs/',
-    lastmod: getLatestModifiedDate()
-  });
+  urls.push('https://genezio.com/docs/');
 
   // 2. Standalone docs
   for (const doc of enabledStandaloneDocs) {
-    const mdPath = contentPath('docs', `${doc.slug}.md`);
-    urls.push({
-      loc: `https://genezio.com/docs/${doc.slug}.html`,
-      lastmod: getFileLastMod(mdPath)
-    });
+    urls.push(`https://genezio.com/docs/${doc.slug}.html`);
   }
 
   // 3. Section pages
   for (const section of enabledSections) {
     if (section.hasIndex) {
-      const mdPath = contentPath('docs', section.slug, 'index.md');
-      urls.push({
-        loc: `https://genezio.com/docs/${section.slug}/`,
-        lastmod: getFileLastMod(mdPath)
-      });
+      urls.push(`https://genezio.com/docs/${section.slug}/`);
     }
 
     for (const pageTitle of section.pages) {
       const pageSlug = slugify(pageTitle);
-      const mdPath = contentPath('docs', section.slug, `${pageSlug}.md`);
-      urls.push({
-        loc: `https://genezio.com/docs/${section.slug}/${pageSlug}.html`,
-        lastmod: getFileLastMod(mdPath)
-      });
+      urls.push(`https://genezio.com/docs/${section.slug}/${pageSlug}.html`);
     }
   }
 
   const xmlItems = urls
     .map(
       (url) => `  <url>
-    <loc>${url.loc}</loc>
-    <lastmod>${url.lastmod}</lastmod>
+    <loc>${url}</loc>
   </url>`
     )
     .join('\n');
