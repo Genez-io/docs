@@ -1016,8 +1016,8 @@ function shellTemplate({ title, description, content, currentSection, currentPag
 
   const sidebar = buildSidebar(currentSection, currentPageSlug, currentFilePath);
 
-  let finalTitle = "Genezio Ai Visibility & Recommendations Documentation";
-  let finalDescription = "Explore the official Genezio documentation for AI Visibility & Recommendations. Learn how to track, measure, and optimize your brand's presence in LLMs.";
+  let finalTitle = title ? `${title} | Genezio Docs` : "Genezio Ai Visibility & Recommendations Documentation";
+  let finalDescription = description || "Explore the official Genezio documentation for AI Visibility & Recommendations. Learn how to track, measure, and optimize your brand's presence in LLMs.";
   let canonicalUrl = "https://genezio.com/docs/";
   let ogType = "website";
 
@@ -1692,7 +1692,7 @@ const metaMap = {
   },
   "introduction/what-kpis-are-we-measuring.html": {
     "title": "What KPIs Are We Measuring for Brand Presence? Genezio",
-    "desc": "Measure your brand's AI performance with his core KPIs: AI Recommendations & AI Visibility. Understand presence & trust in LLMs. Book a demo."
+    "desc": "Measure your brand's AI performance with these core KPIs: AI Recommendations & AI Visibility. Understand presence & trust in LLMs. Book a demo."
   },
   "introduction/why-ai-recommendations-matter.html": {
     "title": "Why AI Recommendations Matter for Brand Presence | Genezio",
