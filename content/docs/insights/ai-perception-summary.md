@@ -61,6 +61,5 @@ The summary also feeds the **Geo Assistant's** context. That means you can ask G
 ## Related Pages
 
 - [Perceptions](../core-concepts/perceptions.html)
-- [Sentiment Analysis](sentiment-analysis.html)
 - [Geo Assistant](../geo-assistant/geo-assistant.html)
 - [Your KPIs Explained](your-kpis-explained.html)

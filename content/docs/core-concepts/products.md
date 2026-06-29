@@ -102,6 +102,5 @@ Because the picker filters at the data level, Products work cleanly with the res
 ## Related Pages
 
 * [Brands](brands.html)
-* [Topics](topics.html)
 * [Topic Tags](../getting-started/topic-tags.html)
 * [Competitors](competitors.html)

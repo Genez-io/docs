@@ -164,15 +164,3 @@ From here you can:
 * analyze visibility across different topics
 
 You can then dive deeper into specific conversations, topics, or insights to better understand how AI systems represent your brand.
-
----
-
-## Next Steps
-
-To better understand the concepts behind these results, see:
-
-* [Introduction -> What KPIs Are We Measuring](./introduction/what-kpis-are-we-measuring.html)
-* [Introduction -> How LLM Search Works](./introduction/how-llm-search-works.html)
-* [Core Concepts -> Topics](./core-concepts/topics.html)
-
-These pages explain the underlying concepts used throughout Genezio.

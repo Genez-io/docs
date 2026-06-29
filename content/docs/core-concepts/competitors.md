@@ -136,7 +136,6 @@ These insights help organizations identify opportunities to improve their AI Rec
 
 To see how competitor data contributes to visibility metrics, continue with:
 
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 
 These pages explain how Genezio converts conversation data into measurable AI visibility insights.

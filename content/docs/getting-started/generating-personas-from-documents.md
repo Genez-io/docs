@@ -57,4 +57,3 @@ If you're not sure your document is "good enough" to use, upload it anyway. Gene
 
 * [Core Concepts -> Personas](../core-concepts/personas.html)
 * [Setup Guide](setup-guide.html)
-* [Your First Week](your-first-week.html)

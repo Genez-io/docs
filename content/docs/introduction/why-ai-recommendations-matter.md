@@ -124,7 +124,4 @@ See your Share of Voice — how often your brand is recommended compared to comp
 
 ## What to Read Next
 
-- [What KPIs Are We Measuring](what-kpis-are-we-measuring.md) — Deep dive into AI Recommendations % and AI Visibility %
 - [How the 5 Agents Work](how-the-5-agents-work.md) — The four types of AI conversations Genezio runs, and why each matters
-- [From Data to Content Strategy](../content-hub/from-data-to-content-strategy.md) — How to turn Genezio insights into a content plan
-- [Your First Week](../getting-started/your-first-week.md) — A practical day-by-day guide to getting started

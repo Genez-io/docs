@@ -68,5 +68,3 @@ Prompter, Recommender, and Introspector conversations do not contribute to SWOT 
 
 * [Genezio Agents -> Comparer Agent](../genezio-agents/comparer-agent.html)
 * [Core Concepts -> Competitors](../core-concepts/competitors.html)
-* [Core Concepts -> Topics](../core-concepts/topics.html)
-* [Insights -> Competitor Insights](competitor-insights.html)

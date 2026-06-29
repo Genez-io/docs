@@ -177,8 +177,6 @@ Improvements to AI recommendations typically come from better content, stronger 
 
 To start using Genezio, continue with:
 
-- [Getting Started](../getting-started.html)
-- [Core Concepts -> Topics](../core-concepts/topics.html)
 - [Core Concepts -> Scenarios](../core-concepts/scenarios.html)
 
 These sections explain how to set up your first AI recommendations analysis.

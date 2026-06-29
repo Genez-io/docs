@@ -2,7 +2,7 @@
 
 **Share of Voice (SOV)** is a brand-level metric that answers the question every executive eventually asks: **"how much of the conversation is mine versus my competitors'?"**
 
-It sits alongside [AI Recommendations](your-kpis-explained.html) and [AI Visibility](ai-visibility-score.html) as one of Genezio's headline numbers — and it's typically the one that ends up in board decks and quarterly reviews.
+It sits alongside [AI Recommendations](your-kpis-explained.html) and AI Visibility as one of Genezio's headline numbers — and it's typically the one that ends up in board decks and quarterly reviews.
 
 ---
 
@@ -85,6 +85,4 @@ This is where you find the actionable detail: the topics where you're winning th
 ## Related Pages
 
 * [Your KPIs Explained](your-kpis-explained.html)
-* [AI Visibility Score](ai-visibility-score.html)
-* [Competitor Insights](competitor-insights.html)
 * [Core Concepts -> Competitors](../core-concepts/competitors.html)

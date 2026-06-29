@@ -223,7 +223,6 @@ By modeling these factors, Genezio can better represent how AI systems respond t
 
 To learn how personas connect to other parts of the analysis, see:
 
-* [Core Concepts -> Topics](./topics.html)
 * [Core Concepts -> Scenarios](./scenarios.html)
 * [Core Concepts -> Conversations](./conversations.html)
 

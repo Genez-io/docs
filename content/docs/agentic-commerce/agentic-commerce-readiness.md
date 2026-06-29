@@ -50,6 +50,4 @@ To get hands-on — how to run the audit, what each check means, and how scoring
 
 * [UCP Readiness Audit](ucp-readiness-audit.html) — run the audit and read your readiness score
 * [Competitors](../core-concepts/competitors.html) — how Genezio tracks the brands you're benchmarked against
-* [Competitor Insights](../insights/competitor-insights.html) — compare your brand to competitors across AI answers
 * [Knowledge Base](../core-concepts/knowledge-base.html) — the source of truth Genezio builds about your brand
-* [Improve AI Visibility for an E-commerce Brand](../tutorials/improve-ai-visibility-for-an-ecommerce-brand.html) — a practical walkthrough for e-commerce teams

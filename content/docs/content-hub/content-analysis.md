@@ -96,8 +96,6 @@ And with the [Geo Assistant](../geo-assistant/geo-assistant.html):
 ## Related Pages
 
 * [Content Hub](content-hub.html)
-* [Generating Articles](generating-articles.html)
 * [Briefs](briefs.html)
 * [Editing Articles](editing-articles.html)
-* [Publishing Content](publishing-content.html)
 * [Core Concepts -> Citations](../core-concepts/citations.html)

@@ -89,6 +89,4 @@ A few things that keep tags useful instead of cluttered:
 
 ## Related Pages
 
-* [Core Concepts -> Topics](../core-concepts/topics.html)
 * [Setup Guide](setup-guide.html)
-* [Your First Week](your-first-week.html)

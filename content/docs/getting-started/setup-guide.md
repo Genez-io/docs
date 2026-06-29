@@ -174,15 +174,3 @@ As you build and refine your setup, Genezio includes a few quality-of-life capab
 * **Recycle Bin** — deleted topics and scenarios are not lost immediately. If you remove something by mistake, you can restore it from the Recycle Bin.
 * **Brand language** — you can set your brand's language during setup. Reports such as **perceptions**, **SWOT**, and **AI insights** are then generated in that language.
 * **Predictable order and auto-scroll** — newly added topics and scenarios appear in a predictable order, and the view automatically scrolls to them, so you can immediately see what you just created.
-
----
-
-## Next Steps
-
-To better understand the concepts behind these results, see:
-
-* [Introduction -> What KPIs Are We Measuring](./introduction/what-kpis-are-we-measuring.html)
-* [Introduction -> How LLM Search Works](./introduction/how-llm-search-works.html)
-* [Core Concepts -> Topics](./core-concepts/topics.html)
-
-These pages explain the underlying concepts used throughout Genezio.

@@ -27,5 +27,4 @@ To learn more about the available scenario types and when to use each, see [Scen
 
 After confirming your scenarios, continue with:
 
-* [Run Your First Conversations](./run-your-first-conversations.html)
 * [Scenarios](../core-concepts/scenarios.html)
