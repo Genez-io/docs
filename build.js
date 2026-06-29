@@ -1044,11 +1044,20 @@ function shellTemplate({ title, description, content, currentSection, currentPag
   <link rel="canonical" href="${canonicalUrl}" />
 
   <!-- Open Graph / Facebook -->
+  <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="${ogType}" />
   <meta property="og:url" content="${canonicalUrl}" />
   <meta property="og:title" content="${escapeHtml(finalTitle)}" />
   <meta property="og:description" content="${escapeHtml(finalDescription)}" />
   <meta property="og:image" content="https://genezio.com/images/genezio-black-logo.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="https://genezio.com/images/genezio-black-logo.webp" />
+  <meta property="og:image:type" content="image/webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="${escapeHtml(finalTitle)}" />
   <meta property="og:site_name" content="Genezio Docs" />
 
   <!-- Twitter -->
@@ -1057,6 +1066,7 @@ function shellTemplate({ title, description, content, currentSection, currentPag
   <meta name="twitter:title" content="${escapeHtml(finalTitle)}" />
   <meta name="twitter:description" content="${escapeHtml(finalDescription)}" />
   <meta name="twitter:image" content="https://genezio.com/images/genezio-black-logo.jpg" />
+  <meta name="twitter:image:alt" content="${escapeHtml(finalTitle)}" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
