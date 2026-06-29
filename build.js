@@ -822,9 +822,9 @@ function hasMarkdownContent(filePath) {
 }
 
 function sectionLandingHref(section) {
-  if (section.hasIndex) return `docs/${section.slug}/index.html`;
-  if (section.pages.length > 0) return `docs/${section.slug}/${slugify(section.pages[0])}.html`;
-  return `docs/${section.slug}/index.html`;
+  if (section.hasIndex) return `${section.slug}/index.html`;
+  if (section.pages.length > 0) return `${section.slug}/${slugify(section.pages[0])}.html`;
+  return `${section.slug}/index.html`;
 }
 
 function computeEnabledStructure() {
@@ -845,7 +845,7 @@ function computeEnabledStructure() {
 function buildSidebar(currentSection, currentPageSlug, currentFilePath) {
   const standaloneLinks = enabledStandaloneDocs
     .map((doc) => {
-      const href = toRelative(currentFilePath, outPath(`docs/${doc.slug}.html`));
+      const href = toRelative(currentFilePath, outPath(`${doc.slug}.html`));
       const activeClass = currentSection === doc.slug && currentPageSlug === '__single__' ? 'active' : '';
       return `<section class="nav-group"><h3><a class="${activeClass}" href="${href}">${escapeHtml(doc.title)}</a></h3></section>`;
     })
@@ -857,7 +857,7 @@ function buildSidebar(currentSection, currentPageSlug, currentFilePath) {
       const pageLinks = section.pages
         .map((pageTitle) => {
           const pageSlug = slugify(pageTitle);
-          const pagePath = `docs/${section.slug}/${pageSlug}.html`;
+          const pagePath = `${section.slug}/${pageSlug}.html`;
           const href = toRelative(currentFilePath, outPath(pagePath));
           const activeClass = section.slug === currentSection && pageSlug === currentPageSlug ? 'active' : '';
           return `<li><a class="${activeClass}" href="${href}">${escapeHtml(pageTitle)}</a></li>`;
@@ -885,7 +885,7 @@ function buildSidebar(currentSection, currentPageSlug, currentFilePath) {
           .flatMap((section) =>
             section.pages.map((pageTitle) => {
               const pageSlug = slugify(pageTitle);
-              const pagePath = `docs/${section.slug}/${pageSlug}.html`;
+              const pagePath = `${section.slug}/${pageSlug}.html`;
               const href = toRelative(currentFilePath, outPath(pagePath));
               const activeClass = section.slug === currentSection && pageSlug === currentPageSlug ? 'active' : '';
               return `<li><a class="${activeClass}" href="${href}">${escapeHtml(pageTitle)}</a></li>`;
@@ -1206,17 +1206,17 @@ function getDocsLandingPath() {
   const intro = enabledSections.find((section) => section.slug === 'introduction');
   if (intro) {
     const preferred = intro.pages.find((title) => title.toLowerCase() === 'what is genezio?');
-    if (preferred) return `docs/introduction/${slugify(preferred)}.html`;
-    if (intro.hasIndex) return 'docs/introduction/index.html';
-    if (intro.pages.length) return `docs/introduction/${slugify(intro.pages[0])}.html`;
+    if (preferred) return `introduction/${slugify(preferred)}.html`;
+    if (intro.hasIndex) return 'introduction/index.html';
+    if (intro.pages.length) return `introduction/${slugify(intro.pages[0])}.html`;
   }
 
-  if (enabledStandaloneDocs.length) return `docs/${enabledStandaloneDocs[0].slug}.html`;
+  if (enabledStandaloneDocs.length) return `${enabledStandaloneDocs[0].slug}.html`;
   if (enabledSections.length) {
     const section = enabledSections[0];
     return section.hasIndex
-      ? `docs/${section.slug}/index.html`
-      : `docs/${section.slug}/${slugify(section.pages[0])}.html`;
+      ? `${section.slug}/index.html`
+      : `${section.slug}/${slugify(section.pages[0])}.html`;
   }
 
   return 'index.html';
@@ -1305,28 +1305,11 @@ function main() {
   const cssTarget = path.join(ASSET_DIR, 'site.css');
   fs.copyFileSync(cssSource, cssTarget);
 
-  writeFile(path.join(OUT_DIR, 'index.html'), homepageContent());
-
-  for (const doc of enabledStandaloneDocs) {
-    const standalonePath = path.join(OUT_DIR, 'docs', `${doc.slug}.html`);
-    writeFile(
-      standalonePath,
-      shellTemplate({
-        title: doc.title,
-        description: doc.description,
-        content: markdownToHtml(readMarkdownFile(contentPath('docs', `${doc.slug}.md`))),
-        currentSection: doc.slug,
-        currentPageSlug: '__single__',
-        currentFilePath: standalonePath
-      })
-    );
-  }
-
-  const docsIndexPath = path.join(OUT_DIR, 'docs', 'index.html');
+  const indexPath = path.join(OUT_DIR, 'index.html');
   const docsLandingPath = getDocsLandingPath();
-  const docsLandingHref = toRelative(docsIndexPath, outPath(docsLandingPath));
+  const docsLandingHref = toRelative(indexPath, outPath(docsLandingPath));
   writeFile(
-    docsIndexPath,
+    indexPath,
     `<!doctype html>
 <html lang="en">
 <head>
@@ -1343,8 +1326,23 @@ function main() {
 </html>`
   );
 
+  for (const doc of enabledStandaloneDocs) {
+    const standalonePath = path.join(OUT_DIR, `${doc.slug}.html`);
+    writeFile(
+      standalonePath,
+      shellTemplate({
+        title: doc.title,
+        description: doc.description,
+        content: markdownToHtml(readMarkdownFile(contentPath('docs', `${doc.slug}.md`))),
+        currentSection: doc.slug,
+        currentPageSlug: '__single__',
+        currentFilePath: standalonePath
+      })
+    );
+  }
+
   for (const section of enabledSections) {
-    const sectionDir = path.join(OUT_DIR, 'docs', section.slug);
+    const sectionDir = path.join(OUT_DIR, section.slug);
     if (section.hasIndex) {
       const sectionIndexPath = path.join(sectionDir, 'index.html');
       writeFile(
@@ -1378,7 +1376,7 @@ function main() {
   }
 
   const sectionPageCount = enabledSections.reduce((acc, section) => acc + section.pages.length + (section.hasIndex ? 1 : 0), 0);
-  const pageCount = sectionPageCount + enabledStandaloneDocs.length + 2;
+  const pageCount = sectionPageCount + enabledStandaloneDocs.length + 1;
   console.log(`Build complete. Generated ${pageCount} HTML pages in dist/.`);
 }
 

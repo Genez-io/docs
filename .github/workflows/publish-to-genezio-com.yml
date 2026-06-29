@@ -1,0 +1,66 @@
+name: Publish docs to genezio.com/docs
+
+# On every push to main, build the docs and sync the output into the
+# genezio-landing-page repo (new-landing/public/docs). That commit triggers
+# the normal genezio.com deploy, which serves the files at genezio.com/docs/.
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "publish-genezio-com"
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout docs repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build docs
+        run: |
+          npm install
+          npm run build
+
+      - name: Checkout landing repo
+        uses: actions/checkout@v4
+        with:
+          repository: Genez-io/genezio-landing-page
+          token: ${{ secrets.LANDING_REPO_TOKEN }}
+          path: landing
+          ref: main
+
+      - name: Sync built docs into landing repo
+        run: |
+          DEST="landing/new-landing/public/docs"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -R dist/. "$DEST/"
+
+      - name: Commit and push to landing repo
+        working-directory: landing
+        run: |
+          git config user.name "genezio-docs-bot"
+          git config user.email "docs-bot@users.noreply.github.com"
+          git add new-landing/public/docs
+          if git diff --cached --quiet; then
+            echo "No documentation changes to publish."
+            exit 0
+          fi
+          git commit -m "docs: sync from docs@${GITHUB_SHA::7}"
+          # Reduce the chance of a race with other pushes to landing main.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin main && exit 0
+            echo "Push attempt $attempt failed, retrying..."
+            sleep 5
+          done
+          echo "Failed to push to landing repo after 3 attempts." >&2
+          exit 1
