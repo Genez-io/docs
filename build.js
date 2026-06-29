@@ -1502,6 +1502,100 @@ function main() {
   const sectionPageCount = enabledSections.reduce((acc, section) => acc + section.pages.length + (section.hasIndex ? 1 : 0), 0);
   const pageCount = sectionPageCount + enabledStandaloneDocs.length + 1;
   console.log(`Build complete. Generated ${pageCount} HTML pages in dist/.`);
+  generateSitemap();
+}
+
+function getFileLastMod(filePath) {
+  try {
+    if (fs.existsSync(filePath)) {
+      const stats = fs.statSync(filePath);
+      return stats.mtime.toISOString().split('T')[0];
+    }
+  } catch (e) {
+    // ignore
+  }
+  return new Date().toISOString().split('T')[0];
+}
+
+function getLatestModifiedDate() {
+  let latest = new Date(0);
+  const checkDir = (dir) => {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+      const fullPath = path.join(dir, file);
+      const stat = fs.statSync(fullPath);
+      if (stat.isDirectory()) {
+        checkDir(fullPath);
+      } else if (file.endsWith('.md')) {
+        if (stat.mtime > latest) {
+          latest = stat.mtime;
+        }
+      }
+    }
+  };
+  try {
+    checkDir(CONTENT_DIR);
+  } catch (e) {
+    // ignore
+  }
+  return latest.getTime() > 0 ? latest.toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
+}
+
+function generateSitemap() {
+  const urls = [];
+
+  // 1. Landing page
+  urls.push({
+    loc: 'https://genezio.com/docs/',
+    lastmod: getLatestModifiedDate()
+  });
+
+  // 2. Standalone docs
+  for (const doc of enabledStandaloneDocs) {
+    const mdPath = contentPath('docs', `${doc.slug}.md`);
+    urls.push({
+      loc: `https://genezio.com/docs/${doc.slug}.html`,
+      lastmod: getFileLastMod(mdPath)
+    });
+  }
+
+  // 3. Section pages
+  for (const section of enabledSections) {
+    if (section.hasIndex) {
+      const mdPath = contentPath('docs', section.slug, 'index.md');
+      urls.push({
+        loc: `https://genezio.com/docs/${section.slug}/`,
+        lastmod: getFileLastMod(mdPath)
+      });
+    }
+
+    for (const pageTitle of section.pages) {
+      const pageSlug = slugify(pageTitle);
+      const mdPath = contentPath('docs', section.slug, `${pageSlug}.md`);
+      urls.push({
+        loc: `https://genezio.com/docs/${section.slug}/${pageSlug}.html`,
+        lastmod: getFileLastMod(mdPath)
+      });
+    }
+  }
+
+  const xmlItems = urls
+    .map(
+      (url) => `  <url>
+    <loc>${url.loc}</loc>
+    <lastmod>${url.lastmod}</lastmod>
+  </url>`
+    )
+    .join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${xmlItems}
+</urlset>\n`;
+
+  const sitemapPath = path.join(OUT_DIR, 'sitemap.xml');
+  fs.writeFileSync(sitemapPath, xml, 'utf8');
+  console.log(`Generated sitemap.xml with ${urls.length} URLs in dist/.`);
 }
 
 main();

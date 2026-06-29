@@ -5,6 +5,8 @@
   "description": "Static HTML documentation site generator for Genezio",
   "scripts": {
     "build": "node build.js",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "dev": "node build.js && npx -y http-server dist -p 3000",
+    "preview": "npx -y http-server dist -p 3000"
   }
 }
