@@ -1016,14 +1016,48 @@ function shellTemplate({ title, description, content, currentSection, currentPag
 
   const sidebar = buildSidebar(currentSection, currentPageSlug, currentFilePath);
 
+  let finalTitle = title ? `${title} | Genezio Docs` : "Genezio Ai Visibility & Recommendations Documentation";
+  let finalDescription = description || "Explore the official Genezio documentation for AI Visibility & Recommendations. Learn how to track, measure, and optimize your brand's presence in LLMs.";
+  let canonicalUrl = "https://genezio.com/docs/";
+  let ogType = "website";
+
+  if (currentFilePath) {
+    const relativeToOut = path.relative(OUT_DIR, currentFilePath).replace(/\\/g, '/');
+    if (relativeToOut !== 'index.html') {
+      canonicalUrl += relativeToOut;
+      ogType = "article";
+    }
+    if (metaMap[relativeToOut]) {
+      finalTitle = metaMap[relativeToOut].title;
+      finalDescription = metaMap[relativeToOut].desc;
+    }
+  }
+
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>${escapeHtml(title)} | Genezio Docs</title>
-  <meta name="description" content="${escapeHtml(description)}" />
+  <title>${escapeHtml(finalTitle)}</title>
+  <meta name="description" content="${escapeHtml(finalDescription)}" />
   <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="${canonicalUrl}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="${ogType}" />
+  <meta property="og:url" content="${canonicalUrl}" />
+  <meta property="og:title" content="${escapeHtml(finalTitle)}" />
+  <meta property="og:description" content="${escapeHtml(finalDescription)}" />
+  <meta property="og:image" content="https://genezio.com/images/genezio-black-logo.jpg" />
+  <meta property="og:site_name" content="Genezio Docs" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="${canonicalUrl}" />
+  <meta name="twitter:title" content="${escapeHtml(finalTitle)}" />
+  <meta name="twitter:description" content="${escapeHtml(finalDescription)}" />
+  <meta name="twitter:image" content="https://genezio.com/images/genezio-black-logo.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -1426,6 +1460,245 @@ function buildSearchPage(currentFilePath) {
     </script>
   </article>`;
 }
+
+const metaMap = {
+  "index.html": {
+    "title": "Genezio Documentation: Measure & Improve Brand Visibility",
+    "desc": "Explore Genezio Documentation to learn how to measure & improve your brand's visibility in AI answer engines like ChatGPT, Claude, Gemini, & Perplexity."
+  },
+  "agentic-commerce/agentic-commerce-readiness.html": {
+    "title": "Agentic Commerce Readiness: Prepare Your Store for AI | Genezio",
+    "desc": "Prepare your e-commerce for AI shopping agents. Genezio's UCP Readiness Audit ensures your store is visible & transactable. Get ahead. Book a demo."
+  },
+  "agentic-commerce/ucp-readiness-audit.html": {
+    "title": "UCP Readiness Audit: Agent-Ready Websites with Genezio",
+    "desc": "Ensure your store is ready for AI shopping agents. The Genezio UCP Readiness Audit scores your site's agent-readiness & benchmarks competitors."
+  },
+  "analysis/creating-scenarios.html": {
+    "title": "Topics and Scenarios: Genezio Guide to AI Visibility",
+    "desc": "Create & optimize Genezio Topics & Scenarios for realistic AI conversations. Boost brand visibility in LLMs. Book a demo."
+  },
+  "analysis/playground.html": {
+    "title": "Playground: Sandbox for LLM Conversation Testing | Genezio",
+    "desc": "Test LLM conversations, personas, and scenarios safely in Genezio's Playground. Explore AI responses without impacting your brand visibility metrics."
+  },
+  "analysis/running-conversations.html": {
+    "title": "Running Conversations: How Genezio Measures Brand AI Visibility",
+    "desc": "Discover how Genezio runs daily AI conversations to measure brand visibility, track recommendations, and extract competitor insights. Understand AI."
+  },
+  "analysis/selecting-answer-engines.html": {
+    "title": "Selecting Answer Engines for AI Brand Visibility - Genezio",
+    "desc": "Configure Genezio's AI answer engines. Customize which LLMs measure your brand's visibility & recommendations across the AI landscape. Book a demo."
+  },
+  "content-hub/briefs.html": {
+    "title": "Genezio Briefs: Efficient Content Outlines & Strategy",
+    "desc": "Streamline content creation with Genezio Briefs. Develop structured outlines for writers & agencies, refine with AI, & convert to articles."
+  },
+  "content-hub/content-analysis.html": {
+    "title": "Content Analysis: Optimize Content for AI Answer Engines",
+    "desc": "Genezio's Content Analysis scores your pages for AI answer engine optimization & citability. Get recommendations to improve visibility & get cited."
+  },
+  "content-hub/content-hub.html": {
+    "title": "Content Hub | Genezio: Create AI-Optimized Articles",
+    "desc": "Leverage Genezio's Content Hub to create AI-assisted articles that boost your brand's visibility in LLMs. Generate and publish content based on insights."
+  },
+  "content-hub/editing-articles.html": {
+    "title": "Editing Articles - Genezio",
+    "desc": "Refine & publish articles efficiently in Genezio's Content Hub editor. Use rich-text tools, direct editing, or AI chat to optimize content. Get started!"
+  },
+  "content-hub/from-data-to-content-strategy.html": {
+    "title": "From Data to Content Strategy: AI Content Plan | Genezio",
+    "desc": "Turn Genezio's AI visibility insights into an actionable content strategy. Tackle AI recommendations, citations & perceptions to move the needle."
+  },
+  "core-concepts/brand-recommendation.html": {
+    "title": "Brand Recommendation: Measure AI Purchase Intent with Genezio",
+    "desc": "Measure how often AI assistants recommend your brand for solutions. Genezio's Brand Recommendation reveals AI purchase intent, showing if you're the top"
+  },
+  "core-concepts/brand-visibility.html": {
+    "title": "Brand Visibility: Measure AI Brand Presence with Genezio",
+    "desc": "Understand Genezio's Brand Visibility: how often your brand appears in AI answers. See how we measure AI recommendations & gain critical insights"
+  },
+  "core-concepts/brands.html": {
+    "title": "Brands: Your AI Brand Presence & Visibility Explained",
+    "desc": "Understand how brands are defined & measured within Genezio. Track your brand's AI visibility, share of voice, & competitor positioning. Book a demo!"
+  },
+  "core-concepts/citations.html": {
+    "title": "Citations in AI | Understand AI Sources with Genezio",
+    "desc": "Genezio explains AI citations: Uncover the sources, brand mentions & sentiment shaping AI answers. Analyze influential sites to boost brand visibility."
+  },
+  "core-concepts/competitors.html": {
+    "title": "Competitors: AI Detection & Analysis with Genezio",
+    "desc": "Understand your brand's competitive landscape in AI answers. Genezio automatically detects, tracks & analyzes competitors across topics."
+  },
+  "core-concepts/conversations.html": {
+    "title": "Conversations - Genezio's Core AI Analysis Unit",
+    "desc": "Understand Genezio's Conversations: The core unit for measuring brand visibility in LLMs. Execute scenarios, analyze AI responses & citations."
+  },
+  "core-concepts/knowledge-base.html": {
+    "title": "Genezio Knowledge Base: Your Brand's Source of Truth",
+    "desc": "Genezio's Knowledge Base is your brand's source of truth. Validate LLM perceptions automatically, detect inaccuracies, and ensure consistent messaging."
+  },
+  "core-concepts/perceptions.html": {
+    "title": "Perceptions | Genezio: Track AI Claims About Your Brand",
+    "desc": "Genezio Perceptions break down AI responses into verifiable claims about your brand. Track accuracy, sources, & narrative to optimize visibility."
+  },
+  "core-concepts/personas.html": {
+    "title": "Personas: Model User Behavior for AI Visibility | Genezio",
+    "desc": "Understand how Genezio Personas simulate realistic user interactions with AI assistants to measure brand visibility. Optimize your brand's AI presence."
+  },
+  "core-concepts/products.html": {
+    "title": "Products - Manage Multi-Product Brand Visibility | Genezio",
+    "desc": "Slice your brand's visibility data by product line with Genezio's Products feature. Optimize your multi-product strategy with granular insights."
+  },
+  "core-concepts/query-fanouts.html": {
+    "title": "Query Fanouts: AI Search & Brand Visibility by Genezio",
+    "desc": "Understand how AI systems expand searches with query fanouts. Genezio detects fanouts to reveal sources & boost brand visibility. Book a demo."
+  },
+  "core-concepts/scenarios.html": {
+    "title": "Scenarios: Simulate Realistic AI Conversations with Genezio",
+    "desc": "Genezio Scenarios simulate realistic user situations for AI conversations, revealing how LLMs respond to brand queries. Boost brand presence today!"
+  },
+  "core-concepts/topic-scenario-relevance.html": {
+    "title": "Topic / Scenario Relevance: Measure AI Brand Mentions | Genezio",
+    "desc": "Understand Topic / Scenario Relevance with Genezio. See how well your scenarios trigger AI brand discussions and improve your content strategy."
+  },
+  "core-concepts/topics.html": {
+    "title": "Topics in Genezio: Define AI Visibility for Your Brand",
+    "desc": "Learn how Genezio topics define subject areas & scope AI conversations to measure your brand's AI recommendations & visibility in LLMs. Book a demo."
+  },
+  "core-concepts/users.html": {
+    "title": "Users: Manage Account & Brand Access with Genezio",
+    "desc": "Understand how to manage users in Genezio, granting account or brand-level access. Control collaboration, enhance security & streamline team workflows."
+  },
+  "genezio-agents/comparer-agent.html": {
+    "title": "Comparer Agent: AI Competitive Brand Analysis | Genezio",
+    "desc": "Leverage Genezio's Comparer Agent to see how AI systems compare your brand against competitors. Get SWOT insights & identify strengths/weaknesses."
+  },
+  "genezio-agents/fact-checker-agent.html": {
+    "title": "Fact Checker Agent - Verify Brand Accuracy with Genezio",
+    "desc": "Ensure LLMs get your brand facts right with Genezio's Fact Checker Agent. Monitor specific claims, prevent misinformation & protect your brand's accuracy"
+  },
+  "genezio-agents/introspector-agent.html": {
+    "title": "Introspector Agent: Understand AI Brand Descriptions - Genezio",
+    "desc": "Analyze how AI systems describe your brand with Genezio's Introspector Agent. Perfect for positioning and narrative quality audits. Book a demo today!"
+  },
+  "genezio-agents/prompter-agent.html": {
+    "title": "Prompter Agent: Single-Turn AI Interaction Testing | Genezio",
+    "desc": "Discover Genezio's Prompter Agent. Test direct discovery AI queries & measure your brand's first-pass visibility in single-turn interactions. Book a demo"
+  },
+  "genezio-agents/recommender-agent.html": {
+    "title": "Recommender Agent - Simulate AI Recommendations | Genezio",
+    "desc": "Genezio's Recommender Agent simulates AI recommendations in multi-step conversations to evaluate brand visibility & positioning. Drive brand presence now"
+  },
+  "geo-assistant/actions-geo-can-take.html": {
+    "title": "Genezio AI: Actions Geo Can Take in Brand Management",
+    "desc": "Discover how Genezio's AI Assistant, Geo, goes beyond reporting to take direct actions. Manage brands, create personas, & generate content in-platform"
+  },
+  "geo-assistant/geo-assistant.html": {
+    "title": "Geo Assistant: AI for Brand Presence & Visibility | Genezio",
+    "desc": "Unleash Geo Assistant, Genezio's AI chat for brand data. Get instant insights, reports, and strategic recommendations to boost your brand visibility."
+  },
+  "geo-assistant/send-to-geo.html": {
+    "title": "Send to Geo: Contextual Insights in Genezio Dashboard",
+    "desc": "Streamline brand analysis with Genezio's Send to Geo. Instantly send dashboard objects to Geo Assistant for contextual insights & actionable steps."
+  },
+  "geo-assistant/sessions-and-history.html": {
+    "title": "Unlock Persistent Work: Geo Assistant Sessions & History",
+    "desc": "Master Genezio Geo Assistant's sessions & history. Conduct persistent investigations, audit AI answers with tool traces, and work in parallel."
+  },
+  "getting-started/create-scenarios.html": {
+    "title": "Create Scenarios for AI Brand Visibility | Genezio",
+    "desc": "Create powerful scenarios in Genezio to simulate real buyer questions for AI assistants. Optimize brand visibility and recommendations in LLMs."
+  },
+  "getting-started/customizing-your-dashboard.html": {
+    "title": "Customizing Your Dashboard: Optimize Your Brand View | Genezio",
+    "desc": "Tailor your Genezio dashboard to show only the brand metrics that matter. Hide unused components for a faster, focused view. Optimize your workflow."
+  },
+  "getting-started/describe-your-brand.html": {
+    "title": "Describe Your Brand: Optimize AI Visibility with Genezio",
+    "desc": "Optimize your brand's AI representation. Accurately describe your brand to Genezio for precise LLM evaluation and enhanced visibility. Book a demo!"
+  },
+  "getting-started/generating-personas-from-documents.html": {
+    "title": "Generate Personas from Documents Quickly with Genezio",
+    "desc": "Quickly generate detailed personas in Genezio by uploading existing research documents. Transform your data into strong personas for better insights."
+  },
+  "getting-started/setup-guide.html": {
+    "title": "Getting Started with Genezio: Setup & Brand Visibility Guide",
+    "desc": "Quickly set up Genezio to measure your brand's AI Recommendations & Visibility across ChatGPT, Claude, Gemini & Perplexity. Get started today!"
+  },
+  "getting-started/sign-in-and-sso-options.html": {
+    "title": "Genezio Sign-in & SSO Options | Flexible Access for Teams",
+    "desc": "Access Genezio with ease. Choose from email, Google, Microsoft, or enterprise SSO options. Learn to sign up, join teams, & configure secure access."
+  },
+  "getting-started/topic-tags.html": {
+    "title": "Topic Tags | Organize Your Brand's Topics with Genezio",
+    "desc": "Struggling with too many topics? Genezio Topic Tags organize your brand's content by pillars, products, or segments. Get clear, actionable insights."
+  },
+  "getting-started/your-first-week.html": {
+    "title": "Your First Week with Genezio: Digital Marketing Manager Guide",
+    "desc": "Get started with Genezio in your first week! This day-by-day guide helps Marketing Managers set up, analyze AI visibility, and plan content actions"
+  },
+  "insights/actionable-insights.html": {
+    "title": "Genezio: Actionable Insights for AI Brand Visibility",
+    "desc": "Get strategic, actionable insights from Genezio to boost your brand's AI visibility. Transform complex data into clear recommendations for growth."
+  },
+  "insights/ai-perception-summary.html": {
+    "title": "AI Perception Summary - Genezio Brand Visibility",
+    "desc": "Get an auto-generated AI Perception Summary of how LLMs see your brand. Synthesize insights into a coherent narrative for executives. Book a demo!"
+  },
+  "insights/share-of-voice.html": {
+    "title": "Share of Voice: Measure Your Brand's Market Share | Genezio",
+    "desc": "Genezio's Share of Voice quantifies your brand's market share in LLM conversations. Track competitor mentions, get actionable content insights."
+  },
+  "insights/swot-analysis.html": {
+    "title": "SWOT Analysis: AI-Powered Brand Comparison by Genezio",
+    "desc": "Genezio provides AI-driven SWOT analysis. See how LLMs position your brand against competitors, revealing strengths, weaknesses, opportunities, & threats"
+  },
+  "insights/your-kpis-explained.html": {
+    "title": "Your KPIs Explained: Genezio's Brand Visibility Metrics",
+    "desc": "Understand Genezio's core KPIs: AI Recommendations, Visibility, & Share of Voice. Measure brand presence in LLMs & optimize your strategy. Book a demo!"
+  },
+  "integrations/cdn-log-integration.html": {
+    "title": "CDN Log Integration: Track AI Crawler Activity | Genezio",
+    "desc": "Genezio's CDN log analysis reveals what content AI crawlers fetch vs. what they cite. Identify crawl gaps, optimize strategy & boost visibility."
+  },
+  "introduction/how-ai-citations-work.html": {
+    "title": "How AI Citations Work: Genezio's Guide to AI Sources",
+    "desc": "Understand how AI citations work and why they're crucial for brand visibility. Genezio analyzes source influence to optimize your brand's AI presence."
+  },
+  "introduction/how-genezio-measures-visibility.html": {
+    "title": "How Genezio Measures Visibility - AI Brand Presence Platform",
+    "desc": "Discover how Genezio measures AI Visibility, quantifying your brand's presence in LLM answers. Understand the formula & agent types. See your brand!"
+  },
+  "introduction/how-llm-search-works.html": {
+    "title": "How LLM Search Works: Understand AI Answer Engines - Genezio",
+    "desc": "Discover how LLM search works. Learn the 5-step process of AI answer generation, query fanouts, & source synthesis to boost brand visibility. Book a demo"
+  },
+  "introduction/how-llms-select-sources.html": {
+    "title": "How LLMs Select Sources: Boost Brand Visibility in AI",
+    "desc": "Understand how LLMs select sources for AI answers. Learn why source selection impacts brand visibility & how Genezio helps. See your brand stats."
+  },
+  "introduction/how-the-5-agents-work.html": {
+    "title": "How the 5 Agents Work | Genezio Brand Presence",
+    "desc": "Genezio's 5 AI agents measure & analyze your brand's presence. Understand visibility, recommendations, competitive insights, & factual accuracy."
+  },
+  "introduction/query-fanouts-explained.html": {
+    "title": "Query Fanouts Explained: AI Search & Brand Visibility | Genezio",
+    "desc": "Discover what query fanouts are and why they're critical for AI search. Learn how Genezio helps brands track and leverage fanouts to boost visibility."
+  },
+  "introduction/what-is-genezio.html": {
+    "title": "What is Genezio? Measure & Improve AI Brand Visibility",
+    "desc": "Genezio reveals how often AI recommends your brand in LLMs like ChatGPT & Claude. Measure visibility, gain insights, and improve your brand's AI presence"
+  },
+  "introduction/what-kpis-are-we-measuring.html": {
+    "title": "What KPIs Are We Measuring for Brand Presence? Genezio",
+    "desc": "Measure your brand's AI performance with these core KPIs: AI Recommendations & AI Visibility. Understand presence & trust in LLMs. Book a demo."
+  },
+  "introduction/why-ai-recommendations-matter.html": {
+    "title": "Why AI Recommendations Matter for Brand Presence | Genezio",
+    "desc": "AI recommendations are critical for pipeline. Genezio measures your brand's visibility & recommendations in real customer AI conversations."
+  }
+};
 
 function main() {
   fs.rmSync(OUT_DIR, { recursive: true, force: true });
