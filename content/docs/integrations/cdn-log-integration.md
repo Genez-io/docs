@@ -79,6 +79,4 @@ You can also explore all of this through the [Geo Assistant](../geo-assistant/ge
 ## Related Pages
 
 - [Citations](../core-concepts/citations.html)
-- [Most Cited Sources](../insights/most-cited-sources.html)
-- [Data Exports](data-exports.html)
 - [Geo Assistant](../geo-assistant/geo-assistant.html)

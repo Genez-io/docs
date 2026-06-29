@@ -66,4 +66,3 @@ You can always turn things back on. The customization is reversible, so there's 
 ## Related Pages
 
 * [Setup Guide](setup-guide.html)
-* [Your First Week](your-first-week.html)

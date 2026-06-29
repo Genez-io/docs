@@ -59,6 +59,4 @@ Multi-step flow makes this agent useful for realistic buyer journeys:
 
 ## Related Pages
 
-* [Introduction -> What KPIs Are We Measuring](../introduction/what-kpis-are-we-measuring.html)
-* [Core Concepts -> Topics](../core-concepts/topics.html)
 * [Core Concepts -> Conversations](../core-concepts/conversations.html)

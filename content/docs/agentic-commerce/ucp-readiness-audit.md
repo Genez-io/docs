@@ -63,7 +63,7 @@ This lets you answer questions like:
 * Is agent-readiness an advantage I can claim before they do?
 * Which specific rules are my competitors passing that I'm failing?
 
-For more on how Genezio identifies and tracks the brands you're compared against, see [Competitors](../core-concepts/competitors.html) and [Competitor Insights](../insights/competitor-insights.html).
+For more on how Genezio identifies and tracks the brands you're compared against, see [Competitors](../core-concepts/competitors.html).
 
 ---
 
@@ -71,6 +71,4 @@ For more on how Genezio identifies and tracks the brands you're compared against
 
 * [Agentic Commerce Readiness](agentic-commerce-readiness.html) — the concept and why agent-readiness matters
 * [Competitors](../core-concepts/competitors.html) — how Genezio tracks the brands you're benchmarked against
-* [Competitor Insights](../insights/competitor-insights.html) — compare your brand to competitors across AI answers
 * [Knowledge Base](../core-concepts/knowledge-base.html) — the source of truth Genezio builds about your brand
-* [Improve AI Visibility for an E-commerce Brand](../tutorials/improve-ai-visibility-for-an-ecommerce-brand.html) — a practical walkthrough for e-commerce teams

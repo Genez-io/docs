@@ -149,6 +149,5 @@ A lower score may indicate that competitors dominate the conversation or that th
 To understand how visibility compares with competitors, continue with:
 
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 
 These pages explain how Genezio expands visibility analysis into deeper competitive insights.

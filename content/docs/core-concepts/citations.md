@@ -212,7 +212,6 @@ By identifying which sources appear most frequently, teams can:
 To understand how citations interact with other extracted signals, see:
 
 * [Core Concepts -> Perceptions](./perceptions.html)
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 
 These pages explain how Genezio converts AI responses into measurable visibility insights.

@@ -53,4 +53,3 @@ To continue, see:
 
 * [Core Concepts -> Brands](./brands.html)
 * [Core Concepts -> Personas](./personas.html)
-* [Core Concepts -> Topics](./topics.html)

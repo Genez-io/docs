@@ -237,7 +237,6 @@ This information contributes to visibility and competitive analysis metrics.
 
 To understand how brands are analyzed in different contexts, see:
 
-* [Core Concepts -> Topics](./topics.html)
 * [Core Concepts -> Scenarios](./scenarios.html)
 * [Core Concepts -> Conversations](./conversations.html)
 

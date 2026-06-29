@@ -53,6 +53,5 @@ Because Prompter Agent conversations are single-turn:
 
 ## Related Pages
 
-* [Core Concepts -> Topics](../core-concepts/topics.html)
 * [Core Concepts -> Scenarios](../core-concepts/scenarios.html)
 * [Core Concepts -> Brand Visibility](../core-concepts/brand-visibility.html)

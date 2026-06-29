@@ -168,7 +168,6 @@ Even if the official vendor websites are not cited directly, the third-party sou
 To continue exploring how Genezio analyzes AI answers, see:
 
 * [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 
 These pages explain how citations and brand mentions are converted into measurable visibility insights.

@@ -182,7 +182,7 @@ The result is that a single, well-crafted scenario can power several types of an
 
 Deleting a scenario — or a whole topic — is not permanent. Removed topics and scenarios go to a **Recycle Bin**, where they are kept so they can be **restored** if they were deleted by mistake.
 
-This means you can clean up your workspace without worrying about losing a carefully written scenario. If you remove something you still need, you can recover it from the Recycle Bin and continue using it as before. For more on managing the topics that scenarios belong to, see [Core Concepts -> Topics](./topics.html).
+This means you can clean up your workspace without worrying about losing a carefully written scenario. If you remove something you still need, you can recover it from the Recycle Bin and continue using it as before.
 
 ---
 

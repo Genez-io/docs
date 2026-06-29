@@ -97,6 +97,3 @@ Both start from the same **New Content** entry point, and a brief can be convert
 ## Related Pages
 
 * [Content Hub](content-hub.html)
-* [Generating Articles](generating-articles.html)
-* [Selecting Target Audience](selecting-target-audience.html)
-* [Selecting Tone of Voice](selecting-tone-of-voice.html)

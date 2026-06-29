@@ -187,7 +187,6 @@ By structuring AI responses into perceptions and evaluating their accuracy, Gene
 
 To understand how perceptions and citations combine to measure brand presence, see:
 
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 * [Insights -> AI Perception Summary](../insights/ai-perception-summary.html)
 

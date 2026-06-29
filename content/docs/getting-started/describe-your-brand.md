@@ -25,5 +25,4 @@ You can set a **brand language** for your brand. This language is used to genera
 
 Once your brand description is confirmed, continue with:
 
-* [Define Topics](./define-topics.html)
 * [Create Scenarios](./create-scenarios.html)

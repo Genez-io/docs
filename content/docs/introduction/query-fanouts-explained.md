@@ -136,6 +136,5 @@ To learn how fanout queries influence AI answers, continue with:
 
 * [Core Concepts -> Citations](../core-concepts/citations.html)
 * [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
-* [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 
 These pages explain how Genezio analyzes AI responses and transforms them into structured insights.

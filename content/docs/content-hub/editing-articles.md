@@ -45,7 +45,7 @@ You can ask Genezio to:
 * improve SEO
 * verify factual claims
 
-See [Chatting with Your Article](chatting-with-your-article.html) for more.
+See Chatting with Your Article for more.
 
 ---
 
@@ -61,5 +61,3 @@ See [Content Hub](content-hub.html) for how templates work.
 
 * [Content Hub](content-hub.html)
 * [Briefs](briefs.html)
-* [Chatting with Your Article](chatting-with-your-article.html)
-* [Publishing Content](publishing-content.html)
