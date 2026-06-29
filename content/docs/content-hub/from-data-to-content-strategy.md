@@ -101,4 +101,4 @@ Each of Genezio's five agent types reveals a different content need:
 
 ---
 
-*Next: [Your First Week with Genezio](05-your-first-week.md)*
+*Next: [Your First Week with Genezio](../getting-started/your-first-week.md)*
