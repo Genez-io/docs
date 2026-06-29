@@ -10,6 +10,8 @@ This is the documentation site for **Genezio**, an AI Visibility platform. It's 
 
 - **Build**: `npm run build` (runs `node build.js`, outputs to `dist/`)
 - **Clean**: `npm run clean` (removes `dist/`)
+- **Dev**: `npm run dev` (builds and starts a local server on port 3000)
+- **Preview**: `npm run preview` (starts a local server on port 3000 for already built dist/)
 - No test suite or linter is configured.
 
 ## Architecture

@@ -1502,6 +1502,48 @@ function main() {
   const sectionPageCount = enabledSections.reduce((acc, section) => acc + section.pages.length + (section.hasIndex ? 1 : 0), 0);
   const pageCount = sectionPageCount + enabledStandaloneDocs.length + 1;
   console.log(`Build complete. Generated ${pageCount} HTML pages in dist/.`);
+  generateSitemap();
+}
+
+function generateSitemap() {
+  const urls = [];
+
+  // 1. Landing page
+  urls.push('https://genezio.com/docs/');
+
+  // 2. Standalone docs
+  for (const doc of enabledStandaloneDocs) {
+    urls.push(`https://genezio.com/docs/${doc.slug}.html`);
+  }
+
+  // 3. Section pages
+  for (const section of enabledSections) {
+    if (section.hasIndex) {
+      urls.push(`https://genezio.com/docs/${section.slug}/index.html`);
+    }
+
+    for (const pageTitle of section.pages) {
+      const pageSlug = slugify(pageTitle);
+      urls.push(`https://genezio.com/docs/${section.slug}/${pageSlug}.html`);
+    }
+  }
+
+  const xmlItems = urls
+    .map(
+      (url) => `  <url>
+    <loc>${url}</loc>
+  </url>`
+    )
+    .join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${xmlItems}
+</urlset>\n`;
+
+  const sitemapPath = path.join(OUT_DIR, 'sitemap.xml');
+  fs.writeFileSync(sitemapPath, xml, 'utf8');
+  console.log(`Generated sitemap.xml with ${urls.length} URLs in dist/.`);
 }
 
 main();
