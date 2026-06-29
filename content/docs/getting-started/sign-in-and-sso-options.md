@@ -1,6 +1,6 @@
 # Sign-in and SSO Options
 
-Genezio offers several ways to **sign in**, so you can use the method that fits how your team already works — a simple email and password, your Microsoft account, or your organization's single sign-on.
+Genezio offers several ways to **sign in**, so you can use the method that fits how your team already works — a simple email and password, your Google or Microsoft account, or your organization's single sign-on.
 
 This page walks through the available options, how to sign up, how to join a team you've been invited to, and what enterprise SSO looks like.
 
@@ -9,6 +9,7 @@ This page walks through the available options, how to sign up, how to join a tea
 ## Available Sign-in Methods
 
 - **Email and password** — Create an account with your email address and a password. New accounts go through an email verification step before they're active.
+- **Google** — Sign in with your Google account.
 - **Microsoft / Entra** — Sign in with your Microsoft (Entra) account. This works on mobile as well as desktop.
 - **Enterprise SSO (SAML)** — For organizations that want everyone to sign in through their own identity provider. See the section below.
 
