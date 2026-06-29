@@ -1519,7 +1519,7 @@ function generateSitemap() {
   // 3. Section pages
   for (const section of enabledSections) {
     if (section.hasIndex) {
-      urls.push(`https://genezio.com/docs/${section.slug}/`);
+      urls.push(`https://genezio.com/docs/${section.slug}/index.html`);
     }
 
     for (const pageTitle of section.pages) {
