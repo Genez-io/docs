@@ -27,12 +27,12 @@
 
 - [ ] **Check AI Recommendations % and AI Visibility %** for each topic. Note which topics you score well on and which are gaps.
 - [ ] **Open Citations.** For each topic where your score is low, look at which URLs AI is citing. Write them down — this list becomes your PR and link-building roadmap.
-- [ ] **Check Statements.** What claims is AI making about your brand? Flag anything outdated, negative, or missing.
+- [ ] **Check Perceptions.** What claims is AI making about your brand? Flag anything outdated, negative, or missing.
 - [ ] **Compare your scores with competitors.** Note who leads, by how much, and what sources they're cited from that you aren't.
 
 > **Tip:** Pick the one topic where the gap between you and the top competitor is smallest — that's your first quick win opportunity.
 
-**End of Day 2 deliverable:** Scored list of topics to prioritize. Citation source list (5–10 domains AI trusts in your category). Statement issues flagged.
+**End of Day 2 deliverable:** Scored list of topics to prioritize. Citation source list (5–10 domains AI trusts in your category). Perception issues flagged.
 
 ---
 
@@ -57,7 +57,7 @@ Take the highest-priority insight from Day 3 and turn it into a proper content b
 
 - [ ] **Title and target keyword** — use the exact phrase the AI uses in scenarios where you score low.
 - [ ] **Citation sources to reference** — list 3–5 sources from Genezio's Citation section for this topic. Your content should reference these domains as external links.
-- [ ] **Inaccurate claims to correct** — include any AI statements about your brand that are incorrect and need to be addressed through better content.
+- [ ] **Inaccurate claims to correct** — include any AI perceptions about your brand that are incorrect and need to be addressed through better content.
 - [ ] **Schema markup requirements** — flag if the page needs FAQPage, HowTo, or other schema.
 - [ ] **Assign and set a re-measurement date** — re-run the relevant Genezio conversations 2–4 weeks after publishing.
 
@@ -77,7 +77,7 @@ Take the highest-priority insight from Day 3 and turn it into a proper content b
 **End of Week 1 — what you now have:**
 - Baseline AI Recommendations % and AI Visibility % across your key topics
 - Citation source list — the domains to target for PR and link-building
-- Statement audit — what AI says about you today (and what you want it to say)
+- Perception audit — what AI says about you today (and what you want it to say)
 - Prioritized action list from Actionable Insights
 - First content brief assigned
 - Monthly reporting rhythm established

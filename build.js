@@ -14,6 +14,7 @@ const sections = [
     pages: [
       'Setup Guide',
       'Create an Account',
+      'Sign-in and SSO Options',
       'Create Your First Brand',
       'Describe Your Brand',
       'Define Topics',
@@ -58,7 +59,7 @@ const sections = [
       'Conversations',
       'Query Fanouts',
       'Citations',
-      'Statements',
+      'Perceptions',
       'Competitors',
       'Knowledge Base',
       'Products'
@@ -89,6 +90,7 @@ const sections = [
     pages: [
       'Your KPIs Explained',
       'AI Visibility Score',
+      'AI Perception Summary',
       'Share of Voice',
       'Competitor Insights',
       'SWOT Analysis',
@@ -140,6 +142,15 @@ const sections = [
       'Backlinks and Citations',
       'Updating Content',
       'Monitoring AI Visibility'
+    ]
+  },
+  {
+    slug: 'agentic-commerce',
+    title: 'Agentic Commerce',
+    description: 'Make your store ready for AI shopping agents.',
+    pages: [
+      'Agentic Commerce Readiness',
+      'UCP Readiness Audit'
     ]
   },
   {

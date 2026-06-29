@@ -169,6 +169,31 @@ This transparency allows users to see exactly **which sources contributed to a s
 
 ---
 
+## Citations and Perceptions
+
+Citations are not just a list of links — they are directly connected to what AI systems actually say about your brand. From any citation, you can see the **perceptions derived from that source**: the claims and impressions an answer engine formed using information from that page.
+
+This connection works in both directions. You can also view perceptions **by citation domain**, making it easy to see which websites are shaping how your brand is described across many answers. To learn more about how Genezio captures and analyzes what AI systems say, see [Core Concepts -> Perceptions](../core-concepts/perceptions.html).
+
+### Cited vs Mentioned Sources
+
+Not every source plays the same role in an answer. Genezio distinguishes between:
+
+* **Cited** sources — pages the answer engine explicitly cited as references
+* **Mentioned** sources — pages that were merely referenced or surfaced without being explicitly cited
+
+This distinction helps you focus on the sources that the AI system is genuinely relying on, versus those that simply came up along the way.
+
+### Working With Citations
+
+The citation interface includes several capabilities that make sources easier to analyze:
+
+* **Group sources by domain** — collapse many individual URLs from the same website into a single domain view, so you can judge the overall influence of a site rather than each page.
+* **Filter by ownership** — narrow the list to **"My citations"** (first-party sources you own) versus third-party sources, to quickly separate your own content from everything else.
+* **"Competitors mentioned" chip** — citation rows surface a chip indicating when competitors are mentioned in that source, so you can spot competitive exposure at a glance.
+
+---
+
 ## Why Citation Analysis Matters
 
 Citation analysis helps organizations understand the **information landscape influencing AI systems**.
@@ -186,7 +211,7 @@ By identifying which sources appear most frequently, teams can:
 
 To understand how citations interact with other extracted signals, see:
 
-* [Core Concepts -> Statements](./statements.html)
+* [Core Concepts -> Perceptions](./perceptions.html)
 * [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 

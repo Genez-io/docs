@@ -1,6 +1,6 @@
 # Geo Assistant
 
-**Geo** is the conversational layer of the Genezio platform — a chat-with-your-data assistant, embedded in the dashboard, with live access to every metric, conversation, citation, competitor, statement, and SWOT entry Genezio has collected for your brand.
+**Geo** is the conversational layer of the Genezio platform — a chat-with-your-data assistant, embedded in the dashboard, with live access to every metric, conversation, citation, competitor, perception, and SWOT entry Genezio has collected for your brand.
 
 The name comes from **GEO** — Generative Engine Optimization, the AI-era counterpart to SEO. Genezio is a GEO platform; Geo is the assistant on top of it.
 
@@ -58,7 +58,7 @@ Geo is the connective tissue between dashboards, competitive analysis, and conte
 
 1. Investigate a competitor in the Competitors view
 2. Send that competitor to Geo
-3. Ask "what SWOT statements show their strengths?"
+3. Ask "what SWOT perceptions show their strengths?"
 4. Ask "draft a brief that counters their top strength"
 5. Hand the brief off to the Content Hub
 
@@ -72,6 +72,24 @@ The platform's data layer — every read endpoint that powers a chart or drawer 
 
 You see both the answer **and** the tool calls Geo made, so every response is auditable. See [Sessions and History](sessions-and-history.html) for how the tool-call trace is exposed.
 
+Within a conversation, Geo **replies in a single, consistent language** — once a thread is underway, every answer stays in the same language, so a briefing never switches mid-thread.
+
+### What Geo Knows About Your Brand
+
+Beyond the per-chart data layer, Geo's context now includes your brand's **AI Perception Summary** — the overall AI-generated narrative of how your brand is perceived. This means you can ask Geo about your brand's perception at the highest level, not just metric by metric:
+
+* "How is our brand perceived overall by AI right now?"
+* "What's the headline of our AI perception, and what's dragging it down?"
+
+See [AI Perception Summary](../insights/ai-perception-summary.html) for the underlying narrative Geo draws on.
+
+### A Growing Toolset
+
+Geo's tools keep expanding. In addition to the existing data tools, Geo can now also work with:
+
+* **CDN log analysis** — surface log clusters and the AI-crawler breakdown, so you can ask how AI crawlers are actually reaching your site. See [CDN Log Integration](../integrations/cdn-log-integration.html).
+* **Recycle Bin operations** — restore deleted topics and scenarios directly from a conversation.
+
 ---
 
 ## Where Geo Lives
@@ -79,7 +97,7 @@ You see both the answer **and** the tool calls Geo made, so every response is au
 Geo is available throughout the dashboard:
 
 * directly via the assistant panel
-* as a **Send to Geo** action on virtually every meaningful surface — topic drawer, scenario drawer, conversations page, competitors-by-LLM view, overview, SWOT, statements, citations, and the competitor details drawer
+* as a **Send to Geo** action on virtually every meaningful surface — topic drawer, scenario drawer, conversations page, competitors-by-LLM view, overview, SWOT, perceptions, citations, and the competitor details drawer
 * as an **Ask Geo** card surfaced alongside data views, with starter prompts for common questions
 
 ---

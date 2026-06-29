@@ -70,6 +70,12 @@ A good scenario includes:
 * **The goal** — what they want to achieve (e.g., find a tool, compare options, solve a problem)
 * **Specific constraints** — budget, team size, technical requirements, compliance needs, timeline
 
+### Goal Description and Intent
+
+In addition to the story itself, each scenario carries a **goal description** and an **intent**. The goal description captures, in plain terms, what the persona is ultimately trying to accomplish, while the intent describes the kind of question they are bringing to the AI system (for example, finding a tool, comparing options, or checking a fact).
+
+These two fields give Genezio extra context when generating messages, which helps it produce **more realistic conversational messages** — questions that are better aligned with what the persona actually wants and how a real person would phrase it.
+
 ### What NOT to Include
 
 Do not repeat persona details in the scenario. The persona already defines who the user is. The scenario focuses on *why they are asking* and *what they need*.
@@ -151,6 +157,32 @@ For example:
 * a runner preparing for a marathon
 
 By modeling these situations, Genezio can analyze how AI systems respond to **realistic user needs and contexts**.
+
+---
+
+## Converting a Scenario to Another Type
+
+A good scenario is valuable work — a well-written situation, with the right constraints and goal, takes effort to get right. Genezio lets you **convert a scenario from one type to another** so you can reuse that work across different intents without rewriting it from scratch.
+
+For example, you can turn a **Prompter** scenario into a **Recommender** one, or move a scenario between any of the five canonical types:
+
+* Prompter
+* Recommender
+* Introspector
+* Comparer
+* Fact Checker
+
+When you convert a scenario, you can also **choose which persona** the converted scenario should use. This is handy when the same underlying situation makes sense for a different audience, or when you want the converted scenario to run from a different perspective.
+
+The result is that a single, well-crafted scenario can power several types of analysis — letting you explore the same customer situation through recommendation, comparison, introspection, or fact-checking lenses without starting over each time.
+
+---
+
+## Restoring Deleted Scenarios
+
+Deleting a scenario — or a whole topic — is not permanent. Removed topics and scenarios go to a **Recycle Bin**, where they are kept so they can be **restored** if they were deleted by mistake.
+
+This means you can clean up your workspace without worrying about losing a carefully written scenario. If you remove something you still need, you can recover it from the Recycle Bin and continue using it as before. For more on managing the topics that scenarios belong to, see [Core Concepts -> Topics](./topics.html).
 
 ---
 

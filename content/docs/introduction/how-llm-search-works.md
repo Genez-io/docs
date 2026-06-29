@@ -178,6 +178,6 @@ To continue learning about how AI systems retrieve and use information, see:
 
 * [Introduction -> Query Fanouts Explained](./query-fanouts-explained.html)
 * [Core Concepts -> Citations](../core-concepts/citations.html)
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 
 These pages explain how Genezio extracts structured insights from AI-generated answers.

@@ -44,6 +44,16 @@ For example, a student, a startup founder, and a corporate buyer asking about th
 
 ---
 
+## How Conversations Are Generated
+
+Multi-turn conversations are now driven by a **two-agent conversation driver**: a **planner** agent and a **replier** agent working as a pair. The planner decides what the simulated user should ask next, and the replier plays the user's side of the exchange with the answer engine.
+
+Using two agents instead of a single driver produces more realistic, natural multi-turn conversations — each follow-up question reads like something a real person would actually ask, rather than a scripted continuation.
+
+This applies to the **multi-step agent types** — **Recommender**, **Comparer**, and **Introspector**, which build up an answer over several turns. **Prompter** is the exception: it sends its single prompt **as-is**, with no planner or replier in the loop.
+
+---
+
 ## Why Conversations Run Daily
 
 AI systems evolve continuously. Their answers may change because:
@@ -90,11 +100,11 @@ These sources help explain where the information in the response came from.
 
 ---
 
-### Statements
+### Perceptions
 
 Individual claims extracted from the AI response.
 
-Statements allow Genezio to evaluate the accuracy of what answer engines say about your brand and compare narratives across conversations.
+Perceptions allow Genezio to evaluate the accuracy of what answer engines say about your brand and compare narratives across conversations.
 
 ---
 
@@ -119,6 +129,14 @@ This gives you a clear picture of how AI systems position your brand relative to
 
 ---
 
+## Reports in Your Brand's Language
+
+Extracted **perceptions**, **SWOT**, and **AI insights** are generated in the **brand's own language**, not just English. Teams working in non-English markets get readable, ready-to-share reports without translation.
+
+A brand's language is set during **brand setup**.
+
+---
+
 ## Inspecting Conversations
 
 Each conversation can be inspected in the **Conversation Detail View**.
@@ -130,7 +148,7 @@ This view allows you to see:
 * the responses generated
 * detected query fanouts
 * extracted citations
-* extracted statements
+* extracted perceptions
 
 This transparency allows teams to understand exactly **why a brand appeared or did not appear in an AI answer**.
 
@@ -156,6 +174,6 @@ To understand the structure of the data extracted from conversations, see:
 
 * [Core Concepts -> Query Fanouts](../core-concepts/query-fanouts.html)
 * [Core Concepts -> Citations](../core-concepts/citations.html)
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 
 These pages explain how Genezio converts AI responses into structured insights.

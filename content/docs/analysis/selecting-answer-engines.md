@@ -39,11 +39,28 @@ Genezio currently supports the following answer engines:
 
 Each engine may produce different answers, citations, and brand mentions.
 
+The underlying models are periodically refreshed as providers ship updates (for example, the Gemini models were upgraded to a newer Flash Lite generation), so results reflect current model behavior.
+
 For most engines, Genezio runs conversations **through the same user interface that a human would use**. In other words, the system interacts with the answer engine the same way a normal user would when typing questions in the product interface. This approach helps reproduce real-world AI interactions as closely as possible.
 
 Some engines can also be run **API-only**. In these cases, conversations are executed directly through the provider's API rather than through a user interface.
 
 Running conversations across multiple engines helps provide a more complete picture of your **AI Recommendations and Visibility**.
+
+---
+
+## Customizing Which Engines You Run
+
+Brands can now **customize which answer engines they run against**. Instead of a fully self-serve subscription that locked everyone into the same engine list, you choose the **engine mix that fits your brand** — focusing your attention and spend on the AI systems your audience actually uses.
+
+On top of the brand-level selection, Genezio supports **per-topic LLM filtering**. Individual topics can **override** which engines they run against, so a specific topic can run on a narrower or different set of engines than the brand default.
+
+This gives marketers two levels of control:
+
+* **Brand level** — set the default engine mix that matters most for your brand.
+* **Topic level** — narrow or change the engines for individual topics, so you can concentrate effort on the engines that matter for each topic.
+
+For example, you might run your full engine set across your core topics, but limit an experimental or region-specific topic to just the one or two engines that are relevant there.
 
 ---
 

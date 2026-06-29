@@ -194,6 +194,16 @@ For customers who already have persona research, it's effectively a one-step imp
 
 ---
 
+## Managing Personas
+
+Genezio makes it easy to keep personas organized and portable:
+
+* **Export personas** — you can export all of your personas at once, or export a specific persona on its own, which is useful for sharing persona definitions or keeping them alongside other research.
+* **Summary field** — each persona can carry a **summary** that captures, at a glance, who the persona is and what they care about.
+* **Consistent country list** — persona creation uses a **consistent country list**, so locations are standardized across every persona. Personas are then generated and used in the persona's **own language and location**, keeping conversations grounded in the right market.
+
+---
+
 ## Why Personas Matter
 
 Personas allow Genezio to simulate **realistic discovery scenarios**.

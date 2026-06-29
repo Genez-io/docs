@@ -35,6 +35,7 @@ The action tools available to Geo include:
 * **Refine a topic** — adjust its description, persona assignment, or competitor selection
 * **Create a scenario** — draft a new scenario for an existing topic when Geo identifies an uncovered intent
 * **Update a scenario** — tighten wording, change the Agent type, or adjust which competitors a Comparer scenario targets
+* **Restore deleted topics or scenarios** — recover an object from the Recycle Bin when it was removed by mistake
 
 ### Produce Content
 
@@ -42,6 +43,10 @@ The action tools available to Geo include:
 * **Trigger article generation** — start a full article in Content Hub grounded in the context of the current conversation
 
 See [Content Hub -> Briefs](../content-hub/briefs.html) for what gets generated.
+
+### Explore CDN Logs
+
+* **Explore CDN logs** — surface log clusters and the AI-crawler breakdown, so you can see how AI crawlers are reaching your site without leaving the conversation
 
 ---
 

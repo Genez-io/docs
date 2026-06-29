@@ -135,7 +135,7 @@ In AI-powered search, understanding the broader set of fanout queries can be mor
 To learn how fanout queries influence AI answers, continue with:
 
 * [Core Concepts -> Citations](../core-concepts/citations.html)
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 * [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 
 These pages explain how Genezio analyzes AI responses and transforms them into structured insights.

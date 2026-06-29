@@ -17,7 +17,7 @@ Depending on the system, citations may appear as:
 * inline source indicators
 * expandable source lists
 
-For example, an AI answer might include a statement like:
+For example, an AI answer might include a claim like:
 
 > The best CRM platforms for startups include HubSpot, Pipedrive, and Zoho CRM.
 
@@ -167,7 +167,7 @@ Even if the official vendor websites are not cited directly, the third-party sou
 
 To continue exploring how Genezio analyzes AI answers, see:
 
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 * [Insights -> Visibility Score](../insights/ai-visibility-score.html)
 * [Insights -> Share of Voice](../insights/share-of-voice.html)
 

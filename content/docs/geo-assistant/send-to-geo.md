@@ -1,6 +1,6 @@
 # Send to Geo
 
-**Send to Geo** is an action available on most data surfaces in the Genezio dashboard. Clicking it hands the current object — a topic, a scenario, a competitor, a citation, a SWOT entry, a statement — to the Geo Assistant with its full context attached.
+**Send to Geo** is an action available on most data surfaces in the Genezio dashboard. Clicking it hands the current object — a topic, a scenario, a competitor, a citation, a SWOT entry, a perception — to the Geo Assistant with its full context attached.
 
 You can then ask follow-up questions about that specific object without re-explaining what you're looking at.
 
@@ -36,8 +36,8 @@ The action is on virtually every meaningful surface in the dashboard, including:
 * **Competitors-by-LLM view** — send a competitor's behavior on a specific engine
 * **Competitor details drawer** — send a competitor's full profile for SWOT, share-of-voice, or counter-strategy questions
 * **Overview** — send the high-level performance snapshot for a summary or trend explanation
-* **SWOT** — send a SWOT entry (yours or a competitor's) to explore the underlying statements
-* **Statements** — send an extracted statement for sentiment, source, or context analysis
+* **SWOT** — send a SWOT entry (yours or a competitor's) to explore the underlying perceptions
+* **Perceptions** — send an extracted perception for sentiment, source, or context analysis
 * **Citations** — send a citation source to explore which conversations it appears in and what it says
 
 Anywhere you see a meaningful object on screen, look for the **Send to Geo** action.
@@ -61,7 +61,7 @@ The attached context stays with the conversation. You can keep asking questions 
 
 **Counter a competitor.** In the competitor details drawer, click **Send to Geo**, ask "what are their top three strengths in SWOT, and how do I counter them?" — Geo answers, then you can ask it to "draft a brief that addresses the top strength."
 
-**Audit a citation source.** On the Citations view, send a domain to Geo and ask "what does this source say about us versus competitors?" — Geo summarizes the statements extracted from conversations that cite it.
+**Audit a citation source.** On the Citations view, send a domain to Geo and ask "what does this source say about us versus competitors?" — Geo summarizes the perceptions extracted from conversations that cite it.
 
 **Explain a scenario.** From the Scenario drawer, send a scenario and ask "which LLM performs worst on this and why?" — Geo cross-references conversations across engines.
 

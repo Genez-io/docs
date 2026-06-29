@@ -52,7 +52,7 @@
 
 **Why it doesn't count toward your score:** If the user mentions your brand in the question, the AI will almost always mention it in the answer — that's not meaningful. Including these would artificially inflate your Visibility score and make it useless as a benchmark.
 
-**What it's useful for instead:** Understanding how AI describes your brand. What claims does it make? Are those claims accurate? This feeds directly into your Statements analysis — the accuracy layer underneath the score.
+**What it's useful for instead:** Understanding how AI describes your brand. What claims does it make? Are those claims accurate? This feeds directly into your Perceptions analysis — the accuracy layer underneath the score.
 
 **Content implication:** Brand narrative analysis · Claim accuracy monitoring · Positioning audit
 
@@ -97,7 +97,7 @@ Think of it this way: Prompter and Recommender tell you *your score*. Comparer t
 
 **Why it doesn't count toward your score:** The claims are stated in the prompt, so the conversation isn't measuring discovery. It's measuring accuracy — a different axis from visibility and recommendation.
 
-**What it's actually for:** Fact Checker is most useful for brands where factual accuracy directly affects buyer trust or regulatory standing — security, financial services, healthcare, regulated industries. It also pairs with the [Knowledge Base](../core-concepts/knowledge-base.html) and [Grounded Statements](../core-concepts/statements.html) to form a complete accuracy stack: KB defines truth, Fact Checker actively tests whether answer engines confirm it, Grounded Statements show whether engines spontaneously match it.
+**What it's actually for:** Fact Checker is most useful for brands where factual accuracy directly affects buyer trust or regulatory standing — security, financial services, healthcare, regulated industries. It also pairs with the [Knowledge Base](../core-concepts/knowledge-base.html) and [Grounded Perceptions](../core-concepts/perceptions.html) to form a complete accuracy stack: KB defines truth, Fact Checker actively tests whether answer engines confirm it, Grounded Perceptions show whether engines spontaneously match it.
 
 **Content implication:** Update product/pricing/certification pages so the right facts are public and crawlable · Correct third-party listings · Publish authoritative reference content for high-risk claims
 

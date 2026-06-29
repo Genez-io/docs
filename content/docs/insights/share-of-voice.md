@@ -31,6 +31,16 @@ This is the metric leadership intuitively understands. It converts the platform'
 
 ---
 
+## When Share of Voice Is Shown
+
+Share of Voice only appears when there's enough cross-model and competitive data to make it meaningful. When that signal isn't there, the metric is **hidden rather than shown as a misleading number**.
+
+You won't see SOV, for example, when a brand runs against only a single answer-engine model, or for **industry-only brands** where there's no competitive set and a "share" doesn't apply.
+
+In short: you'll only see Share of Voice when there's enough competitive, cross-model data behind it to make the percentage trustworthy.
+
+---
+
 ## How to Read Share of Voice
 
 SOV is **brand-wide** and measured over a **time range**. The headline number is your share of all mentions across your tracked topics, for the period you've selected.

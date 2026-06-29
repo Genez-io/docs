@@ -144,7 +144,7 @@ For each conversation, Genezio:
 * captures the response
 * extracts mentions of brands
 * detects citations and sources
-* extracts and evaluates statements (claims) for accuracy
+* extracts and evaluates perceptions (claims) for accuracy
 
 This process builds the dataset used to calculate AI Recommendations and Visibility.
 
@@ -164,6 +164,16 @@ From here you can:
 * analyze visibility across different topics
 
 You can then dive deeper into specific conversations, topics, or insights to better understand how AI systems represent your brand.
+
+---
+
+## Managing Your Setup
+
+As you build and refine your setup, Genezio includes a few quality-of-life capabilities that make the process safer and easier to follow:
+
+* **Recycle Bin** — deleted topics and scenarios are not lost immediately. If you remove something by mistake, you can restore it from the Recycle Bin.
+* **Brand language** — you can set your brand's language during setup. Reports such as **perceptions**, **SWOT**, and **AI insights** are then generated in that language.
+* **Predictable order and auto-scroll** — newly added topics and scenarios appear in a predictable order, and the view automatically scrolls to them, so you can immediately see what you just created.
 
 ---
 

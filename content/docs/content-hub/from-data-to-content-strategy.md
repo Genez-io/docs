@@ -12,7 +12,7 @@ Every insight in Genezio traces back to four underlying data types. Understandin
 | --- | --- |
 | **📊 AI Recommendations & Visibility %** | Which topics do you score well on? Which ones have low visibility despite strong SEO rankings? These gaps are your priority list. |
 | **🔗 Citations** | Which URLs is the AI pulling from when it recommends competitors instead of you? Those are the domains you need to get featured on — or outrank. |
-| **💬 Statements** | What specific claims does the AI make about your brand? Positive ones to amplify. Negative or outdated ones to correct through better content. |
+| **💬 Perceptions** | What specific claims does the AI make about your brand? Positive ones to amplify. Negative or outdated ones to correct through better content. |
 | **🎯 Actionable Insights** | Pre-analyzed recommendations from Genezio: growth opportunities, critical gaps, citation sources to target, and positioning issues to fix. |
 
 ---
@@ -51,9 +51,9 @@ Every insight in Genezio traces back to four underlying data types. Understandin
 
 ---
 
-### Playbook 3: Negative or Outdated Statements
+### Playbook 3: Negative or Outdated Perceptions
 
-> **Signal:** Statements analysis shows AI making incorrect or unfavorable claims about your brand. **HIGH PRIORITY.**
+> **Signal:** Perceptions analysis shows AI making incorrect or unfavorable claims about your brand. **HIGH PRIORITY.**
 
 **What's happening:** answer engines are trained on existing web content. If the web says your product is "hard to set up" or "expensive," that narrative will persist in AI answers — even if it's no longer true.
 

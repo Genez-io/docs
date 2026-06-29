@@ -79,6 +79,6 @@ Even though it is excluded from visibility KPIs, this agent is valuable for:
 
 ## Related Pages
 
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 * [Core Concepts -> Brand Visibility](../core-concepts/brand-visibility.html)
 * [Core Concepts -> Conversations](../core-concepts/conversations.html)

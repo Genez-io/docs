@@ -158,5 +158,5 @@ By analyzing these interactions at scale, Genezio provides a measurable view of 
 To understand how information extracted from conversations is structured and analyzed, see:
 
 * [Core Concepts -> Citations](./citations.html)
-* [Core Concepts -> Statements](./statements.html)
+* [Core Concepts -> Perceptions](./perceptions.html)
 * [Insights -> Visibility Score](../insights/ai-visibility-score.html)

@@ -10,7 +10,7 @@ It's a corpus of documents, pages, and notes you maintain — the things you'd p
 
 Answer engines make claims about brands constantly. Some are accurate; some are outdated; some are flat-out wrong.
 
-Until now, telling the difference required a human to read each statement and check it against an internal source. The Knowledge Base automates that comparison. You provide the truth once, and the platform uses it as the reference every time a statement about your brand gets extracted from an answer engine conversation.
+Until now, telling the difference required a human to read each perception and check it against an internal source. The Knowledge Base automates that comparison. You provide the truth once, and the platform uses it as the reference every time a perception about your brand gets extracted from an answer engine conversation.
 
 This is the foundation for an **accuracy audit loop**:
 
@@ -24,13 +24,13 @@ This is the foundation for an **accuracy audit loop**:
 
 The Knowledge Base lives under **Brand Settings → Knowledge Base**.
 
-Setting it up is a one-time configuration step per brand. Once it's in place, it works in the background — every new statement extracted from conversations is checked against it automatically.
+Setting it up is a one-time configuration step per brand. Once it's in place, it works in the background — every new perception extracted from conversations is checked against it automatically.
 
 ### You Start With One Already
 
 You don't begin from an empty Knowledge Base.
 
-When a brand is created, Genezio automatically crawls the **brand's website** and adds it as the first Knowledge Base item. That means grounded-statement checks work from day one, using your public site as the initial source of truth — even if you've done no other setup.
+When a brand is created, Genezio automatically crawls the **brand's website** and adds it as the first Knowledge Base item. That means grounded-perception checks work from day one, using your public site as the initial source of truth — even if you've done no other setup.
 
 From there, you build the Knowledge Base out by adding the documents, URLs, and free-text snippets that your website doesn't cover.
 
@@ -67,19 +67,19 @@ Quality matters more than volume. A small, accurate, current Knowledge Base is m
 
 Once a Knowledge Base is in place, it powers two things in the platform today:
 
-### Grounded Statements
+### Grounded Perceptions
 
-Every statement extracted from an answer engine conversation gets checked against your Knowledge Base. Statements that can be verified get a **grounded** badge with one of three states:
+Every perception extracted from an answer engine conversation gets checked against your Knowledge Base. Perceptions that can be verified get a **grounded** badge with one of three states:
 
-* **Grounded-correct** — the statement matches what your Knowledge Base says
-* **Grounded-incorrect** — the statement contradicts what your Knowledge Base says
-* **Not grounded** — the statement couldn't be verified either way against your Knowledge Base
+* **Grounded-correct** — the perception matches what your Knowledge Base says
+* **Grounded-incorrect** — the perception contradicts what your Knowledge Base says
+* **Not grounded** — the perception couldn't be verified either way against your Knowledge Base
 
-This is the accuracy audit, made visible. See [Statements](statements.html) for how grounded statements appear in the platform.
+This is the accuracy audit, made visible. See [Perceptions](perceptions.html) for how grounded perceptions appear in the platform.
 
 ### Reporting and Insights
 
-Grounded statements flow into the platform's reporting. You can see the proportion of statements about your brand that are correct, incorrect, or unverifiable — and dig into the specific ones that are getting it wrong, so you can fix the source (your website, your docs, or your Knowledge Base itself).
+Grounded perceptions flow into the platform's reporting. You can see the proportion of perceptions about your brand that are correct, incorrect, or unverifiable — and dig into the specific ones that are getting it wrong, so you can fix the source (your website, your docs, or your Knowledge Base itself).
 
 ---
 
@@ -87,7 +87,7 @@ Grounded statements flow into the platform's reporting. You can see the proporti
 
 Because every brand starts with its website crawled in, the grounded layer is active from day one. But the **strength** of the signal depends on how much truth your Knowledge Base actually covers.
 
-If your website is detailed and current, the initial crawl alone delivers a lot of value. If it's sparse, marketing-heavy, or doesn't include pricing, specifications, or positioning detail, the platform won't be able to verify as many statements — and you'll see more "not grounded" badges than you'd like.
+If your website is detailed and current, the initial crawl alone delivers a lot of value. If it's sparse, marketing-heavy, or doesn't include pricing, specifications, or positioning detail, the platform won't be able to verify as many perceptions — and you'll see more "not grounded" badges than you'd like.
 
 That's the nudge to extend the Knowledge Base: add the documents, URLs, and snippets that fill the gaps your website leaves.
 
@@ -98,7 +98,7 @@ That's the nudge to extend the Knowledge Base: add the documents, URLs, and snip
 The Knowledge Base is a living asset. Treat it like a brand book that gets edited:
 
 * **Update it when your brand changes** — new product, new pricing, new positioning
-* **Add to it when you spot an incorrect statement** — if answer engines keep saying something untrue, document the correction in the Knowledge Base so the platform can flag future occurrences
+* **Add to it when you spot an incorrect perception** — if answer engines keep saying something untrue, document the correction in the Knowledge Base so the platform can flag future occurrences
 * **Prune it when documents go stale** — outdated truth is worse than no truth
 
 The more current and accurate the Knowledge Base, the more trustworthy the grounded signal becomes.
@@ -107,6 +107,6 @@ The more current and accurate the Knowledge Base, the more trustworthy the groun
 
 ## Related Pages
 
-* [Statements](statements.html)
+* [Perceptions](perceptions.html)
 * [Brands](brands.html)
 * [Competitors](competitors.html)

@@ -1,6 +1,6 @@
 # Customizing Your Dashboard
 
-The Genezio dashboard is broad on purpose — it surfaces visibility, recommendations, citations, statements, competitors, SOV, and more. But not every brand cares about all of those, all the time.
+The Genezio dashboard is broad on purpose — it surfaces visibility, recommendations, citations, perceptions, competitors, SOV, and more. But not every brand cares about all of those, all the time.
 
 **Dashboard Components** lets each brand strip the dashboard down to what actually matters for that brand, by hiding the charts, tables, and panels that aren't being used.
 
@@ -12,7 +12,7 @@ Different brands live in different parts of the platform.
 
 * A consumer brand might spend most of its time in **Citations** and **Recommender** results.
 * A B2B brand might focus on **Introspector** and **Share of Voice**.
-* A regulated brand might care most about **Statements** and the **Grounded** badge.
+* A regulated brand might care most about **Perceptions** and the **Grounded** badge.
 * An agency managing multiple clients will want different defaults per client.
 
 Showing every section to every brand creates noise. Hiding the ones that don't apply makes the dashboard easier to scan and the daily workflow tighter.

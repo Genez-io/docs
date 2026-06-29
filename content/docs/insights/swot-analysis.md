@@ -42,6 +42,18 @@ This view displays a SWOT analysis for:
 
 Seeing all SWOTs side by side helps you spot patterns — recurring strengths competitors share, weaknesses unique to your brand, and opportunities where no competitor is currently positioned well.
 
+**Competitor logos** are shown throughout the SWOT views, making the side-by-side comparison faster to scan — you can recognize each brand at a glance instead of reading down a list of names.
+
+---
+
+## Sources Behind Each SWOT Point
+
+Every SWOT point can be traced back to the evidence that produced it. For each strength, weakness, opportunity, or threat, Genezio can surface the **citation paragraphs (sources)** that back it — the actual passages from the webpages answer engines drew on — with the **matching text highlighted**.
+
+This means you can move from a high-level claim ("competitors are framed as more affordable") straight to the exact webpage passage that produced it, without guessing where the framing came from.
+
+It's the same source-tracing already available for [perceptions](../core-concepts/perceptions.html), now applied to your competitive SWOT — so every strength, weakness, opportunity, and threat is auditable down to the source paragraph.
+
 ---
 
 ## How SWOT Is Generated

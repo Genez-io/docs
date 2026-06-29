@@ -22,7 +22,7 @@ Fact Checker turns that into measurement: you list the claims you care about, an
 
 ## How It Works
 
-A Fact Checker topic carries a set of **claims to verify** — statements you assert are true about your brand. For each claim, the platform runs conversations with every supported answer engine and classifies the response into one of three outcomes:
+A Fact Checker topic carries a set of **claims to verify** — claims you assert are true about your brand. For each claim, the platform runs conversations with every supported answer engine and classifies the response into one of three outcomes:
 
 * **True** — the engine confirms the claim
 * **False** — the engine contradicts the claim
@@ -75,13 +75,13 @@ Like Introspector and Comparer, Fact Checker is a **measurement tool of its own*
 Fact Checker is the final piece of Genezio's accuracy stack:
 
 1. **[Knowledge Base](../core-concepts/knowledge-base.html)** — defines what's true about your brand
-2. **[Grounded Statements](../core-concepts/statements.html)** — show whether claims pulled from organic conversations match your KB
+2. **[Grounded Perceptions](../core-concepts/perceptions.html)** — show whether claims pulled from organic conversations match your KB
 3. **Fact Checker** — actively tests whether answer engines confirm specific claims when asked
 
 Together, these give you a complete view of accuracy:
 
 * the **KB** is the source of truth
-* **Grounded Statements** measure what answer engines *spontaneously* say about you
+* **Grounded Perceptions** measure what answer engines *spontaneously* say about you
 * **Fact Checker** measures what answer engines say *when asked directly*
 
 The first observes; the second probes. Read them together and you know both the narrative answer engines volunteer and the answers they give when pushed.
@@ -114,7 +114,7 @@ Fact Checker is most valuable for brands where factual accuracy directly affects
 ## Related Pages
 
 * [Core Concepts -> Knowledge Base](../core-concepts/knowledge-base.html)
-* [Core Concepts -> Statements](../core-concepts/statements.html)
+* [Core Concepts -> Perceptions](../core-concepts/perceptions.html)
 * [Prompter Agent](prompter-agent.html)
 * [Recommender Agent](recommender-agent.html)
 * [Introspector Agent](introspector-agent.html)

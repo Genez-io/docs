@@ -2,7 +2,7 @@
 
 **Products** let you slice a single brand's data by product line — so a multi-product company can stay as one brand in Genezio and still see how each product is doing individually.
 
-A product is defined as a **set of topics**. When you create products and pick one from the product picker, every view in Genezio narrows to that product's topics: dashboards, conversations, insights, citations, share of voice, statements, everything.
+A product is defined as a **set of topics**. When you create products and pick one from the product picker, every view in Genezio narrows to that product's topics: dashboards, conversations, insights, citations, share of voice, perceptions, everything.
 
 ---
 
@@ -70,7 +70,7 @@ When you pick a product:
 * **dashboards** show metrics for the topics in that product
 * **conversations** filter to that product's topics
 * **insights** are scoped to that product's data
-* **citations**, **SOV**, **statements**, **competitors** — every view narrows to that product
+* **citations**, **SOV**, **perceptions**, **competitors** — every view narrows to that product
 
 The default view is **all products** — the brand-wide picture, untouched by any product filter. The picker is an optional lens you opt into.
 

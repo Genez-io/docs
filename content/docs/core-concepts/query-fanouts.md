@@ -143,6 +143,6 @@ This transparency allows users to understand how an AI system arrived at a speci
 To understand how sources retrieved through fanout queries influence answers, see:
 
 * [Core Concepts -> Citations](./citations.html)
-* [Core Concepts -> Statements](./statements.html)
+* [Core Concepts -> Perceptions](./perceptions.html)
 
 These pages explain how Genezio extracts structured information from AI responses.
