@@ -1005,7 +1005,7 @@ function siteHeader() {
   </header>`;
 }
 
-function shellTemplate({ title, description, content, currentSection, currentPageSlug, currentFilePath }) {
+function shellTemplate({ title, description, content, currentSection, currentPageSlug, currentFilePath, baseHref }) {
   const cssHref = toRelative(currentFilePath, path.join(ASSET_DIR, 'site.css'));
   const topNav = quickLinks
     .map((link) => {
@@ -1038,6 +1038,7 @@ function shellTemplate({ title, description, content, currentSection, currentPag
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  ${baseHref ? `<base href="${baseHref}" />` : ''}
   <title>${escapeHtml(finalTitle)}</title>
   <meta name="description" content="${escapeHtml(finalDescription)}" />
   <meta name="robots" content="index,follow" />
@@ -1729,7 +1730,8 @@ function main() {
       content: docsLandingContent(indexPath),
       currentSection: '',
       currentPageSlug: '',
-      currentFilePath: indexPath
+      currentFilePath: indexPath,
+      baseHref: '/docs/'
     })
   );
 
