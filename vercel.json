@@ -1,4 +1,1332 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "devCommand": "npm run build && npx -y http-server dist -p $PORT",
+  "redirects": [
+    {
+      "source": "/docs",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/advanced/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/advanced/aws/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/advanced/genezio-cloud",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/advanced/genezio-cloud/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/analytics",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/analytics/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/account",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/account/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/addclass/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/analyze",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/analyze/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/delete",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/delete/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/deploy",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/deploy/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/generatesdk",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/generatesdk/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-addclass",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-addclass/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-clone/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-create",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-create/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-link",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-link/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-pull",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-pull/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio-unlink/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/genezio/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/local",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/local/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/login",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/login/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/logout",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/logout/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/ls/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/cli-commands/update/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/getting-started-with-the-cli/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/install",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/install/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/update",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli-tool/update/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cli/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cloud-providers",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cloud-providers/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/cloud-providers/genezio-cloud",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/backend",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/backend/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/frontend",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/frontend/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/persistent",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/persistent/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deploy/serverless-containers/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deployment-environments",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/deployment-environments/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/docs",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/dart",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/dart/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/dart/chat-with-yoda-chatgpt/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/dart/getting-started/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/dart/todo-list-react/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/go-experimental/getting-started/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/blockchain-app",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/blockchain-app/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/chatgpt-project",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/chatgpt-project/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/cron",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/cron/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/getting-started",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/getting-started/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/hello-world",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/hello-world/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/html-example/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/stripe-integration/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list-sql",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list-sql/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list-vue",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list-vue/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/todo-list/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/webhook",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/javascript/webhook/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/kotlin-experimental/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/crud-application/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/getting-started/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/hello-world",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/hello-world/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/hello-world/typescript/hello-world/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/multiversx-integration/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/shopping-cart/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/todo-list-angular",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/todo-list-angular/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/todo-list-flutter",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/todo-list-flutter/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/todo-list/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/trivia-application",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/trivia-application/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/webhook-example",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/examples/typescript/webhook-example/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/faq",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/authentication",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/authentication/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/backend-deployment",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/backend-deployment/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/check-genezio-dashboard",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/check-genezio-dashboard/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/cron-jobs",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/cron-jobs/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/cron-methods",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/cron-methods/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/custom-domain-configuration/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/databases/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/deployment-environments",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/deployment-environments/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/deployments/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/email-service/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/frontend-deployment/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/generated-sdk/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/genezio-deploy-button/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/http-methods-webhooks",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/project-collaboration",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/project-collaboration/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/rate-limiter/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/temporary-storage/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/features/testing/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/framework/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/angular",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/angular/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/angular/docs/features/deployments/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/django",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/django/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/ember/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/ember/docs/features/deployments",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/ember/docs/features/deployments/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/expressjs/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/fastapi",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/fastapi/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/fastify",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/fastify/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/flask",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/flask/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/nestjs/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/nextjs/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/nitro",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/nitro/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/nuxt/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/react-admin/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/react/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/refine",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/refine/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/remix",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/remix/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/streamlit",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/streamlit/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/svelte",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/svelte/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/typesafe-project",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/typesafe-project/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/vue",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frameworks/vue/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frontend-deployment/custom-domain-configuration",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frontend-deployment/custom-domain-configuration/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frontend-deployment/quickstart",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frontend-deployment/quickstart/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/frontend-deployment/troubleshooting-guide/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-examples/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/authentication/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/cron-methods/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/generated-sdk/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/genezio-context/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/genezio-decorators/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/http-methods-webhooks/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/project-template/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/rate-limiter/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/typesafety",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/genezio-typesafe/typesafety/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/check-genezio-dashboard",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/check-genezio-dashboard/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/create-your-first-project",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/import-existing-project/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/install-the-genezio-cli/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/test-your-project-locally/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/use-a-template",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/getting-started/use-a-template/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/guides/intro-to-serverless/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/hall-of-fame",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/how-billing-works",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/how-billing-works/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/github-action",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/github-action/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/neon-postgres",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/neon-postgres/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/sentry",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/sentry/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/upstash-qstash",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/upstash-qstash/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/upstash-redis",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/integrations/upstash-redis/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/learn-more/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/learn-more/supported-languages/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/learn-more/supported-languages/s",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/learn-more/upgrading-to-v1",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/learn-more/upgrading-to-v1/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/method-types",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/method-types/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/method-types/http-methods-webhooks",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/method-types/http-methods-webhooks/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/programming-languages/dart",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/programming-languages/typescript/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structu",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/.genezioignore",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/.genezioignore/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/backend-envinronment-variables/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/backend-environment-variables",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/backend-environment-variables/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/genezio-configuration-file/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/genezio-decorators/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/project-structure/project-template/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/search",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/search/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/test-interface/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/test-interface/gui-overview/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/test-interface/remote-testing/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/troubleshooting",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/troubleshooting/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-mongo-atlas",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-mongo-atlas/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-mongodb-atlas",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-mongodb-atlas/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-postgres-powered-by-neon",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-postgres-powered-by-neon/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-postgres/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-redis-powered-by-upstash/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-redis-upstash",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/connect-to-redis-upstash/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/create-react-app-genezio-auth",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/create-react-app-genezio-auth/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/create-react-app-genezio-google-oauth",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/create-react-app-genezio-google-oauth/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/create-your-first-project",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/how-to-deploy-a-serverless-function/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/tutorials/temporary-files/",
+      "destination": "/docs/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/yaml-configuration-file/",
+      "destination": "/docs/",
+      "permanent": true
+    }
+  ]
 }
