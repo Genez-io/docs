@@ -152,6 +152,12 @@ This view allows you to see:
 
 This transparency allows teams to understand exactly **why a brand appeared or did not appear in an AI answer**.
 
+### Product-Aware Transcripts
+
+Transcripts are **product-aware**: individual products mentioned in an answer are tagged and highlighted inline, and tables and maps in the response are rendered as tables and maps rather than raw text.
+
+That means you can scroll a conversation and see the exact moment a product was recommended — or named and then skipped in favour of something else. For brands with [Shopping](../shopping/product-visibility.html) enabled, this is the evidence layer underneath the product metrics.
+
 ---
 
 ## Re-running Conversations

@@ -62,7 +62,7 @@ const sections = [
       'Perceptions',
       'Competitors',
       'Knowledge Base',
-      'Products'
+      'Master Filters'
     ]
   },
   {
@@ -109,7 +109,7 @@ const sections = [
       'From Data to Content Strategy',
       'Generating Articles',
       'Briefs',
-      'Content Analysis',
+      'Content Analyzer',
       'Using Query Fanouts for Content',
       'Selecting Tone of Voice',
       'Selecting Target Audience',
@@ -142,6 +142,18 @@ const sections = [
       'Backlinks and Citations',
       'Updating Content',
       'Monitoring AI Visibility'
+    ]
+  },
+  {
+    slug: 'shopping',
+    title: 'Shopping',
+    description: 'Track how AI talks about your individual products.',
+    pages: [
+      'Product Visibility',
+      'Shopping Overview',
+      'Products',
+      'Product Details',
+      'Merchants and Retailers'
     ]
   },
   {
@@ -199,6 +211,7 @@ const sections = [
     title: 'Security & Data',
     description: 'Security, governance, and compliance policies.',
     pages: [
+      'Enterprise SSO and SCIM',
       'Data Collection',
       'Privacy',
       'Security Architecture',
@@ -742,7 +755,9 @@ function markdownToHtml(markdown) {
       closeList();
       flushQuote();
       const level = heading[1].length;
-      out.push(`<h${level}>${renderInline(heading[2])}</h${level}>`);
+      const headingId = slugify(heading[2].replace(/[*`_]/g, ''));
+      const idAttr = headingId ? ` id="${headingId}"` : '';
+      out.push(`<h${level}${idAttr}>${renderInline(heading[2])}</h${level}>`);
       continue;
     }
 

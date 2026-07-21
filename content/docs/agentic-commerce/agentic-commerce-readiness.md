@@ -49,5 +49,6 @@ To get hands-on — how to run the audit, what each check means, and how scoring
 ## Related Pages
 
 * [UCP Readiness Audit](ucp-readiness-audit.html) — run the audit and read your readiness score
+* [Shopping -> Product Visibility](../shopping/product-visibility.html) — how AI talks about your individual products today
 * [Competitors](../core-concepts/competitors.html) — how Genezio tracks the brands you're benchmarked against
 * [Knowledge Base](../core-concepts/knowledge-base.html) — the source of truth Genezio builds about your brand

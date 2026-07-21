@@ -197,6 +197,25 @@ Users can then:
 
 Over time, teams often expand their topics to cover additional markets, products, or user intents.
 
+### Generating More Topics
+
+You don't have to think of every topic yourself. **Generate topics** asks Genezio to suggest new ones for you.
+
+When generating, you:
+
+* pick the **persona** the topics should be written for, so the suggestions reflect how that audience actually asks questions
+* optionally add a **hint** — a nudge toward a market, product line, or angle you want covered
+
+This is the fastest way to fill gaps: pick a persona you're under-serving, hint at the area you care about, and review what comes back. You still edit or discard anything that doesn't fit.
+
+### Choosing Answer Engines Per Topic
+
+In **Settings**, when you create or edit a topic, you can **pick the specific answer engines that topic runs against** instead of inheriting the brand-wide default.
+
+Engine selection is per topic, so different topics can run against different sets. For example, you might run most of your topics against ChatGPT plus five other engines, while one particular topic runs against **ChatGPT only**.
+
+That's useful when a topic only matters on certain engines — a region-specific or experimental topic doesn't need your full engine set. See [Selecting Answer Engines](../analysis/selecting-answer-engines.html).
+
 ---
 
 ## Why Topics Matter

@@ -178,6 +178,20 @@ The result is that a single, well-crafted scenario can power several types of an
 
 ---
 
+## Pausing and Resuming a Scenario
+
+You can **pause** a scenario to stop it running, without deleting it — and **resume** it later when you want the data again.
+
+A paused scenario stays exactly as written; it simply stops being executed in the daily runs. That's useful when you want to:
+
+* park a seasonal or campaign-specific scenario until it's relevant again
+* stop spending runs on a scenario that isn't telling you anything right now
+* temporarily narrow your analysis without losing the scenario's wording or history
+
+Pausing is the right tool when you might want the scenario back. Deleting is for scenarios you're genuinely done with — and even then, see below.
+
+---
+
 ## Restoring Deleted Scenarios
 
 Deleting a scenario — or a whole topic — is not permanent. Removed topics and scenarios go to a **Recycle Bin**, where they are kept so they can be **restored** if they were deleted by mistake.

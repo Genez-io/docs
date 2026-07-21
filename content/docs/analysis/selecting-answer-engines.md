@@ -53,7 +53,11 @@ Running conversations across multiple engines helps provide a more complete pict
 
 Brands can now **customize which answer engines they run against**. Instead of a fully self-serve subscription that locked everyone into the same engine list, you choose the **engine mix that fits your brand** — focusing your attention and spend on the AI systems your audience actually uses.
 
-On top of the brand-level selection, Genezio supports **per-topic LLM filtering**. Individual topics can **override** which engines they run against, so a specific topic can run on a narrower or different set of engines than the brand default.
+On top of the brand-level selection, Genezio supports **per-topic engine selection**. Individual topics can **override** which engines they run against, so a specific topic can run on a narrower or different set of engines than the brand default.
+
+You set this in **Settings**, when you create a topic or later when you edit it — so you can decide the engine mix as you define the topic, and change your mind at any point.
+
+Because the setting is per topic, different topics can run against different engine sets. For example, most of your topics might run against ChatGPT plus five other engines, while one topic runs against **ChatGPT only**. See [Topics](../core-concepts/topics.html).
 
 This gives marketers two levels of control:
 

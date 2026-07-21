@@ -43,3 +43,7 @@ If a colleague has invited you to an existing team, you'll receive an invitation
 For organizations that prefer centralized access, Genezio supports **single sign-on (SSO) via SAML**, powered by Keycloak. This lets your people sign in through your company's existing identity provider, using the credentials and policies you already manage.
 
 Enterprise SSO is set up together with the Genezio team. You provide the details for your identity provider, the connection is configured on both sides, and from then on your users sign in through your organization's normal login. If single sign-on is a requirement for your organization, reach out to the Genezio team to get it configured.
+
+Organizations using SSO can also enable **SCIM provisioning**, so accounts are created, updated, and deactivated automatically from your identity provider instead of being invited by hand. Note that SSO alone doesn't create accounts — a user has to exist in Genezio (via SCIM or an invitation) before they can sign in.
+
+If you're the IT or identity administrator doing the setup, the full technical walkthrough — SAML configuration, SCIM tokens, role mapping, and troubleshooting — is in [Enterprise SSO and SCIM](../security/enterprise-sso-and-scim.html).

@@ -35,14 +35,31 @@ The same SWOT is also aggregated and shown at the **scenario** and **topic** lev
 
 For an overall view across your full competitive landscape, Genezio provides a dedicated **SWOT Comparison** view, available from the menu under **Competitors -> SWOT**.
 
-This view displays a SWOT analysis for:
+The redesigned view is built around a **brand-vs-competitor picker**: choose your brand and the competitor you want to examine, and the comparison reframes around that pairing. Instead of reading every SWOT at once, you work through the matchups that actually matter to you.
+
+Each comparison opens with an **AI-written overview** — a short written summary of how the two stack up — so you get the conclusion first and then dig into the four quadrants for the detail behind it. It's the fastest way to answer "how are we doing against them?" without interpreting a grid yourself.
+
+The view covers a SWOT analysis for:
 
 * your brand
 * each of your tracked competitors
 
-Seeing all SWOTs side by side helps you spot patterns — recurring strengths competitors share, weaknesses unique to your brand, and opportunities where no competitor is currently positioned well.
+Seeing SWOTs side by side helps you spot patterns — recurring strengths competitors share, weaknesses unique to your brand, and opportunities where no competitor is currently positioned well.
 
-**Competitor logos** are shown throughout the SWOT views, making the side-by-side comparison faster to scan — you can recognize each brand at a glance instead of reading down a list of names.
+**Competitor logos** are shown throughout the SWOT views, making the comparison faster to scan — you can recognize each brand at a glance instead of reading down a list of names.
+
+---
+
+## Opening SWOT From Anywhere
+
+SWOT is no longer just a destination you navigate to. **Wherever a competitor appears in Genezio, you can open its SWOT as a drawer** in place — without losing the view you were working in.
+
+Alongside the SWOT, that drawer surfaces:
+
+* **the competitor's own products** — the products answer engines associate with them
+* **co-mentioned products** — the products that get named alongside them, including yours
+
+That turns a competitor from a name in a list into a full picture: how AI frames them, what they're known for selling, and which products they're being weighed against. These tie into the product-level data in [Shopping](../shopping/products.html).
 
 ---
 

@@ -1,6 +1,8 @@
 # Editing Articles
 
-Once an article is generated, it opens in the **Content Hub editor**. The editor is where you refine the draft, adjust structure, and tighten the writing before publishing.
+Once an article is generated, it fills the editor side of the Content Hub **writing workspace** — a full-screen view with the AI writing assistant chat on one side and a rich text editor on the other. The editor is where you refine the draft, adjust structure, and tighten the writing before publishing.
+
+Articles and briefs both open here, so there's one place to write regardless of what you started from. See [Content Hub](content-hub.html).
 
 ---
 
@@ -35,7 +37,7 @@ You can format content visually without writing markup by hand. This is especial
 
 ## Conversational Editing
 
-In addition to manual editing, the editor provides a **chat interface** that lets you interact with the article conversationally.
+In addition to manual editing, the assistant sitting alongside the editor lets you interact with the article conversationally — the same chat you use to shape a piece before Genezio drafts it.
 
 You can ask Genezio to:
 

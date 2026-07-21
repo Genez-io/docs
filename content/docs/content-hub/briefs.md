@@ -51,7 +51,7 @@ The **New Content** entry point (previously labeled "New Article") now creates e
 
 ## Refining a Brief
 
-Each brief has its own **chat interface** for iterative refinement.
+A brief opens in the same [writing workspace](content-hub.html) as an article — the **AI writing assistant** chat on one side, the rich text editor on the other — and you refine it by talking to the assistant.
 
 You can ask Genezio to:
 
@@ -67,9 +67,9 @@ This works the same way as conversational editing for articles — the brief is 
 
 ## Briefs and Articles, Side by Side
 
-Briefs live alongside articles in your Content Hub library. You can browse, filter, and open them from the same place.
+Briefs live alongside articles in your Content Hub library. You can browse, filter, and open them from the same place — and they open in the same workspace.
 
-When you're ready to move from outline to draft, a brief can be **converted into an article**. The brief's structure — audience, tone, keywords, scenarios, instructions — becomes the starting point for the article generation, so you don't have to re-enter context.
+When you're ready to move from outline to draft, hit **Generate Article from Brief**. That happens right there in the workspace, with no export, re-import, or second entry point. The brief's structure — audience, tone, keywords, scenarios, instructions — becomes the starting point for the article, so you don't have to re-enter context.
 
 ---
 

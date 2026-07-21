@@ -82,7 +82,12 @@ This is where you find the actionable detail: the topics where you're winning th
 
 ---
 
+Brands with [Shopping](../shopping/product-visibility.html) enabled also get a Share of Voice at the **product** level, alongside Product Visibility and Product Recommendation — the same idea applied to individual products rather than the brand as a whole.
+
+---
+
 ## Related Pages
 
 * [Your KPIs Explained](your-kpis-explained.html)
 * [Core Concepts -> Competitors](../core-concepts/competitors.html)
+* [Shopping -> Shopping Overview](../shopping/shopping-overview.html)

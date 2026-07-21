@@ -149,9 +149,9 @@ Use this approach when your **parent brand** is strong but the individual produc
 * answer engines describe the products as offerings of the parent brand
 * products often share competitors
 
-In this case, keep everything as one brand and use Genezio's **Products** feature to filter the data per product line. A product picker appears in the main header, letting you switch between products — or stay in the brand-wide "all products" view.
+In this case, keep everything as one brand and use Genezio's **Master Filters** feature to filter the data per product line. A master filter picker appears in the main header, letting you switch between product lines — or stay in the brand-wide "all" view.
 
-See [Products](products.html) for the full setup.
+See [Master Filters](master-filters.html) for the full setup.
 
 ### When to Use a Single Brand With No Products
 

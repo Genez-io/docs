@@ -138,8 +138,11 @@ This view allows you to see:
 * extracted **query fanouts**
 * detected **citations**
 * mentioned **brands and competitors**
+* mentioned **products**, tagged and highlighted inline
 
 This level of transparency helps teams understand exactly **why a brand appeared-or did not appear-in an AI response**.
+
+Transcripts are product-aware — products named in an answer are highlighted, and tables and maps render inline — so you can pinpoint the moment a specific product was recommended or passed over. See [Shopping](../shopping/product-visibility.html).
 
 ---
 

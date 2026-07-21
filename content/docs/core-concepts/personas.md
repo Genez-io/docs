@@ -204,6 +204,14 @@ Genezio makes it easy to keep personas organized and portable:
 
 ---
 
+## Filtering Reports by Persona
+
+When a brand's topics span **two or more personas**, a **persona filter** appears in the report header. Selecting one narrows the report to that persona's data, so you can see how AI answers differ for, say, a startup founder versus an enterprise buyer.
+
+The filter carries across screens, and sits alongside the [Master Filters](master-filters.html) dropdown. With only one persona defined there's nothing to compare, so the filter stays hidden.
+
+---
+
 ## Why Personas Matter
 
 Personas allow Genezio to simulate **realistic discovery scenarios**.

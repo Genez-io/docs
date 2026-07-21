@@ -24,6 +24,26 @@ The Content Hub helps you create **content specifically designed to influence AI
 
 ---
 
+## The Writing Workspace
+
+Articles and briefs open in the **same workspace** — one full-screen view with two halves:
+
+* an **AI writing assistant** chat
+* a **rich text editor**
+
+Both fill the screen, so you're no longer moving between a separate "generate" step and an "edit" step. It's one place.
+
+Two things follow from that:
+
+* **You talk to the assistant before anything is written.** Rather than filling in a form and hoping for the best, you chat with the writing assistant first — shaping the angle, structure, and emphasis — and Genezio only starts drafting once you're aligned on what the piece should be.
+* **Briefs turn into articles in place.** If you're working on a brief, **Generate Article from Brief** happens right there in the same screen — no export, re-import, or second entry point. See [Briefs](briefs.html).
+
+### Optimized by Design
+
+Content Hub uses the [Content Analyzer](content-analyzer.html) on the content it generates, so the output is shaped by the same checks you would otherwise run on it afterwards. The intent is content that's optimized as it's written, rather than fixed after the fact.
+
+---
+
 ## Creating a New Article
 
 To create an article:
@@ -77,7 +97,7 @@ Examples include:
 * **Website URLs** that should be used as reference sources
 * **Additional instructions** to influence the writing style or focus
 
-Once these parameters are configured, you can generate the article.
+Once these parameters are configured, the piece opens in the writing workspace. From there you **chat with the AI writing assistant** about what you want before Genezio drafts anything — so generation starts from an agreed direction rather than a guess.
 
 ---
 
@@ -97,7 +117,7 @@ Templates are useful for teams that produce content with a consistent shape — 
 
 ## Editing Articles
 
-Once an article is generated, it opens in the **Content Hub editor**.
+Once an article is generated, it fills the **editor** side of the writing workspace, with the assistant chat alongside it.
 
 This editor allows you to modify the article directly inside the browser.
 
@@ -114,7 +134,7 @@ The editor behaves like a traditional writing environment, giving you full contr
 
 ## Conversational Editing
 
-In addition to manual editing, the Content Hub provides a **chat interface** that lets you interact with the article conversationally.
+In addition to manual editing, the assistant panel sitting next to the editor lets you interact with the article conversationally — the same chat you used to shape it before drafting.
 
 You can ask Genezio to:
 

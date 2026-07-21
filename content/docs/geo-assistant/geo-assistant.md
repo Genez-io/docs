@@ -99,6 +99,7 @@ Geo is available throughout the dashboard:
 * directly via the assistant panel
 * as a **Send to Geo** action on virtually every meaningful surface — topic drawer, scenario drawer, conversations page, competitors-by-LLM view, overview, SWOT, perceptions, citations, and the competitor details drawer
 * as an **Ask Geo** card surfaced alongside data views, with starter prompts for common questions
+* as one-click **Ask Geo** questions on the [Shopping](../shopping/shopping-overview.html) cards, wired to your actual numbers — so a metric like "0% product visibility" comes with a ready-made "where do we start?" question instead of a dead end
 
 ---
 
