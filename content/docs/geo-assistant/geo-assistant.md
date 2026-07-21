@@ -87,7 +87,6 @@ See [AI Perception Summary](../insights/ai-perception-summary.html) for the unde
 
 Geo's tools keep expanding. In addition to the existing data tools, Geo can now also work with:
 
-* **CDN log analysis** — surface log clusters and the AI-crawler breakdown, so you can ask how AI crawlers are actually reaching your site. See [CDN Log Integration](../integrations/cdn-log-integration.html).
 * **Recycle Bin operations** — restore deleted topics and scenarios directly from a conversation.
 
 ---

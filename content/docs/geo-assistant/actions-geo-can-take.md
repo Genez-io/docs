@@ -44,10 +44,6 @@ The action tools available to Geo include:
 
 See [Content Hub -> Briefs](../content-hub/briefs.html) for what gets generated.
 
-### Explore CDN Logs
-
-* **Explore CDN logs** — surface log clusters and the AI-crawler breakdown, so you can see how AI crawlers are reaching your site without leaving the conversation
-
 ---
 
 ## How Actions Get Triggered

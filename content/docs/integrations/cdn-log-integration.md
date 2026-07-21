@@ -53,37 +53,25 @@ These are the same logs your infrastructure team can typically export from your 
 
 ---
 
-## How It Works
+## What Genezio Analyzes
+
+Raw logs are long lists of individual requests, which tell you very little on their own. Genezio does the analysis and reports back on three things.
 
 ### Clustering by keyword
 
-Raw logs are long lists of individual URLs, which are hard to read on their own. Genezio **clusters** your log entries by keyword, grouping requested paths into themes so you can see activity at the level of topics rather than single URLs.
-
-Multiple **clusterings** can be run on the same logs — cluster them one way, save it, then cluster them another way for a different perspective. Saved clusterings stay available so you can revisit or compare them later.
+Genezio **clusters** your log entries by keyword, grouping requested paths into themes — so activity is reported at the level of topics rather than single URLs. The same logs can be clustered more than one way when a different perspective is useful.
 
 ### Crawler breakdown
 
 Genezio produces a **crawler breakdown** identifying which bots and crawlers are hitting your site, with particular emphasis on **AI crawlers** — the crawlers answer engines use to fetch content.
 
-This separates AI engine traffic from search engines, scrapers, and ordinary visitors.
+This separates answer-engine traffic from search engines, scrapers, and ordinary visitors.
 
 ### AI-crawler traffic vs. citations
 
-The most valuable view connects the two halves of the story: Genezio analyzes **AI-crawler traffic against your citations**, checking whether the pages answer engines fetch line up with the pages that actually get cited in AI answers.
+The most valuable analysis connects the two halves of the story: **AI-crawler traffic against your citations**, checking whether the pages answer engines fetch line up with the pages that actually get cited in AI answers.
 
-This is where gaps surface — important pages AI bots ignore, or pages they fetch heavily but never cite.
-
----
-
-## Reading the Results
-
-When reviewing your CDN log analysis, look for:
-
-* **Real-time fetches** — pages being pulled during live answers. Treat these as your highest-value content and protect them.
-* **Coverage gaps** — high-value pages that answer engines rarely or never fetch.
-* **Crawled-but-not-cited pages** — content AI bots fetch but that never appears in answers, which may signal a content or relevance issue.
-* **Crawler mix** — how much of your bot traffic comes from answer engines versus other crawlers.
-* **Theme-level patterns** — using your keyword clusters to see which content areas get the most attention.
+This is where the gaps surface — important pages answer engines ignore, or pages they fetch heavily but never cite.
 
 ---
 
@@ -93,14 +81,11 @@ CDN log ingestion is **not self-serve**. It is arranged on demand for each custo
 
 1. **Contact Genezio** and tell us you want your CDN or server logs ingested.
 2. Genezio works with you and your infrastructure team on how the logs are delivered.
-3. Once the logs are in, you can review the crawler breakdown, run and save keyword clusterings, and compare AI-crawler traffic against your citations.
-
-You can also explore all of this through the [Geo Assistant](../geo-assistant/geo-assistant.html) — most CDN log operations are exposed as assistant tools, so you can simply ask about your log clusters, crawler breakdown, and how crawl activity compares to your citations.
+3. Genezio analyzes the data and provides you with **custom reports** built from your CDN and GA4 data — showing what answer engines crawl, what they fetch in real time, and how that compares with the pages they cite.
 
 ---
 
 ## Related Pages
 
 * [Citations](../core-concepts/citations.html)
-* [Geo Assistant](../geo-assistant/geo-assistant.html)
 * [Insights -> Actionable Insights](../insights/actionable-insights.html)
