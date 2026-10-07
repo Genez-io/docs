@@ -160,6 +160,21 @@
     <loc>https://genezio.com/docs/content-hub/content-analyzer.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/content-hub/analyzing-landing-pages.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/analyzing-many-urls-at-once.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/covering-several-topics-in-one-piece.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/schema-markup.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/working-in-your-brand-language.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/content-hub/editing-articles.html</loc>
   </url>
   <url>
@@ -212,6 +227,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/agentic-commerce/ucp-readiness-audit.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/integrations/google-search-console.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/integrations/cdn-log-integration.html</loc>
