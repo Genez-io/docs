@@ -96,6 +96,8 @@ const sections = [
       'SWOT Analysis',
       'Sentiment Analysis',
       'Most Cited Sources',
+      'Channels and Authors',
+      'Monitor Perceptions',
       'Content Opportunities',
       'Actionable Insights'
     ]
@@ -127,6 +129,24 @@ const sections = [
       'Send to Geo',
       'Sessions and History',
       'Actions Geo Can Take'
+    ]
+  },
+  {
+    slug: 'scorecard',
+    title: 'Business Scorecard',
+    description: 'Track the handful of goals you actually care about, every day.',
+    pages: [
+      'Creating a Goal',
+      'Reading a Goal',
+      'Managing Your Board'
+    ]
+  },
+  {
+    slug: 'mcp',
+    title: 'Genezio over MCP',
+    description: 'Work with your brand data from Claude or another MCP client.',
+    pages: [
+      'Scorecards over MCP'
     ]
   },
   {
@@ -197,6 +217,7 @@ const sections = [
     description: 'Programmatic access for agencies and technical teams.',
     pages: [
       'Authentication',
+      'Errors',
       'Run Conversations API',
       'Query Fanouts API',
       'Citations API',
