@@ -43,6 +43,9 @@
     <loc>https://genezio.com/docs/getting-started/your-first-week.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/introduction/index.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/introduction/what-is-genezio.html</loc>
   </url>
   <url>
@@ -71,6 +74,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/introduction/how-the-5-agents-work.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/core-concepts/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/core-concepts/brands.html</loc>
@@ -133,6 +139,9 @@
     <loc>https://genezio.com/docs/genezio-agents/fact-checker-agent.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/analysis/index.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/analysis/creating-scenarios.html</loc>
   </url>
   <url>
@@ -158,6 +167,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/analysis/playground.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/insights/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/insights/your-kpis-explained.html</loc>
@@ -194,6 +206,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/insights/actionable-insights.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/content-hub/content-hub.html</loc>
@@ -274,6 +289,9 @@
     <loc>https://genezio.com/docs/mcp/scorecards-over-mcp.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/index.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/improving-ai-visibility/how-llms-choose-sources.html</loc>
   </url>
   <url>
@@ -319,6 +337,9 @@
     <loc>https://genezio.com/docs/agentic-commerce/ucp-readiness-audit.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/dashboards/index.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/dashboards/visibility-score-explained.html</loc>
   </url>
   <url>
@@ -338,6 +359,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/dashboards/trend-tracking.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/integrations/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/integrations/google-search-console.html</loc>
@@ -367,7 +391,13 @@
     <loc>https://genezio.com/docs/api/rate-limits.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/security/index.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/security/enterprise-sso-and-scim.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/tutorials/improve-ai-visibility-for-an-ecommerce-brand.html</loc>
@@ -383,6 +413,9 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/tutorials/monitor-brand-reputation-in-ai.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/faq/index.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/faq/how-often-should-i-run-conversations.html</loc>
