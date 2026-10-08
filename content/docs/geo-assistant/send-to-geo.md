@@ -1,6 +1,15 @@
 # Send to Geo
 
-**Send to Geo** is an action available on most data surfaces in the Genezio dashboard. Clicking it hands the current object — a topic, a scenario, a competitor, a citation, a SWOT entry, a perception — to the Geo Assistant with its full context attached.
+Most data surfaces in the Genezio dashboard carry a small **sparkle button**
+that hands what you are looking at to the Geo Assistant. You will find it in
+the corner of a drawer or beside a chart — on a topic, a scenario, a
+competitor, a citation, a SWOT entry or a perception.
+
+The button carries no text, only the sparkle icon, so look for the icon rather
+than for a labelled control.
+
+Pressing it opens the Geo Assistant with the object you were reading already
+attached, along with its context.
 
 You can then ask follow-up questions about that specific object without re-explaining what you're looking at.
 
@@ -8,14 +17,14 @@ You can then ask follow-up questions about that specific object without re-expla
 
 ## Why It Exists
 
-Investigating something in the dashboard usually starts with noticing it on a chart or in a drawer. Before **Send to Geo**, the path to a question was:
+Investigating something in the dashboard usually starts with noticing it on a chart or in a drawer. Before the sparkle button, the path to a question was:
 
 1. See something interesting on a chart
 2. Open the Geo Assistant
 3. Re-describe what you're looking at, in words
 4. Hope Geo finds the right slice of data
 
-**Send to Geo** collapses that into a single click. The assistant picks up the exact object you were looking at — that competitor, that scenario, that citation source — and you can immediately ask:
+The sparkle button collapses that into a single click. The assistant picks up the exact object you were looking at — that competitor, that scenario, that citation source — and you can immediately ask:
 
 * "why is this happening?"
 * "what should I do about it?"

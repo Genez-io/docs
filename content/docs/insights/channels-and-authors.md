@@ -51,5 +51,5 @@ use of a week than one cited once.
 Not every citation can be attributed. A source has to identify its channel or
 author for Genezio to resolve one, so the panel appears where that information
 exists and stays out of the way where it does not. Think of it as a sharper
-view of part of your citations, not a replacement for
-[Most Cited Sources](most-cited-sources.html).
+view of part of your citations rather than a replacement for the citation
+reporting as a whole.
