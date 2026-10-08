@@ -29,7 +29,7 @@ Typical questions:
 
 Notice a metric move on a chart — a recommendation rate drop, a new competitor appearing, citations from a particular domain turning negative? Instead of clicking through filtered views to figure out why, send the chart, drawer, or object directly to Geo and ask "what's behind this?". Geo pulls the relevant slice, summarizes it, and points at the underlying conversations.
 
-See [Send to Geo](send-to-geo.html) for the full list of surfaces that support this.
+See [Ask Geo](ask-geo.html) for the full list of surfaces that support this.
 
 ### Report
 
@@ -96,7 +96,7 @@ Geo's tools keep expanding. In addition to the existing data tools, Geo can now 
 Geo is available throughout the dashboard:
 
 * directly via the assistant panel
-* as a **Send to Geo** action on virtually every meaningful surface — topic drawer, scenario drawer, conversations page, competitors-by-LLM view, overview, SWOT, perceptions, citations, and the competitor details drawer
+* as a **Ask Geo** action on virtually every meaningful surface — topic drawer, scenario drawer, conversations page, competitors-by-LLM view, overview, SWOT, perceptions, citations, and the competitor details drawer
 * as an **Ask Geo** card surfaced alongside data views, with starter prompts for common questions
 * as one-click **Ask Geo** questions on the [Shopping](../shopping/shopping-overview.html) cards, wired to your actual numbers — so a metric like "0% product visibility" comes with a ready-made "where do we start?" question instead of a dead end
 
@@ -114,7 +114,7 @@ Useful when you want to keep Geo in the flow of work you're already doing in you
 
 ## Related Pages
 
-* [Send to Geo](send-to-geo.html)
+* [Ask Geo](ask-geo.html)
 * [Sessions and History](sessions-and-history.html)
 * [Actions Geo Can Take](actions-geo-can-take.html)
 * [Insights -> SWOT Analysis](../insights/swot-analysis.html)

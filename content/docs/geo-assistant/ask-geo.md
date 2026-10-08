@@ -1,6 +1,12 @@
-# Send to Geo
+# Ask Geo
 
-**Send to Geo** is an action available on most data surfaces in the Genezio dashboard. Clicking it hands the current object — a topic, a scenario, a competitor, a citation, a SWOT entry, a perception — to the Geo Assistant with its full context attached.
+Most data surfaces in the Genezio dashboard carry an **Ask Geo** button, marked
+with a sparkle icon. You will find it in the corner of a drawer or beside a
+chart — on a topic, a scenario, a competitor, a citation, a SWOT entry or a
+perception.
+
+Pressing it opens the Geo Assistant with the object you were reading already
+attached, along with its context.
 
 You can then ask follow-up questions about that specific object without re-explaining what you're looking at.
 
@@ -8,14 +14,14 @@ You can then ask follow-up questions about that specific object without re-expla
 
 ## Why It Exists
 
-Investigating something in the dashboard usually starts with noticing it on a chart or in a drawer. Before **Send to Geo**, the path to a question was:
+Investigating something in the dashboard usually starts with noticing it on a chart or in a drawer. Before **Ask Geo**, the path to a question was:
 
 1. See something interesting on a chart
 2. Open the Geo Assistant
 3. Re-describe what you're looking at, in words
 4. Hope Geo finds the right slice of data
 
-**Send to Geo** collapses that into a single click. The assistant picks up the exact object you were looking at — that competitor, that scenario, that citation source — and you can immediately ask:
+**Ask Geo** collapses that into a single click. The assistant picks up the exact object you were looking at — that competitor, that scenario, that citation source — and you can immediately ask:
 
 * "why is this happening?"
 * "what should I do about it?"
@@ -26,7 +32,7 @@ It shortens the path from noticing something in a chart to deciding what to do a
 
 ---
 
-## Where Send to Geo Is Available
+## Where Ask Geo Is Available
 
 The action is on virtually every meaningful surface in the dashboard, including:
 
@@ -40,13 +46,13 @@ The action is on virtually every meaningful surface in the dashboard, including:
 * **Perceptions** — send an extracted perception for sentiment, source, or context analysis
 * **Citations** — send a citation source to explore which conversations it appears in and what it says
 
-Anywhere you see a meaningful object on screen, look for the **Send to Geo** action.
+Anywhere you see a meaningful object on screen, look for the **Ask Geo** action.
 
 ---
 
 ## What Happens When You Send Something
 
-1. You click **Send to Geo** on the object.
+1. You click **Ask Geo** on the object.
 2. Geo opens (or comes to the foreground) with the object attached as context.
 3. Geo acknowledges what it received — for example, "I'm looking at the *CRM for startups* topic for the last 30 days."
 4. You type your follow-up question. Geo answers grounded in that object.
@@ -57,9 +63,9 @@ The attached context stays with the conversation. You can keep asking questions 
 
 ## Typical Workflows
 
-**Diagnose a drop.** On the Overview, your recommendation rate drops on ChatGPT. Click **Send to Geo** on the chart, ask "what's behind this drop?" — Geo pulls the underlying conversations and explains.
+**Diagnose a drop.** On the Overview, your recommendation rate drops on ChatGPT. Click **Ask Geo** on the chart, ask "what's behind this drop?" — Geo pulls the underlying conversations and explains.
 
-**Counter a competitor.** In the competitor details drawer, click **Send to Geo**, ask "what are their top three strengths in SWOT, and how do I counter them?" — Geo answers, then you can ask it to "draft a brief that addresses the top strength."
+**Counter a competitor.** In the competitor details drawer, click **Ask Geo**, ask "what are their top three strengths in SWOT, and how do I counter them?" — Geo answers, then you can ask it to "draft a brief that addresses the top strength."
 
 **Audit a citation source.** On the Citations view, send a domain to Geo and ask "what does this source say about us versus competitors?" — Geo summarizes the perceptions extracted from conversations that cite it.
 

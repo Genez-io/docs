@@ -74,7 +74,7 @@ This means actions taken by Geo are as auditable as any change made directly in 
 
 * [Geo Assistant](geo-assistant.html)
 * [Sessions and History](sessions-and-history.html)
-* [Send to Geo](send-to-geo.html)
+* [Ask Geo](ask-geo.html)
 * [Content Hub -> Briefs](../content-hub/briefs.html)
 * [Core Concepts -> Personas](../core-concepts/personas.html)
 * [Core Concepts -> Competitors](../core-concepts/competitors.html)

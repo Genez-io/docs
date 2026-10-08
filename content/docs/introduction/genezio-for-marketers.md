@@ -16,11 +16,10 @@ That model is changing. More and more, people skip the list of links and just as
 
 If your brand isn't in that answer, you've lost the moment — even if you rank #1 on Google for the same query.
 
-| Stat | What it means |
+| | |
 | --- | --- |
-| **−25%** | Projected decline in traditional search clicks by 2026 due to AI answers |
-| **4** | Major answer engines Genezio monitors: ChatGPT, Claude, Gemini, Perplexity |
-| **2** | Core KPIs that matter: AI Visibility % and AI Recommendations % |
+| **The engines** | Genezio monitors ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok and DeepSeek, as well as Google AI Overview. You choose which ones matter for your market. |
+| **The two numbers** | AI Visibility — how often you appear at all. AI Recommendation — how often you are actually put forward. A brand can be highly visible and rarely recommended. |
 
 ---
 
@@ -72,7 +71,7 @@ See your Share of Voice — how often your brand appears compared to competitors
 
 The rest of this Foundations section translates Genezio's technical concepts into practical execution language:
 
-- [Your KPIs Explained](02-your-kpis-explained.md) — What AI Visibility % and AI Recommendations % mean for your business
-- [How the 5 Agents Work](03-how-the-5-agents-work.md) — The four types of AI conversations Genezio runs, and why it matters
-- [From Data to Content Strategy](04-from-data-to-content-strategy.md) — How to turn Genezio insights into a content plan
-- [Your First Week with Genezio](05-your-first-week.md) — A practical day-by-day guide to getting started
+- [Your KPIs Explained](../insights/your-kpis-explained.html) — What AI Visibility % and AI Recommendations % mean for your business
+- [How the 5 Agents Work](how-the-5-agents-work.html) — The four types of AI conversations Genezio runs, and why it matters
+- [From Data to Content Strategy](../content-hub/from-data-to-content-strategy.html) — How to turn Genezio insights into a content plan
+- [Your First Week with Genezio](../getting-started/your-first-week.html) — A practical day-by-day guide to getting started

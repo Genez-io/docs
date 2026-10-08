@@ -33,6 +33,7 @@ const sections = [
     description: 'Understand AI Recommendations, Visibility, and how Genezio works.',
     pages: [
       'What is Genezio?',
+      'Genezio for Marketers',
       'Why AI Recommendations Matter',
       'How LLM Search Works',
       'Query Fanouts Explained',
@@ -79,6 +80,10 @@ const sections = [
       'Creating Scenarios',
       'Selecting Answer Engines',
       'Running Conversations',
+      'Understanding Conversation Results',
+      'Detecting Citations',
+      'Extracting Competitors',
+      'Extracting Query Fanouts',
       'Sentiment Analysis',
       'Playground'
     ]
@@ -131,7 +136,7 @@ const sections = [
     description: 'Chat with your brand data — investigate, report, and decide what to do next.',
     pages: [
       'Geo Assistant',
-      'Send to Geo',
+      'Ask Geo',
       'Sessions and History',
       'Actions Geo Can Take'
     ]
@@ -213,7 +218,6 @@ const sections = [
       'Google Analytics Integration',
       'CDN Log Integration',
       'Data Exports',
-      'Webhooks',
       'External Reporting Tools'
     ]
   },
