@@ -16,11 +16,10 @@ That model is changing. More and more, people skip the list of links and just as
 
 If your brand isn't in that answer, you've lost the moment — even if you rank #1 on Google for the same query.
 
-| Stat | What it means |
+| | |
 | --- | --- |
-| **−25%** | Projected decline in traditional search clicks by 2026 due to AI answers |
-| **4** | Major answer engines Genezio monitors: ChatGPT, Claude, Gemini, Perplexity |
-| **2** | Core KPIs that matter: AI Visibility % and AI Recommendations % |
+| **The engines** | Genezio monitors ChatGPT, Claude, Gemini, Perplexity, Copilot, Grok and DeepSeek, as well as Google AI Overview. You choose which ones matter for your market. |
+| **The two numbers** | AI Visibility — how often you appear at all. AI Recommendation — how often you are actually put forward. A brand can be highly visible and rarely recommended. |
 
 ---
 
