@@ -218,7 +218,6 @@ const sections = [
       'Google Analytics Integration',
       'CDN Log Integration',
       'Data Exports',
-      'Webhooks',
       'External Reporting Tools'
     ]
   },

@@ -202,6 +202,9 @@
     <loc>https://genezio.com/docs/content-hub/from-data-to-content-strategy.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/content-hub/generating-articles.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/content-hub/briefs.html</loc>
   </url>
   <url>
@@ -223,7 +226,22 @@
     <loc>https://genezio.com/docs/content-hub/working-in-your-brand-language.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/content-hub/using-query-fanouts-for-content.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/selecting-tone-of-voice.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/selecting-target-audience.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/content-hub/editing-articles.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/chatting-with-your-article.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/content-hub/publishing-content.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/geo-assistant/geo-assistant.html</loc>
@@ -254,6 +272,30 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/mcp/scorecards-over-mcp.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/how-llms-choose-sources.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/entity-reinforcement.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/structuring-content-for-llms.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/semantic-topic-coverage.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/building-authority.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/backlinks-and-citations.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/updating-content.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/improving-ai-visibility/monitoring-ai-visibility.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/shopping/product-visibility.html</loc>
@@ -301,7 +343,16 @@
     <loc>https://genezio.com/docs/integrations/google-search-console.html</loc>
   </url>
   <url>
+    <loc>https://genezio.com/docs/integrations/google-analytics-integration.html</loc>
+  </url>
+  <url>
     <loc>https://genezio.com/docs/integrations/cdn-log-integration.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/integrations/data-exports.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/integrations/external-reporting-tools.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/api/index.html</loc>
@@ -317,6 +368,21 @@
   </url>
   <url>
     <loc>https://genezio.com/docs/security/enterprise-sso-and-scim.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/improve-ai-visibility-for-an-ecommerce-brand.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/improve-ai-visibility-for-a-saas-company.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/track-competitors-in-ai-search.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/generate-content-that-llms-cite.html</loc>
+  </url>
+  <url>
+    <loc>https://genezio.com/docs/tutorials/monitor-brand-reputation-in-ai.html</loc>
   </url>
   <url>
     <loc>https://genezio.com/docs/faq/how-often-should-i-run-conversations.html</loc>
