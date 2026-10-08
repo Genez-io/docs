@@ -80,6 +80,10 @@ const sections = [
       'Creating Scenarios',
       'Selecting Answer Engines',
       'Running Conversations',
+      'Understanding Conversation Results',
+      'Detecting Citations',
+      'Extracting Competitors',
+      'Extracting Query Fanouts',
       'Sentiment Analysis',
       'Playground'
     ]
