@@ -132,7 +132,7 @@ const sections = [
     description: 'Chat with your brand data — investigate, report, and decide what to do next.',
     pages: [
       'Geo Assistant',
-      'Send to Geo',
+      'Ask Geo',
       'Sessions and History',
       'Actions Geo Can Take'
     ]
