@@ -33,6 +33,7 @@ const sections = [
     description: 'Understand AI Recommendations, Visibility, and how Genezio works.',
     pages: [
       'What is Genezio?',
+      'Genezio for Marketers',
       'Why AI Recommendations Matter',
       'How LLM Search Works',
       'Query Fanouts Explained',
