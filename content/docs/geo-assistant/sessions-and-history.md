@@ -8,7 +8,7 @@ This turns Geo from a one-shot chat into a persistent workspace.
 
 ## Multiple Sessions
 
-You can keep several Geo sessions running in parallel. Each session is independent — its own conversation history, its own attached context (from any **Send to Geo** actions), and its own thread of follow-up questions.
+You can keep several Geo sessions running in parallel. Each session is independent — its own conversation history, its own attached context (from any **Ask Geo** actions), and its own thread of follow-up questions.
 
 Common patterns:
 
@@ -60,4 +60,4 @@ Sessions and tool-call traces change how teams use the assistant:
 ## Related Pages
 
 * [Geo Assistant](geo-assistant.html)
-* [Send to Geo](send-to-geo.html)
+* [Ask Geo](ask-geo.html)
